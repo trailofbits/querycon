@@ -1,0 +1,103 @@
+@import '../../styles/variables';
+
+.registrationTiles {
+  display: flex;
+  justify-content: space-between;
+  margin: 110px auto 0;
+  width: 700px;
+}
+
+.tile {
+  background-image: url('./early-bird.svg');
+  background-position: center 90px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border-top: 12px solid $hot-pink;
+  box-shadow: 0 3px 20px 0 rgba(50, 50, 93, 0.14),
+    0 3px 3px 0 rgba(0, 0, 0, 0.07);
+  box-sizing: border-box;
+  height: 400px;
+  text-align: center;
+  width: 320px;
+}
+
+.tileFullPrice {
+  background-color: $cloud;
+  background-image: url('./night-owl.svg');
+  background-position: center 85px;
+  border-color: $grape;
+  box-shadow: none;
+}
+
+.title {
+  font-weight: 700;
+  margin: 28px 0 20px;
+}
+
+.price {
+  color: $midnight-blue;
+  font-size: 92px;
+  font-weight: 900;
+  margin: 120px 0 25px;
+  position: relative;
+  left: -7px;
+}
+
+.priceFullPrice {
+  opacity: 0.3;
+}
+
+.dollar {
+  font-size: 32px;
+}
+
+.registerButton {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.registerButtonFullPrice,
+.registerButtonFullPrice:hover {
+  background-color: $lavender;
+  opacity: 0.5;
+}
+
+.dates {
+  color: $lavender;
+  font-size: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.lateRegistrationTiles {
+  background: linear-gradient($cloud, $white 30%);
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+}
+
+.lanyard {
+  background: url('./badge-top.svg') center center no-repeat;
+  height: 193px;
+  left: 50%;
+  margin-left: -161px;
+  position: absolute;
+  top: 0;
+  width: 322px;
+  z-index: 1;
+}
+
+.lateRegistrationTile {
+  background-image: url('../../pages/querycon.svg');
+  background-size: 66px 66px;
+  border-color: $cookie-monster-blue;
+  margin: 146px auto 0;
+}
+
+.lateRegistrationButton {
+  background-color: $cookie-monster-blue;
+
+  &:hover {
+    background: lighten($cookie-monster-blue, 10%);
+  }
+}

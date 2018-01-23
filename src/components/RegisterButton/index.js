@@ -5,10 +5,14 @@ import styles from './register-button.module.scss'
 
 const cx = classNames.bind(styles)
 
-const RegisterButton = ({ className }) => {
+const RegisterButton = ({ className, disabled }) => {
   const linkClasses = cx(styles.registerButton, className)
 
-  return <a href="" className={linkClasses}>Register Now</a>
+  if (disabled) {
+    return <div className={linkClasses}>Register</div>
+  } else {
+    return <a href="" className={linkClasses}>Register Now</a>
+  }
 }
 
 export default RegisterButton
