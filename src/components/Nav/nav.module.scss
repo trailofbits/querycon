@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 488px;
+}
+
+.link {
+  color: $eggshell;
+  flex: 1;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .6px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $hot-pink;
+  }
+}

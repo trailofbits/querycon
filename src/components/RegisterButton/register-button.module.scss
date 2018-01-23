@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.registerButton {
+  background-color: $hot-pink;
+  border-radius: 4px;
+  color: $white;
+  display: block;
+  font-size: 18px;
+  font-weight: 900;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  width: 180px;
+
+  &:hover {
+    background: darken($hot-pink, 10%);
+  }
+}

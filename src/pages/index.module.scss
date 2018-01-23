@@ -1,1 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
 @import '../styles/variables';
+
+:global(body) {
+  font-family: $primary-font;
+  padding: 0;
+  margin: 0;
+}
+
+.heroSection {
+  background-color: $midnight-blue;
+  padding-bottom: 95px;
+}
+
+.header {
+  color: $white;
+  font-size: 72px;
+  font-weight: 900;
+  margin: 50px 0 40px;
+  text-align: center;
+}
+
+.subHeader {
+  color: $white;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 2.7px;
+  margin: 40px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subSubHeader {
+  color: $white;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 32px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ctaBar {
+  align-items: center;
+  background: $cookie-monster-blue;
+  display: flex;
+  height: 72px;
+  justify-content: center;
+}
+
+.ctaBarText {
+  color: $eggshell;
+  font-weight: 300;
+}
+
+.ctaBarRegisterButton {
+  margin-left: 20px;
+  width: 200px;
+}
