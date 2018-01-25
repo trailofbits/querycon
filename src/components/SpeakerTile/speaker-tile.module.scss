@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.speakerTile {
+  text-align: center;
+}
+
+.name {
+  color: $midnight-blue;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.67;
+  margin: 30px 0 12px;
+}
+
+.company {
+  color: $cookie-monster-blue;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.title {
+  color: $lavender;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  line-height: 2.0;
+  margin-bottom: 20px;
+  text-align: center;
+}

@@ -39,6 +39,13 @@
   max-width: 100%;
 }
 
+.sectionBreak {
+  background-color: $light-gray;
+  height: 2px;
+  margin: 84px auto;
+  width: 70%;
+}
+
 .heroSection {
   background-color: $midnight-blue;
   padding-bottom: 95px;
@@ -137,4 +144,38 @@
   color: $lavender;
   font-size: 30px;
   text-align: center;
+}
+
+.passDescription {
+  color: $midnight-blue;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 69px 0 75px;
+  text-align: center;
+}
+
+.passFeatures {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.speakersHeader {
+  margin-bottom: 16px;
+}
+
+.speakersSub {
+  color: $lavender;
+  font-size: 24px;
+  line-height: 1.67;
+  margin: 0 auto;
+  text-align: center;
+  width: 660px;
+}
+
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 57px 0;
 }
