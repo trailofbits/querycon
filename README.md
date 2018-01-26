@@ -1,13 +1,39 @@
-# gatsby-starter-default
-The default Gatsby starter
+# QueryCon Website
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+## Running the app locally
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+Install all dependencies:
+
 ```
-gatsby new gatsby-example-site
+yarn
 ```
 
-## Deploy
+Run the app:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+```
+yarn develop
+```
+
+The app should be available in thebrowser at [http://localhost:8000](http://localhost:8000).
+
+## Running the production version
+
+Install all dependencies:
+
+```
+yarn
+```
+
+Build the site:
+
+```
+yarn build
+```
+
+Serve the built site:
+
+```
+yarn serve
+```
+
+The app should be available in thebrowser at [http://localhost:9000](http://localhost:9000).
