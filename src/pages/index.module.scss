@@ -71,21 +71,31 @@
   text-transform: uppercase;
 }
 
+.pageWrapper {
+  overflow: hidden;
+}
+
 .heroSection {
   background-color: $midnight-blue;
   position: relative;
 }
 
 .videoBackground {
+  display: flex;
   height: 784px;
+  justify-content: center;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 100%;
   z-index: 0;
 }
 
 .video {
   height: 784px;
+  min-width: 100%;
+  position: absolute;
+  width: auto;
 }
 
 .heroContent {
@@ -273,4 +283,75 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.preConfMain {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 61px auto 29px;
+  max-width: 1070px;
+}
+
+.preConfMainVideo {
+  background-color: $black;
+  height: 300px;
+  width: 500px;
+}
+
+.preConfMainTitle {
+  font-size: 20px;
+  text-align: left;
+}
+
+.preConfMainDescription {
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: left;
+  width: 500px;
+}
+
+.preConfLinks {
+  display: flex;
+  margin: 0 auto 140px;
+  width: 1160px;
+}
+
+.preConfLinksWrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1100px;
+}
+
+.preConfLinksCarousel {
+  display: flex;
+  transition: transform .25s linear;
+  white-space: nowrap;
+}
+
+.preConfLink {
+  color: $midnight-blue;
+  display: block;
+  padding: 0 15px;
+  text-decoration: none;
+  width: 190px;
+
+  &:hover {
+    color: $hot-pink;
+  }
+}
+
+.preConfLinkImg {
+  height: 110px;
+  margin-bottom: 5px;
+  width: 190px;
+}
+
+.preConfLinkTitle {
+  font-size: 14px;
+  line-height: 1.43;
+  margin: 0;
+  text-align: left;
+  white-space: normal;
+  width: 190px;
 }
