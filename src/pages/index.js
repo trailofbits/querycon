@@ -12,15 +12,18 @@ import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
 import imgHeadshotChristopherLong from './headshot-christopher-long.jpg'
 import imgHeadshotLaurenPearl from './headshot-lauren-pearl.jpg'
 import imgHeadshotMike from './headshot-mike.jpg'
+import imgHeroLogo from './querycon-large.svg'
 import imgMegaphone from './megaphone.svg'
 import imgMikeStage1 from './mike-stage-1.png'
 import imgOrbitz from './orbitz.svg'
+import imgPalaceOfFineArtsPoster from './palace-fine-arts.png'
 import imgVenue from './palace-fine-arts.svg'
 import ProminentCta from '../components/ProminentCta'
 import RegisterButton from '../components/RegisterButton'
 import RegistrationTiles from '../components/RegistrationTiles'
 import SpeakerTile from '../components/SpeakerTile'
 import styles from './index.module.scss'
+import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
 
 const IndexPage = () => (
   <div>
@@ -30,10 +33,21 @@ const IndexPage = () => (
     </Helmet>
 
     <section className={styles.heroSection}>
-      <Header />
-      <h1 className={styles.header}>QueryCon 2018</h1>
-      <h2 className={styles.subHeader}>An osquery conference</h2>
-      <h3 className={styles.subSubHeader}>San Francisco | May 31 - Jun 1</h3>
+      <div className={styles.videoBackground}>
+        <video loop muted autoPlay className={styles.video} poster={imgPalaceOfFineArtsPoster}>
+          <source src={videoPalaceOfFineArtsMp4} type="video/mp4" />
+        </video>
+      </div>
+
+      <div className={styles.heroContent}>
+        <Header />
+        <h1 className={styles.header}>QueryCon 2018</h1>
+        <div className={styles.heroLogo}>
+          <img alt="" src={imgHeroLogo} />
+        </div>
+        <h2 className={styles.subHeader}>An osquery conference by Kolide</h2>
+        <h3 className={styles.subSubHeader}>San Francisco | May 31 - Jun 1</h3>
+      </div>
     </section>
 
     <div className={styles.ctaBar}>
@@ -57,7 +71,7 @@ const IndexPage = () => (
       <div className={styles.leaderSub1}>
         <h3>Osquery Expertise for Big and Small</h3>
         <p>
-          We&apos;ve brought together the biggest names in the osquery community
+          {`We've`} brought together the biggest names in the osquery community
           to speak and discuss on a variety of use-cases and issues. No matter
           whether you are an osquery expert or are installing it for the first
           time there is something for you.

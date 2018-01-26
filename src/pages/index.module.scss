@@ -73,7 +73,26 @@
 
 .heroSection {
   background-color: $midnight-blue;
-  padding-bottom: 95px;
+  position: relative;
+}
+
+.videoBackground {
+  height: 784px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.video {
+  height: 784px;
+}
+
+.heroContent {
+  background-color: rgba(0, 18, 95, 0.6);
+  height: 784px;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -84,11 +103,18 @@
   text-align: center;
 }
 
+.heroLogo {
+  height: 200px;
+  margin: 52px auto 47px;
+  width: 198px;
+}
+
 .subHeader {
   color: $white;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 900;
-  letter-spacing: 2.7px;
+  letter-spacing: 5.3px;
+  line-height: 1.58;
   margin: 40px 0 0;
   text-align: center;
   text-transform: uppercase;
