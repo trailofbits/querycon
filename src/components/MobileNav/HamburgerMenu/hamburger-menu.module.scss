@@ -1,0 +1,24 @@
+@import '../../../styles/variables.scss';
+
+.hamburgerMenu {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 12px;
+  justify-content: space-between;
+  padding: 0;
+  width: 18px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.bar {
+  background-color: $midnight-blue;
+  display: block;
+  height: 2px;
+  width: 18px;
+}
+

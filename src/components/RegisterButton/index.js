@@ -11,7 +11,7 @@ const RegisterButton = ({ className, disabled }) => {
   if (disabled) {
     return <div className={linkClasses}>Register</div>
   } else {
-    return <a href="" className={linkClasses}>Register Now</a>
+    return <a href="https://www.eventbrite.com/edit?eid=42317323253#" className={linkClasses}>Register Now</a>
   }
 }
 

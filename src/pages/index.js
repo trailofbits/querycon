@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import MediaQuery from 'react-responsive'
 
 import Button from '../components/buttons/Button'
 import FeatureTile from '../components/FeatureTile'
@@ -8,6 +9,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import MainSpeaker from '../components/MainSpeaker'
 import MediaCarousel from '../components/MediaCarousel'
+import MobileHeader from '../components/MobileHeader'
 import imgAirbnb from './airbnb.svg'
 import imgExpedia from './expedia.svg'
 import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
@@ -18,7 +20,7 @@ import imgHeroLogo from './querycon-large.svg'
 import imgMegaphone from './megaphone.svg'
 import imgMikeStage1 from './mike-stage-1.png'
 import imgOrbitz from './orbitz.svg'
-import imgPalaceOfFineArtsPoster from './palace-fine-arts.png'
+import imgPalaceOfFineArtsPoster from './palace-fine-arts.jpg'
 import imgVenue from './palace-fine-arts.svg'
 import ProminentCta from '../components/ProminentCta'
 import RegisterButton from '../components/RegisterButton'
@@ -26,6 +28,9 @@ import RegistrationTiles from '../components/RegistrationTiles'
 import SpeakerTile from '../components/SpeakerTile'
 import styles from './index.module.scss'
 import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
+import videoPalaceOfFineArtsWebM from './palace-fine-arts.webm'
+
+const MOBILE_WIDTH = 800
 
 const IndexPage = () => (
   <div className={styles.pageWrapper}>
@@ -35,20 +40,30 @@ const IndexPage = () => (
     </Helmet>
 
     <section className={styles.heroSection}>
-      <div className={styles.videoBackground}>
-        <video
-          loop
-          muted
-          autoPlay
-          className={styles.video}
-          poster={imgPalaceOfFineArtsPoster}
-        >
-          <source src={videoPalaceOfFineArtsMp4} type="video/mp4" />
-        </video>
-      </div>
+      <MediaQuery minWidth={MOBILE_WIDTH + 1}>
+        <div className={styles.videoBackground}>
+          <video
+            loop
+            muted
+            autoPlay
+            className={styles.video}
+            poster={imgPalaceOfFineArtsPoster}
+          >
+            <source src={videoPalaceOfFineArtsWebM} type="video/webm" />
+            <source src={videoPalaceOfFineArtsMp4} type="video/mp4" />
+          </video>
+        </div>
+      </MediaQuery>
 
       <div className={styles.heroContent}>
-        <Header />
+        <MediaQuery minWidth={MOBILE_WIDTH + 1}>
+          <Header />
+        </MediaQuery>
+
+        <MediaQuery maxWidth={MOBILE_WIDTH}>
+          <MobileHeader />
+        </MediaQuery>
+
         <h1 className={styles.header}>QueryCon 2018</h1>
         <div className={styles.heroLogo}>
           <img alt="" src={imgHeroLogo} />
@@ -59,47 +74,67 @@ const IndexPage = () => (
     </section>
 
     <div className={styles.ctaBar}>
-      <p className={styles.ctaBarText}>
-        Interested in attending? Space is limited, reserve your spot!
-      </p>
+      <MediaQuery minWidth={MOBILE_WIDTH + 1}>
+        <p className={styles.ctaBarText}>
+          Interested in attending? Space is limited, reserve your spot!
+        </p>
+      </MediaQuery>
+
       <RegisterButton className={styles.ctaBarRegisterButton} />
     </div>
 
+    <MediaQuery maxWidth={MOBILE_WIDTH}>
+      <h2 className={styles.supplementaryHeader}>QueryCon18</h2>
+    </MediaQuery>
+
     <p className={styles.leader}>
-      <span className={styles.bigCharacter}>Q</span>
-      ueryCon is a 2 day <strong>osquery</strong> conference at the{' '}
-      <strong>Palace of Fine Arts</strong> focused on bringing security, devops,
-      macadmins and other experts in the <strong>osquery</strong> community
-      together. With talks from industry juggernauts and the creators of
-      osquery, discussion will focus on emergent topics that affect the
-      landscape &amp; development of osquery.
+      Join us for a 2-day <strong>Osquery</strong> conference at the <strong>Palace of Fine Arts</strong> focused
+      on bringing security, devops, macadmins and other experts in the <strong>osquery</strong>
+      community together. With talks from industry juggernauts and the creators
+      of osquery, discussion will focus on emergent topics that affect the
+      landscape {`&`} development of osquery.
     </p>
 
     <div className={styles.leaderSub}>
+      <MediaQuery maxWidth={MOBILE_WIDTH}>
+        <div className={styles.leaderSub2}>
+          <img
+            className={styles.responsiveImage}
+            src={imgMikeStage1}
+            alt="Mike Arpaia"
+          />
+        </div>
+      </MediaQuery>
+
       <div className={styles.leaderSub1}>
         <h3>Osquery Expertise for Big and Small</h3>
         <p>
           {`We've`} brought together the biggest names in the osquery community
           to speak and discuss on a variety of use-cases and issues. No matter
           whether you are an osquery expert or are installing it for the first
-          time there is something for you.
+          time there is something for you:
         </p>
       </div>
 
-      <div className={styles.leaderSub2}>
-        <img
-          className={styles.responsiveImage}
-          src={imgMikeStage1}
-          alt="Mike Arpaia"
-        />
-      </div>
+      <MediaQuery minWidth={MOBILE_WIDTH + 1}>
+        <div className={styles.leaderSub2}>
+          <img
+            className={styles.responsiveImage}
+            src={imgMikeStage1}
+            alt="Mike Arpaia"
+          />
+        </div>
+      </MediaQuery>
     </div>
 
     <div className={styles.kolideBanner}>
-      QueryCon18 brought to you by Kolide
+      <span className={styles.kolideBannerText}>
+        QueryCon18 brought to you by Kolide
+      </span>
     </div>
+
     <h2 className={styles.reserve}>Reserve your seat for QueryCon18 now!</h2>
-    <div className={styles.reserveSub}>Only 140 seats remaining</div>
+    <div className={styles.reserveSub}>Register soon! Seating is limited!</div>
 
     <RegistrationTiles />
 
@@ -125,7 +160,7 @@ const IndexPage = () => (
       </FeatureTile>
     </div>
 
-    <div className={styles.sectionBreak} />
+    <div className={styles.sectionBreak} id="speakers" />
 
     <h2 className={styles.sectionHeader}>The Speakers</h2>
 
@@ -146,7 +181,7 @@ const IndexPage = () => (
         company="Stripe"
         image={imgHeadshotBenHughes}
         name="Ben Hughes"
-        title="Co-Founder & CTO"
+        title="Security Jerk"
       />
 
       <SpeakerTile
@@ -188,7 +223,7 @@ const IndexPage = () => (
       Apply Now
     </Button>
 
-    <div className={styles.sectionBreak} />
+    <div className={styles.sectionBreak} id="location" />
 
     <h2 className={styles.sectionHeader}>The Venue</h2>
 
@@ -238,7 +273,7 @@ const IndexPage = () => (
       />
     </div>
 
-    <div className={styles.sectionBreak} />
+    <div className={styles.sectionBreak} id="learning" />
 
     <h2 className={styles.sectionHeader}>Pre-Conference Learning</h2>
 
@@ -255,19 +290,26 @@ const IndexPage = () => (
         <source src={videoPalaceOfFineArtsMp4} type="video/mp4" />
       </video>
 
-      <div>
+      <div className={styles.preConfMainText}>
         <h3 className={styles.preConfMainTitle}>
           Introduction to Using Osquery
         </h3>
 
         <p className={styles.preConfMainDescription}>
-          {`We've`} brought together the biggest names in the osquery community to
+          We've brought together the biggest names in the osquery community to
           speak and discuss on a variety of use-cases and issues. No matter
           whether you are an osquery expert or are installing it for the first
-          time there is something for you.
+          time there is something for you. We've brought together the biggest
+          names in the osquery community to speak and discuss on a variety of
+          use-cases and issues. No matter whether you are an osquery expert or
+          are installing it for the first time there is something for you:
         </p>
       </div>
     </div>
+
+    <MediaQuery maxWidth={MOBILE_WIDTH}>
+      <div className={styles.clearBanner}>More Resources:</div>
+    </MediaQuery>
 
     <MediaCarousel />
 

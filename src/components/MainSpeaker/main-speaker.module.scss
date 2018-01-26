@@ -7,6 +7,26 @@
   justify-content: space-around;
   height: 480px;
   margin: 81px 0 56px;
+
+  @media(max-width: $mobile-width) {
+    box-sizing: border-box;
+    height: 300px;
+  }
+}
+
+.speaker {
+  @media(max-width: $mobile-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+}
+
+.headshot {
+  @media(max-width: $mobile-width) {
+    height: 120px;
+    width: 120px;
+  }
 }
 
 .name {
@@ -15,6 +35,11 @@
   letter-spacing: 2px;
   margin-bottom: 15px;
   text-align: left;
+
+  @media(max-width: $mobile-width) {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .company {
@@ -26,6 +51,12 @@
   margin-bottom: 15px;
   text-align: left;
   text-transform: uppercase;
+
+  @media(max-width: $mobile-width) {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    margin-bottom: 7px;
+  }
 }
 
 .title {
@@ -37,6 +68,11 @@
   margin-bottom: 20px;
   text-align: left;
   white-space: nowrap;
+
+  @media(max-width: $mobile-width) {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .break {
@@ -44,6 +80,11 @@
   height: 2px;
   margin: 0 0 28px;
   width: 300px;
+
+  @media(max-width: $mobile-width) {
+    margin: 15px 20px;
+    width: inherit;
+  }
 }
 
 .presentationHeader {
@@ -54,6 +95,12 @@
   margin-bottom: 15px;
   text-align: left;
   text-transform: uppercase;
+
+  @media(max-width: $mobile-width) {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .presentation {
@@ -62,4 +109,12 @@
   height: 32px;
   line-height: 1.33;
   text-align: left;
+
+  @media(max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 2.0;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

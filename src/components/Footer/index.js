@@ -1,64 +1,53 @@
 import React from 'react'
+import MediaQuery from 'react-responsive'
+
 import styles from './footer.module.scss'
+
+const MOBILE_WIDTH = 800
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>&copy; Kolide 2018</div>
+      <MediaQuery minWidth={MOBILE_WIDTH + 1}>
+        <div className={styles.copyright}>&copy; Kolide 2018</div>
+      </MediaQuery>
 
-      <section className={styles.openSourceLinks}>
-        <h3 className={styles.header}>Open Source</h3>
+      <MediaQuery maxWidth={MOBILE_WIDTH}>
+        <div className={styles.footerBranding}>QueryCon18</div>
+      </MediaQuery>
 
+      <section className={styles.links}>
         <ul>
           <li className={styles.li}>
-            <a href="https://kolide.com/launcher">Kolide Launcher</a>
-          </li>
-
-          <li className={styles.li}>
-            <a href="https://kolide.com/fleet">Kolide Fleet (On Prem)</a>
+            <a
+              className={styles.registerLink}
+              href="https://www.eventbrite.com/edit?eid=42317323253#"
+            >
+              Register Now
+            </a>
           </li>
         </ul>
       </section>
 
       <section className={styles.links}>
-        <h3 className={styles.header}>Company</h3>
-
         <ul>
           <li className={styles.li}>
-            <a href="https://kolide.com/company">About Us</a>
+            <a href="#speakers">Speakers</a>
           </li>
 
           <li className={styles.li}>
-            <a href="https://careers.jobscore.com/careers/kolide">Jobs</a>
+            <a href="#location">Venue</a>
           </li>
 
           <li className={styles.li}>
-            <a href="https://blog.kolide.com">Blog</a>
+            <a href="#learning">Learning</a>
           </li>
         </ul>
       </section>
 
-      <section className={styles.links}>
-        <h3 className={styles.header}>Resources</h3>
-
-        <ul>
-          <li className={styles.li}>
-            <a href="mailto:support@kolide.com">Support</a>
-          </li>
-
-          <li className={styles.li}>
-            <a href="https://kolide.com/contact">Contact</a>
-          </li>
-
-          <li className={styles.li}>
-            <a href="https://kolide.com/privacy-policy">Privacy Policy</a>
-          </li>
-
-          <li className={styles.li}>
-            <a href="https://kolide.com/terms">Terms</a>
-          </li>
-        </ul>
-      </section>
+      <MediaQuery maxWidth={MOBILE_WIDTH}>
+        <div className={styles.copyright}>&copy; Kolide 2018</div>
+      </MediaQuery>
     </footer>
   )
 }

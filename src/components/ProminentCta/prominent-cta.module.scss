@@ -4,6 +4,14 @@
   margin-bottom: 30px;
   text-align: center;
   text-decoration: none;
+
+  @media(max-width: $mobile-width) {
+    margin-bottom: 90px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .circle {
@@ -15,6 +23,21 @@
   justify-content: center;
   margin-bottom: 36px;
   width: 300px;
+
+  @media(max-width: $mobile-width) {
+    background-color: transparent;
+    height: inherit;
+  }
+}
+
+.icon {
+  @media(max-width: $mobile-width) {
+    width: 130px;
+  }
+}
+
+.iconImg {
+  max-width: 100%;
 }
 
 .heading {

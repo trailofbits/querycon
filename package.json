@@ -10,7 +10,8 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sass": "^1.0.15",
     "moment": "^2.20.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-responsive": "^4.0.3"
   },
   "keywords": [
     "osquery"

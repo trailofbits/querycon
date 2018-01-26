@@ -6,7 +6,9 @@ const ProminentCta = ({ heading, href, icon, subheading }) => {
   return (
     <a className={styles.prominentCta} href={href} target="_blank">
       <div className={styles.circle}>
-        <img alt="" src={icon} />
+        <div className={styles.icon}>
+          <img className={styles.iconImg} alt="" src={icon} />
+        </div>
       </div>
 
       <div className={styles.heading}>{heading}</div>

@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+
+.mobileNav {
+  background: $charcoal;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.close {
+  background: none;
+  border: none;
+  color: $eggshell;
+  font-family: $primary-font;
+  font-size: 36px;
+  left: 10px;
+  position: relative;
+  top: 20px;
+}
+
+.closeBarA {
+  background-color: $eggshell;
+  display: block;
+  height: 2px;
+  position: relative;
+  top: 2px;
+  transform: rotate(45deg);
+  width: 26px;
+}
+
+.closeBarB {
+  background-color: $eggshell;
+  display: block;
+  height: 2px;
+  transform: rotate(135deg);
+  width: 26px;
+}
+
+.navItems {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: $eggshell;
+  font-family: $primary-font;
+  font-size: 36px;
+  margin-bottom: 35px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

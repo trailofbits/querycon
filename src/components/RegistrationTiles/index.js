@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
+import MediaQuery from 'react-responsive'
 import moment from 'moment'
 
 import imgEarlyBird from './early-bird.svg'
 import imgNightOwl from './night-owl.svg'
 import RegisterButton from '../RegisterButton'
 import styles from './registration-tiles.module.scss'
+
+const MOBILE_WIDTH = 800
 
 class RegistrationTiles extends Component {
   state = {
@@ -35,23 +38,32 @@ class RegistrationTiles extends Component {
               <RegisterButton className={styles.registerButton} />
             </div>
 
-            <div className={styles.dates}>Now through Mar 31st</div>
-          </div>
+            <div className={styles.dates}>
+              Now through Mar 31st
 
-          <div className={styles.registrationTile}>
-            <div className={fullPriceTileClasses}>
-              <h3 className={styles.title}>Full Price</h3>
-
-              <div className={fullPricePriceClasses}>
-                <span className={styles.dollar}>$</span>
-                150
-              </div>
-
-              <RegisterButton className={fullPriceRegisterButtonClasses} disabled />
+              <MediaQuery maxWidth={MOBILE_WIDTH}>
+                <div className={styles.datesSub}>(then $150)</div>
+              </MediaQuery>
             </div>
 
-            <div className={styles.dates}>After Mar 31st</div>
           </div>
+
+          <MediaQuery minWidth={MOBILE_WIDTH + 1 }>
+            <div className={styles.registrationTile}>
+              <div className={fullPriceTileClasses}>
+                <h3 className={styles.title}>Full Price</h3>
+
+                <div className={fullPricePriceClasses}>
+                  <span className={styles.dollar}>$</span>
+                  150
+                </div>
+
+                <RegisterButton className={fullPriceRegisterButtonClasses} disabled />
+              </div>
+
+              <div className={styles.dates}>After Mar 31st</div>
+            </div>
+          </MediaQuery>
         </div>
       )
     } else {

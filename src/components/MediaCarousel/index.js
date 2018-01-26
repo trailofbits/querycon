@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import MediaQuery from 'react-responsive'
 
 import CarouselButton from '../buttons/CarouselButton'
 import styles from './media-carousel.module.scss'
 
 const CAROUSEL_DISPLAY_COUNT = 5
 const FORWARD = 'forward'
+const MOBILE_WIDTH = 800
 
 class MediaCarousel extends Component {
   state = {
@@ -42,13 +44,15 @@ class MediaCarousel extends Component {
 
     return (
       <div className={styles.mediaCarousel}>
-        <CarouselButton
-          direction="back"
-          displayCount={CAROUSEL_DISPLAY_COUNT}
-          index={carouselIndex}
-          itemsCount={carouselItemsCount}
-          onClick={this.moveCarousel}
-        />
+        <MediaQuery minWidth={MOBILE_WIDTH + 1}>
+          <CarouselButton
+            direction="back"
+            displayCount={CAROUSEL_DISPLAY_COUNT}
+            index={carouselIndex}
+            itemsCount={carouselItemsCount}
+            onClick={this.moveCarousel}
+          />
+        </MediaQuery>
 
         <div className={styles.preConfLinksWrapper}>
           <div
@@ -148,13 +152,15 @@ class MediaCarousel extends Component {
           </div>
         </div>
 
-        <CarouselButton
-          direction="forward"
-          displayCount={CAROUSEL_DISPLAY_COUNT}
-          index={carouselIndex}
-          itemsCount={carouselItemsCount}
-          onClick={this.moveCarousel}
-        />
+        <MediaQuery minWidth={MOBILE_WIDTH + 1}>
+          <CarouselButton
+            direction="forward"
+            displayCount={CAROUSEL_DISPLAY_COUNT}
+            index={carouselIndex}
+            itemsCount={carouselItemsCount}
+            onClick={this.moveCarousel}
+          />
+        </MediaQuery>
       </div>
     )
   }
