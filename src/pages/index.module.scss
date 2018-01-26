@@ -39,11 +39,36 @@
   max-width: 100%;
 }
 
+.sectionHeader {
+  margin-bottom: 16px;
+}
+
+.sectionSubheader {
+  color: $lavender;
+  font-size: 24px;
+  line-height: 1.67;
+  margin: 0 auto;
+  text-align: center;
+  width: 660px;
+}
+
 .sectionBreak {
   background-color: $light-gray;
   height: 2px;
   margin: 84px auto;
   width: 70%;
+}
+
+.genericBanner {
+  background-color: $cloud;
+  color: $lavender;
+  font-size: 24px;
+  height: 72px;
+  letter-spacing: 6px;
+  line-height: 72px;
+  margin-bottom: 102px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .heroSection {
@@ -160,22 +185,60 @@
   margin-bottom: 20px;
 }
 
-.speakersHeader {
-  margin-bottom: 16px;
-}
-
-.speakersSub {
-  color: $lavender;
-  font-size: 24px;
-  line-height: 1.67;
-  margin: 0 auto;
-  text-align: center;
-  width: 660px;
-}
-
 .speakers {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 57px 0;
+}
+
+.speakerSubmissionsHeader {
+  color: $cookie-monster-blue;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.megaphoneImage {
+  margin: 0 auto 45px;
+  width: 208px;
+}
+
+.speakerSubmissionsDescription {
+  color: $lavender;
+  font-size: 24px;
+  line-height: 1.67;
+  margin: 0 auto 50px;
+  text-align: center;
+  width: 475px;
+
+  strong {
+    color: $midnight-blue;
+  }
+}
+
+.speakerSubmissionButton {
+  margin: 0 auto 104px;
+}
+
+.venueImage {
+  margin: 33px auto 20px;
+  width: 489px;
+}
+
+.venueDescription {
+  color: $dark-gray;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 auto 111px;
+  text-align: center;
+  width: 560px;
+}
+
+.venueMap {
+  background: url('./venue-map.png') center center no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 100%;
 }

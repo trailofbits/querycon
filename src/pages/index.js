@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
+import Button from '../components/buttons/Button'
 import FeatureTile from '../components/FeatureTile'
 import Header from '../components/Header'
 import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
@@ -9,6 +10,8 @@ import imgHeadshotChristopherLong from './headshot-christopher-long.jpg'
 import imgHeadshotLaurenPearl from './headshot-lauren-pearl.jpg'
 import imgHeadshotMike from './headshot-mike.jpg'
 import imgMikeStage1 from './mike-stage-1.png'
+import imgMegaphone from './megaphone.svg'
+import imgVenue from './palace-fine-arts.svg'
 import MainSpeaker from '../components/MainSpeaker'
 import RegisterButton from '../components/RegisterButton'
 import RegistrationTiles from '../components/RegistrationTiles'
@@ -98,9 +101,9 @@ const IndexPage = () => (
 
     <div className={styles.sectionBreak} />
 
-    <h2 className={styles.speakersHeader}>The Speakers</h2>
+    <h2 className={styles.sectionHeader}>The Speakers</h2>
 
-    <div className={styles.speakersSub}>
+    <div className={styles.sectionSubheader}>
       We are bringing the brightest and best of the osquery community together.
     </div>
 
@@ -141,6 +144,45 @@ const IndexPage = () => (
         title="Chief Security Specialist"
       />
     </div>
+
+    <div className={styles.genericBanner}>And many more!</div>
+
+    <h2 className={styles.speakerSubmissionsHeader}>Interested in Speaking?</h2>
+
+    <div className={styles.megaphoneImage}>
+      <img alt="" className={styles.responsiveImage} src={imgMegaphone} />
+    </div>
+
+    <p className={styles.speakerSubmissionsDescription}>
+      There is limited space remaining for speakers. Apply below to speak at
+      <strong> QueryCon18</strong>
+    </p>
+
+    <Button className={styles.speakerSubmissionButton} url="#">
+      Apply Now
+    </Button>
+
+    <div className={styles.sectionBreak} />
+
+    <h2 className={styles.sectionHeader}>The Venue</h2>
+
+    <div className={styles.sectionSubheader}>
+      Palace of the Fine Arts - San Francisco, CA
+    </div>
+
+    <div className={styles.venueImage}>
+      <img alt="" className={styles.responsiveImage} src={imgVenue} />
+    </div>
+
+    <p className={styles.venueDescription}>
+      QueryCon18 will be held at the Palace of the Fine Arts, minutes away from
+      the Golden Gate Bridge. Parking will be validated for all conference
+      goers.
+    </p>
+
+    <div className={styles.venueMap} />
+
+    <div className={styles.genericBanner}>Not sure where to stay?</div>
   </div>
 )
 

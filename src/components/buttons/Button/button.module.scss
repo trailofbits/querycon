@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.button {
+  background-color: $cookie-monster-blue;
+  border-radius: 4px;
+  color: $white;
+  display: block;
+  font-size: 18px;
+  font-weight: 900;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  width: 240px;
+
+  &:hover {
+    background: darken($cookie-monster-blue, 10%);
+  }
+}
