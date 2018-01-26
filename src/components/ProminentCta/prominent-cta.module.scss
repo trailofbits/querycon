@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.prominentCta {
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.circle {
+  align-items: center;
+  background-color: $cloud;
+  border-radius: 300px;
+  display: inline-flex;
+  height: 300px;
+  justify-content: center;
+  margin-bottom: 36px;
+  width: 300px;
+}
+
+.heading {
+  color: $cookie-monster-blue;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: none;
+}

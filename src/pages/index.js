@@ -5,14 +5,18 @@ import Link from 'gatsby-link'
 import Button from '../components/buttons/Button'
 import FeatureTile from '../components/FeatureTile'
 import Header from '../components/Header'
+import MainSpeaker from '../components/MainSpeaker'
+import imgAirbnb from './airbnb.svg'
+import imgExpedia from './expedia.svg'
 import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
 import imgHeadshotChristopherLong from './headshot-christopher-long.jpg'
 import imgHeadshotLaurenPearl from './headshot-lauren-pearl.jpg'
 import imgHeadshotMike from './headshot-mike.jpg'
-import imgMikeStage1 from './mike-stage-1.png'
 import imgMegaphone from './megaphone.svg'
+import imgMikeStage1 from './mike-stage-1.png'
+import imgOrbitz from './orbitz.svg'
 import imgVenue from './palace-fine-arts.svg'
-import MainSpeaker from '../components/MainSpeaker'
+import ProminentCta from '../components/ProminentCta'
 import RegisterButton from '../components/RegisterButton'
 import RegistrationTiles from '../components/RegistrationTiles'
 import SpeakerTile from '../components/SpeakerTile'
@@ -180,9 +184,39 @@ const IndexPage = () => (
       goers.
     </p>
 
-    <div className={styles.venueMap} />
+    <a href="https://goo.gl/maps/jbcmsmERrUJ2">
+      <div className={styles.venueMap} />
+    </a>
 
     <div className={styles.genericBanner}>Not sure where to stay?</div>
+
+    <div className={styles.lodgingOptions}>
+      <ProminentCta
+        className={styles.prominentCta}
+        heading="Check AirBnB Availability"
+        icon={imgAirbnb}
+        subheading="May 31 - June 1"
+        href="https://www.airbnb.com/s/Bay-Area--CA--United-States/homes?place_id=ChIJtdeIpqODhYARqR9GV4QbiYw&refinement_paths%5B%5D=%2Fhomes&allow_override%5B%5D=&checkin=2018-05-30&checkout=2018-06-01&s_tag=wWue7Zlm"
+      />
+
+      <ProminentCta
+        className={styles.prominentCta}
+        heading="See Hotels on Orbitz"
+        icon={imgOrbitz}
+        subheading="May 31 - June 1"
+        href="https://www.orbitz.com/Hotel-Search?#&destination=Bay%20Area%2C%20California&startDate=05/30/2018&endDate=06/01/2018&regionId=6056043&latLong=37.724160,-122.270938&adults=1"
+      />
+
+      <ProminentCta
+        className={styles.prominentCta}
+        heading="See Hotels on Expedia"
+        icon={imgExpedia}
+        subheading="May 31 - June 1"
+        href="https://www.expedia.com/Hotel-Search?destination=Bay+Area%2C+California&latLong=37.724160%2C-122.270938&regionId=6056043&startDate=05%2F30%2F2018&endDate=06%2F01%2F2018&_xpid=11905%7C1&adults=1&children=0"
+      />
+    </div>
+
+    <div className={styles.sectionBreak} />
   </div>
 )
 
