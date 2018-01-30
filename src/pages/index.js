@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 import Button from '../components/buttons/Button'
 import CarouselButton from '../components/buttons/CarouselButton'
 import FeatureTile from '../components/FeatureTile'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import MainSpeaker from '../components/MainSpeaker'
 import imgAirbnb from './airbnb.svg'
@@ -435,6 +436,8 @@ class IndexPage extends Component {
             onClick={this.moveCarousel}
           />
         </div>
+
+        <Footer />
       </div>
     )
   }

@@ -35,6 +35,10 @@
   text-align: center;
 }
 
+:global(ul) {
+  padding: 0;
+}
+
 .responsiveImage {
   max-width: 100%;
 }

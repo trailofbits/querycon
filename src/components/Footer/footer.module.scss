@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  background-color: $eggshell;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding: 58px;
+
+  @media(max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.header {
+  color: $lavender;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+.li {
+  list-style: none;
+  margin-bottom: 10px;
+
+  > a {
+    color: $lavender;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.copyright {
+  color: $lavender;
+  flex: 3;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: .3;
+  padding-top: 130px;
+}
+
+.openSourceLinks {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.links {
+  flex: 1;
+}
