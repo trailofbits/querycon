@@ -126,6 +126,7 @@
   height: 784px;
   justify-content: center;
   left: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
   width: 100%;
@@ -133,7 +134,8 @@
 }
 
 .video {
-  height: 784px;
+  height: auto;
+  min-height: 100%;
   min-width: 100%;
   position: absolute;
   width: auto;
