@@ -15,6 +15,7 @@ import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
 import imgHeadshotChristopherLong from './headshot-christopher-long.jpg'
 import imgHeadshotLaurenPearl from './headshot-lauren-pearl.jpg'
 import imgHeadshotMike from './headshot-mike.jpg'
+import imgHeadshotNickAnderson from './headshot-nick-anderson.png'
 import imgHeroLogo from './querycon-large.svg'
 import imgMegaphone from './megaphone.svg'
 import imgMikeStage1 from './mike-stage-1.png'
@@ -176,7 +177,7 @@ const IndexPage = () => (
 
     <MainSpeaker
       company="Facebook"
-      image="https://www.kepplerspeakers.com/carter-j.jpg"
+      image={imgHeadshotNickAnderson}
       name="Nick Anderson"
       presentation="Deploying osquery at scale in massive production environments"
       title="Senior Security Engineer"

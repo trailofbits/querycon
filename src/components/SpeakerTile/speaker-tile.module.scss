@@ -10,10 +10,18 @@
 }
 
 .headshot {
+  height: 240px;
+  margin: 0 auto;
+  width: 240px;
+
   @media(max-width: $mobile-width) {
     height: 100px;
     width: 100px;
   }
+}
+
+.headshotImg {
+  max-width: 100%;
 }
 
 .name {

@@ -1,21 +1,27 @@
 @import '../../styles/variables.scss';
 
+.wrapper {
+  background: $cloud;
+}
+
 .mainSpeaker {
   align-items: center;
-  background: $cloud;
   display: flex;
   justify-content: space-around;
   height: 480px;
-  margin: 81px 0 56px;
+  margin: 81px auto 56px;
+  max-width: 1240px;
 
   @media(max-width: $mobile-width) {
     box-sizing: border-box;
     height: 300px;
+    max-width: 400px;
   }
 }
 
 .speaker {
   @media(max-width: $mobile-width) {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 0 20px;
@@ -23,6 +29,10 @@
 }
 
 .headshot {
+  height: 360px;
+  margin-right: 30px;
+  width: 360px;
+
   @media(max-width: 970px) {
     margin: 0 20px;
   }
@@ -31,6 +41,17 @@
     height: 120px;
     margin: 0;
     width: 120px;
+  }
+}
+
+.headshotImg {
+  max-width: 100%;
+}
+
+.speakerInfo {
+  @media(max-width: $mobile-width) {
+    position: relative;
+    top: 25px;
   }
 }
 
