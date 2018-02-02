@@ -95,11 +95,11 @@ const IndexPage = () => (
 
     <p className={styles.leader}>
       Join us for a 2-day <strong>Osquery</strong> conference at the{' '}
-      <strong>Palace of Fine Arts</strong> focused on bringing security, devops,
-      macadmins and other experts in the <strong>osquery</strong>
-      community together. With talks from industry juggernauts and the creators
-      of osquery, discussion will focus on emergent topics that affect the
-      landscape {`&`} development of osquery.
+      <strong>Palace of Fine Arts Innovation Hangar</strong> focused on bringing
+      security, devops, macadmins, and other experts in the osquery community
+      together. With talks from industry juggernauts and the{' '}
+      <strong>creators of osquery</strong>, discussion will focus on emergent
+      topics that affect the landscape {`&`} development of osquery.
     </p>
 
     <div className={styles.leaderSub}>
@@ -156,9 +156,8 @@ const IndexPage = () => (
       </FeatureTile>
 
       <FeatureTile title="After Hours Cocktail Party" url="">
-        Kolide utilizes the the latest standard in securing your data. We
-        encourage you to look at our feature-set and see how seriously we take
-        your security.
+        Join us after Day 1 of the conference for some appetizers and drinks!
+        Location to be announced soon!
       </FeatureTile>
 
       <FeatureTile title="Entry to Osquery Hackathon" url="">
@@ -235,7 +234,7 @@ const IndexPage = () => (
     <h2 className={styles.sectionHeader}>The Venue</h2>
 
     <div className={styles.sectionSubheader}>
-      Palace of the Fine Arts - San Francisco, CA
+      Palace of the Fine Arts Innovation Hangar - San Francisco, CA
     </div>
 
     <div className={styles.venueImage}>
@@ -243,9 +242,9 @@ const IndexPage = () => (
     </div>
 
     <p className={styles.venueDescription}>
-      QueryCon18 will be held at the Palace of the Fine Arts, minutes away from
-      the Golden Gate Bridge. Parking will be validated for all conference
-      goers.
+      QueryCon18 will be held at the Palace of the Fine Arts Innovation Hangar,
+      minutes away from the Golden Gate Bridge. Parking will be validated for
+      all conference goers.
     </p>
 
     <a href="https://goo.gl/maps/jbcmsmERrUJ2">
@@ -324,20 +323,18 @@ const IndexPage = () => (
 
     <div className={styles.sectionBreak} id="questions" />
 
-    <h2 className={cx(styles.sectionHeader, styles.questionsSectionHeader)}>Still Have Questions?</h2>
+    <h2 className={cx(styles.sectionHeader, styles.questionsSectionHeader)}>
+      Still Have Questions?
+    </h2>
 
     <div className={styles.sectionSubheader}>
-      We're here to answer whatever you would like to know about QueryCon.
-      Please see the FAQ and don't hesitate to contact us if you have further
+      {`We're`} here to answer whatever you would like to know about QueryCon.
+      Please see the FAQ and {`don't`} hesitate to contact us if you have further
       questions or concerns.
     </div>
 
     <div className={styles.prominentCTAs}>
-      <ProminentCta
-        heading="Read the FAQ"
-        icon={imgFAQ}
-        href="/faq"
-      />
+      <ProminentCta heading="Read the FAQ" icon={imgFAQ} href="/faq" />
 
       <ProminentCta
         heading="Hit Us Up on Twitter"
