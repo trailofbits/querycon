@@ -333,21 +333,18 @@ const IndexPage = () => (
 
     <div className={styles.prominentCTAs}>
       <ProminentCta
-        className={styles.prominentCta}
         heading="Read the FAQ"
         icon={imgFAQ}
         href="/faq"
       />
 
       <ProminentCta
-        className={styles.prominentCta}
         heading="Hit Us Up on Twitter"
         icon={imgTwitterBird}
         href="http://www.twitter.com/queryconf"
       />
 
       <ProminentCta
-        className={styles.prominentCta}
         heading="Contact Us"
         icon={imgPaperAirplane}
         href="mailto:info@querycon.io"
