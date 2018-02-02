@@ -25,7 +25,7 @@
   padding: 0;
   text-align: center;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 30px;
   }
 }
@@ -38,7 +38,7 @@
   margin: 0 0 15px;
   text-align: center;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 20px;
   }
 }
@@ -63,7 +63,7 @@
   text-align: center;
   width: 660px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 20px;
     line-height: 1.5;
     width: 75%;
@@ -76,7 +76,7 @@
   margin: 84px auto;
   width: 70%;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin: 64px auto 44px;
     width: 80%;
   }
@@ -93,7 +93,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 16px;
     letter-spacing: 4px;
     margin-bottom: 52px;
@@ -147,7 +147,7 @@
   position: relative;
   z-index: 1;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     background-color: transparent;
     height: 580px;
   }
@@ -160,7 +160,7 @@
   margin: 50px 0 40px;
   text-align: center;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 40px;
   }
 }
@@ -170,7 +170,7 @@
   margin: 52px auto 47px;
   width: 198px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     height: 110px;
     width: 110px;
   }
@@ -186,7 +186,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 18px;
     line-height: 2.11;
   }
@@ -201,7 +201,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 18px;
   }
 }
@@ -235,7 +235,7 @@
   margin: 45px auto 40px;
   width: 600px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 18px;
     line-height: 32px;
     width: 90%;
@@ -257,7 +257,7 @@
   margin: 50px auto 0;
   width: 951px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     flex-wrap: wrap;
     width: 90%;
   }
@@ -266,7 +266,7 @@
 .leaderSub1 {
   width: 400px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin-top: 30px;
     width: 100%;
   }
@@ -275,7 +275,7 @@
 .leaderSub2 {
   width: 482px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
@@ -332,7 +332,7 @@
 .reserve {
   margin-bottom: 66px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin-bottom: 46px;
   }
 }
@@ -342,7 +342,7 @@
   font-size: 30px;
   text-align: center;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 20px;
   }
 }
@@ -354,7 +354,7 @@
   margin: 69px 0 75px;
   text-align: center;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 24px;
     line-height: 1.67;
     margin: 45px 0;
@@ -374,7 +374,7 @@
   justify-content: space-around;
   margin: 57px 0;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin: 17px 0;
   }
 }
@@ -386,7 +386,7 @@
   margin: 0 auto 45px;
   text-align: center;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 30px;
   }
 }
@@ -404,9 +404,9 @@
   text-align: center;
   width: 475px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 20px;
-    line-height: 2.0;
+    line-height: 2;
     width: 95%;
   }
 
@@ -418,7 +418,7 @@
 .speakerSubmissionButton {
   margin: 0 auto 104px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin: 0 auto;
   }
 }
@@ -427,7 +427,7 @@
   margin: 33px auto 20px;
   width: 489px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     width: 280px;
   }
 }
@@ -440,7 +440,7 @@
   text-align: center;
   width: 560px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 18px;
     line-height: 1.67;
     margin-bottom: 61px;
@@ -477,14 +477,14 @@
   margin-bottom: 30px;
   width: 500px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     height: auto;
     width: 100%;
   }
 }
 
 .preConfMainText {
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     width: 90%;
   }
 }
@@ -500,7 +500,7 @@
   text-align: left;
   width: 500px;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin-bottom: 15px;
     width: 100%;
   }
@@ -520,7 +520,7 @@
 
 .preConfLinksCarousel {
   display: flex;
-  transition: transform .25s linear;
+  transition: transform 0.25s linear;
   white-space: nowrap;
 }
 
