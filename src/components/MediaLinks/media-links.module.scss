@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+
+.preConfLinksCarousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  transition: transform .25s linear;
+  width: 90%;
+}
+
+.preConfLink {
+  color: $midnight-blue;
+  display: block;
+  margin-bottom: 22px;
+  padding: 0 15px;
+  text-decoration: none;
+  width: 190px;
+
+  &:hover {
+    color: $hot-pink;
+  }
+
+  @media(max-width: $mobile-width) {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.preConfLinkImg {
+  height: 110px;
+  margin-bottom: 5px;
+  width: 190px;
+
+  @media(max-width: $mobile-width) {
+    height: auto;
+    width: 70px;
+  }
+}
+
+.preConfLinkTitle {
+  font-size: 14px;
+  line-height: 1.43;
+  margin: 0;
+  text-align: left;
+  white-space: normal;
+  width: 190px;
+
+  @media(max-width: $mobile-width) {
+    color: $cookie-monster-blue;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 10px;
+    width: inherit;
+  }
+}
+
+

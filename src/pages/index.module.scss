@@ -506,47 +506,6 @@
   }
 }
 
-.preConfLinks {
-  display: flex;
-  margin: 0 auto 140px;
-  width: 1160px;
-}
-
-.preConfLinksWrapper {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 1100px;
-}
-
-.preConfLinksCarousel {
-  display: flex;
-  transition: transform 0.25s linear;
-  white-space: nowrap;
-}
-
-.preConfLink {
-  color: $midnight-blue;
-  display: block;
-  padding: 0 15px;
-  text-decoration: none;
-  width: 190px;
-
-  &:hover {
-    color: $hot-pink;
-  }
-}
-
-.preConfLinkImg {
-  height: 110px;
-  margin-bottom: 5px;
-  width: 190px;
-}
-
-.preConfLinkTitle {
-  font-size: 14px;
-  line-height: 1.43;
-  margin: 0;
-  text-align: left;
-  white-space: normal;
-  width: 190px;
+.moreResourcesBanner {
+  margin-bottom: 30px;
 }

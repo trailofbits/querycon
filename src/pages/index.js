@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import MediaQuery from 'react-responsive'
@@ -8,7 +9,7 @@ import FeatureTile from '../components/FeatureTile'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import MainSpeaker from '../components/MainSpeaker'
-import MediaCarousel from '../components/MediaCarousel'
+import MediaLinks from '../components/MediaLinks'
 import MobileHeader from '../components/MobileHeader'
 import imgAirbnb from './airbnb.svg'
 import imgExpedia from './expedia.svg'
@@ -31,6 +32,7 @@ import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
 import videoPalaceOfFineArtsWebM from './palace-fine-arts.webm'
 
 const MOBILE_WIDTH = 800
+const cx = classNames.bind(styles)
 
 const IndexPage = () => (
   <div className={styles.pageWrapper}>
@@ -308,10 +310,10 @@ const IndexPage = () => (
     </div>
 
     <MediaQuery maxWidth={MOBILE_WIDTH}>
-      <div className={styles.clearBanner}>More Resources:</div>
+      <div className={cx(styles.clearBanner, styles.moreResourcesBanner)}>More Resources:</div>
     </MediaQuery>
 
-    <MediaCarousel />
+    <MediaLinks />
 
     <Footer />
   </div>
