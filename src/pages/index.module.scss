@@ -281,7 +281,6 @@
 }
 
 .kolideBanner {
-  background: $cookie-monster-blue;
   color: $white;
   font-size: 24px;
   height: 72px;
@@ -291,7 +290,14 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media(max-width: $mobile-width) {
+  @media (min-width: $mobile-width + 1) {
+    background: url('./kolide-pattern.svg') $cookie-monster-blue;
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url('./kolide-small-tile.svg') 7% center no-repeat,
+      url('./kolide-small-tile.svg') 93% center no-repeat;
+    background-color: $cookie-monster-blue;
     box-sizing: border-box;
     font-size: 16px;
     letter-spacing: 2px;
@@ -305,8 +311,20 @@
   display: inline-block;
   padding: 0 30px;
   height: 100%;
+  width: 100%;
 
-  @media(max-width: $mobile-width) {
+  @media (min-width: $mobile-width + 1) {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      $cookie-monster-blue 20%,
+      $cookie-monster-blue 50%,
+      $cookie-monster-blue 80%,
+      transparent
+    );
+  }
+
+  @media (max-width: $mobile-width) {
     width: 230px;
   }
 }
