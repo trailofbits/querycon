@@ -157,6 +157,7 @@
   color: $white;
   font-size: 72px;
   font-weight: 900;
+  letter-spacing: 4px;
   margin: 50px 0 40px;
   text-align: center;
 
@@ -215,7 +216,8 @@
 }
 
 .ctaBarText {
-  color: $eggshell;
+  color: $white;
+  font-size: 20px;
 }
 
 .ctaBarRegisterButton {
@@ -365,17 +367,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  max-width: 1100px;
 }
 
 .speakers {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 57px 0;
+  margin: 57px auto 0;
+  max-width: 1240px;
 
   @media (max-width: $mobile-width) {
-    margin: 17px 0;
+    margin: 17px auto 0;
+    max-width: 400px;
   }
 }
 
@@ -460,7 +465,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 50px;
+  margin: 50px auto 0;
+  max-width: 990px;
 }
 
 .preConfMain {

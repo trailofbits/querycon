@@ -1,9 +1,13 @@
 @import '../../styles/variables';
 
-.text {
+.textLogo {
+  background: url('../../pages/querycon-large.svg') left center no-repeat;
   color: $white;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 900;
-  letter-spacing: 2px;
+  height: 50px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  padding-left: 65px;
   text-transform: uppercase;
 }
