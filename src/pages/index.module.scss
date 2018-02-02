@@ -456,10 +456,11 @@
   width: 100%;
 }
 
-.lodgingOptions {
+.prominentCTAs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 50px;
 }
 
 .preConfMain {
@@ -508,4 +509,8 @@
 
 .moreResourcesBanner {
   margin-bottom: 30px;
+}
+
+.questionsSectionHeader {
+  color: $cookie-monster-blue;
 }

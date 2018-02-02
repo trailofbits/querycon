@@ -8,11 +8,9 @@ import Button from '../components/buttons/Button'
 import FeatureTile from '../components/FeatureTile'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import MainSpeaker from '../components/MainSpeaker'
-import MediaLinks from '../components/MediaLinks'
-import MobileHeader from '../components/MobileHeader'
 import imgAirbnb from './airbnb.svg'
 import imgExpedia from './expedia.svg'
+import imgFAQ from './faq.svg'
 import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
 import imgHeadshotChristopherLong from './headshot-christopher-long.jpg'
 import imgHeadshotLaurenPearl from './headshot-lauren-pearl.jpg'
@@ -22,7 +20,12 @@ import imgMegaphone from './megaphone.svg'
 import imgMikeStage1 from './mike-stage-1.png'
 import imgOrbitz from './orbitz.svg'
 import imgPalaceOfFineArtsPoster from './palace-fine-arts.jpg'
+import imgPaperAirplane from './paper-airplane.svg'
+import imgTwitterBird from './twitter-bird.svg'
 import imgVenue from './palace-fine-arts.svg'
+import MainSpeaker from '../components/MainSpeaker'
+import MediaLinks from '../components/MediaLinks'
+import MobileHeader from '../components/MobileHeader'
 import ProminentCta from '../components/ProminentCta'
 import RegisterButton from '../components/RegisterButton'
 import RegistrationTiles from '../components/RegistrationTiles'
@@ -90,8 +93,9 @@ const IndexPage = () => (
     </MediaQuery>
 
     <p className={styles.leader}>
-      Join us for a 2-day <strong>Osquery</strong> conference at the <strong>Palace of Fine Arts</strong> focused
-      on bringing security, devops, macadmins and other experts in the <strong>osquery</strong>
+      Join us for a 2-day <strong>Osquery</strong> conference at the{' '}
+      <strong>Palace of Fine Arts</strong> focused on bringing security, devops,
+      macadmins and other experts in the <strong>osquery</strong>
       community together. With talks from industry juggernauts and the creators
       of osquery, discussion will focus on emergent topics that affect the
       landscape {`&`} development of osquery.
@@ -249,7 +253,7 @@ const IndexPage = () => (
 
     <div className={styles.genericBanner}>Not sure where to stay?</div>
 
-    <div className={styles.lodgingOptions}>
+    <div className={styles.prominentCTAs}>
       <ProminentCta
         className={styles.prominentCta}
         heading="Check AirBnB Availability"
@@ -310,10 +314,45 @@ const IndexPage = () => (
     </div>
 
     <MediaQuery maxWidth={MOBILE_WIDTH}>
-      <div className={cx(styles.clearBanner, styles.moreResourcesBanner)}>More Resources:</div>
+      <div className={cx(styles.clearBanner, styles.moreResourcesBanner)}>
+        More Resources:
+      </div>
     </MediaQuery>
 
     <MediaLinks />
+
+    <div className={styles.sectionBreak} id="questions" />
+
+    <h2 className={cx(styles.sectionHeader, styles.questionsSectionHeader)}>Still Have Questions?</h2>
+
+    <div className={styles.sectionSubheader}>
+      We're here to answer whatever you would like to know about QueryCon.
+      Please see the FAQ and don't hesitate to contact us if you have further
+      questions or concerns.
+    </div>
+
+    <div className={styles.prominentCTAs}>
+      <ProminentCta
+        className={styles.prominentCta}
+        heading="Read the FAQ"
+        icon={imgFAQ}
+        href="/faq"
+      />
+
+      <ProminentCta
+        className={styles.prominentCta}
+        heading="Hit Us Up on Twitter"
+        icon={imgTwitterBird}
+        href="http://www.twitter.com/queryconf"
+      />
+
+      <ProminentCta
+        className={styles.prominentCta}
+        heading="Contact Us"
+        icon={imgPaperAirplane}
+        href="mailto:info@querycon.io"
+      />
+    </div>
 
     <Footer />
   </div>
