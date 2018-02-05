@@ -76,7 +76,7 @@ const FAQ = () => {
         <img className={styles.heroImage} src={require('./faq-image.svg')} />
         <div className={styles.contactUsBar}>
           <span className={styles.contactUsContent}>
-            Don't see your question below? Don't hesitate to reach out:
+            {"Don't"} see your question below? {"Don't"} hesitate to reach out:
           </span>
           <a href="mailto:info@querycon.io" className={styles.contactUsButton}>Contact Us</a>
         </div>
@@ -100,7 +100,9 @@ const FAQ = () => {
 
         <div className={styles.bottomText}>
           <div>Still have questions about QueryCon?</div>
-          <div>Don't hesitate to reach out and ask!</div>
+          <div>
+            {"Don't"} hesitate to reach out and ask!
+          </div>
         </div>
 
         <a href="mailto:info@querycon.io" className={styles.bottomButton}>Contact Us</a>

@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './question.module.scss'
 
-const Question = (props) => {
+const Question = props => {
   const { answer, question } = props
 
   return (
