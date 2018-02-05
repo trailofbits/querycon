@@ -5,7 +5,7 @@ import moment from 'moment'
 
 import imgEarlyBird from './early-bird.svg'
 import imgNightOwl from './night-owl.svg'
-import RegisterButton from '../RegisterButton'
+import RegisterButton from '../buttons/RegisterButton'
 import styles from './registration-tiles.module.scss'
 
 const MOBILE_WIDTH = 800

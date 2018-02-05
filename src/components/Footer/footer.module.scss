@@ -68,17 +68,31 @@
   }
 }
 
-.copyright {
-  color: $lavender;
+.meta {
   flex: 3;
-  font-size: 18px;
-  font-weight: 400;
-  opacity: .3;
+  padding-left: 100px;
   padding-top: 130px;
-  text-decoration: none;
 
   @media(max-width: $mobile-width) {
+    padding-left: 0;
     padding-top: 80px;
+  }
+}
+
+.metaText {
+  color: $purple-gray-light;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.metaText a {
+  color: $purple-gray-light;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 

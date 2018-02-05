@@ -17,6 +17,10 @@
   text-align: justify;
 }
 
+:global(a) {
+  transition: color 0.2s;
+}
+
 :global(h2) {
   color: $midnight-blue;
   font-size: 48px;
@@ -56,7 +60,7 @@
 }
 
 .sectionSubheader {
-  color: $lavender;
+  color: $purple-gray;
   font-size: 24px;
   line-height: 1.67;
   margin: 0 auto;
@@ -340,7 +344,7 @@
 }
 
 .reserveSub {
-  color: $lavender;
+  color: $purple-gray;
   font-size: 30px;
   text-align: center;
 
@@ -499,6 +503,7 @@
 
 .preConfMainTitle {
   font-size: 20px;
+  margin-bottom: 6px;
   text-align: left;
 }
 

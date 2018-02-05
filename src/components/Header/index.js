@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Nav from '../Nav'
-import RegisterButton from '../RegisterButton'
+import RegisterButton from '../buttons/RegisterButton'
 import TextLogo from '../TextLogo'
 
 import styles from './header.module.scss'

@@ -5,13 +5,29 @@ import styles from './footer.module.scss'
 
 const MOBILE_WIDTH = 800
 
+const Meta = () => (
+  <div className={styles.meta}>
+    <a className={styles.metaText} href="https://kolide.com">
+      &copy; Kolide 2018
+    </a>
+
+    <div className={styles.metaText}>
+      Drone footage used with permission from{` `}
+      <a
+        href="https://www.youtube.com/channel/UC2rFASLn1FmCYqyPgxinNNw"
+        target="_blank"
+      >
+        Kendal Omdahl
+      </a>
+    </div>
+  </div>
+)
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <MediaQuery minWidth={MOBILE_WIDTH + 1}>
-        <a className={styles.copyright} href="https://kolide.com">
-          &copy; Kolide 2018
-        </a>
+        <Meta />
       </MediaQuery>
 
       <MediaQuery maxWidth={MOBILE_WIDTH}>
@@ -48,9 +64,7 @@ const Footer = () => {
       </section>
 
       <MediaQuery maxWidth={MOBILE_WIDTH}>
-        <a className={styles.copyright} href="https://kolide.com">
-          &copy; Kolide 2018
-        </a>
+        <Meta />
       </MediaQuery>
     </footer>
   )
