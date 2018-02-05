@@ -13,43 +13,44 @@ const MOBILE_MAX_WIDTH = 800
 const DESKTOP_MIN_WIDTH = 801
 const questions = [
   {
-    question: 'When does the conference start on May 31st? When does it end on June 1st?',
+    questionLine1: 'When does the conference start on May 31st?',
+    questionLine2: 'When does it end on June 1st?',
     answer: 'On the first day, there will be check-ins and breakfast starting at 9:00 AM. Open remarks begin at 10:00 AM, and the first presentation will begin around 10:30 AM. The conference portion of the day will end at 4:00 PM, when people can make their way to the after-hours event, which will begin at 5:00 PM. On June 1st, presentations will be complete at noon, and our Community Day will commence after lunch, and wrap up at 4:00 PM.',
   },
   {
-    question: 'Is breakfast provided? What about lunch and dinner?',
+    questionLine1: 'Is breakfast provided? What about lunch and dinner?',
     answer: 'We will provide a light breakfast on both days at 9:00 AM until 9:45 AM. We also provide a full lunch and afternoon snack, but not dinner. Light appetizers and beverages will be served at the after-hours social event on Thursday. Coffee, tea, and water are served throughout both conference days.',
   },
   {
-    question: 'Are there any ticket discounts available?',
+    questionLine1: 'Are there any ticket discounts available?',
     answer: 'In addition to our Early Bird special (Ends March 31st), we offer a group discount for those purchasing 5-10 tickets at once. No code is necessary for this, just choose that option when registering.',
   },
   {
-    question: 'Can I buy a ticket for just one day?',
+    questionLine1: 'Can I buy a ticket for just one day?',
     answer: 'No, tickets can only be purchased for the whole conference at once.',
   },
   {
-    question: 'Will you have any tutorial- or workshop-only days?',
+    questionLine1: 'Will you have any tutorial- or workshop-only days?',
     answer: 'We will feature a Community Day that will be similar to a workshop style session at QueryCon2018. This will occur in the afternoon on the second day.',
   },
   {
-    question: 'How far away is the conference venue from the airport?',
+    questionLine1: 'How far away is the conference venue from the airport?',
     answer: 'Approximately 20 miles from the airport, in San Francisco’s Marina/Presidio district.',
   },
   {
-    question: 'Can I sponsor this conference?',
+    questionLine1: 'Can I sponsor this conference?',
     answer: 'We are not accepting any sponsors.',
   },
   {
-    question: 'Can I submit a talk about a commercial product?',
+    questionLine1: 'Can I submit a talk about a commercial product?',
     answer: 'No, our goal is to ensure all talks center around open-source tools that attendees can easily utilize all of the available tools and software discussed in our speaker’s presentations. Please refrain from submitting talks that advertise, demo or heavily discuss any Osquery commercial offerings.',
   },
   {
-    question: 'Is this an official Facebook conference?',
+    questionLine1: 'Is this an official Facebook conference?',
     answer: 'While core members of Facebook’s Osquery team are attending and giving great talks, the conference is organized by Kolide, Inc.',
   },
   {
-    question: 'Do you offer refunds for tickets?',
+    questionLine1: 'Do you offer refunds for tickets?',
     answer: 'No. We do not offer partial or full refunds for tickets.',
   }
 ]
@@ -87,7 +88,8 @@ const FAQ = () => {
           <Question
             answer={question.answer}
             key={index}
-            question={question.question}
+            questionLine1={question.questionLine1}
+            questionLine2={question.questionLine2}
           />
         )
       )}

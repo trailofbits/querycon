@@ -3,13 +3,20 @@ import React from 'react'
 import styles from './question.module.scss'
 
 const Question = props => {
-  const { answer, question } = props
+  const { answer, questionLine1, questionLine2 } = props
 
   return (
     <div className={styles.questionContainer}>
       <div className={styles.question}>
-        {question}
+        {questionLine1}
       </div>
+
+      {questionLine2 &&
+        <div className={styles.question}>
+          {questionLine2}
+        </div>
+      }
+
       <div className={styles.answer}>
         {answer}
       </div>
