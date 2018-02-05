@@ -225,7 +225,10 @@ const IndexPage = () => (
       <strong> QueryCon18</strong>
     </p>
 
-    <Button className={styles.speakerSubmissionButton} url="#">
+    <Button
+      className={styles.speakerSubmissionButton}
+      url="https://www.papercall.io/querycon"
+    >
       Apply Now
     </Button>
 
@@ -288,27 +291,32 @@ const IndexPage = () => (
     </div>
 
     <div className={styles.preConfMain}>
-      <video
+      <iframe
+        allowFullScreen
         className={styles.preConfMainVideo}
-        controls
-        poster={imgPalaceOfFineArtsPoster}
-      >
-        <source src={videoPalaceOfFineArtsMp4} type="video/mp4" />
-      </video>
+        frameBorder="0"
+        height="315"
+        src="https://www.youtube.com/embed/yg-UeTdRRLo?rel=0"
+      />
 
       <div className={styles.preConfMainText}>
         <h3 className={styles.preConfMainTitle}>
-          Introduction to Using Osquery
+          How Osquery is Built - Teddy Reed {`&`} Javier Marcos
         </h3>
 
         <p className={styles.preConfMainDescription}>
-          We've brought together the biggest names in the osquery community to
-          speak and discuss on a variety of use-cases and issues. No matter
-          whether you are an osquery expert or are installing it for the first
-          time there is something for you. We've brought together the biggest
-          names in the osquery community to speak and discuss on a variety of
-          use-cases and issues. No matter whether you are an osquery expert or
-          are installing it for the first time there is something for you:
+          {`Facebook's`} osquery is a Linux and OS X intrusion detection and
+          response tool. It supports 10 OS flavors and is continuously built for
+          8 of those. It is very important that the infrastructure used to test,
+          build, and publish security software be secure itself. This discussion
+          presents how our Security team has enabled any Github contributor to
+          submit C/C++/bash code to our CI and build server, safely. We will
+          guide the audience through our CI hardening process and the attack and
+          vulnerability reports we have received through our bug bounty
+          targeting CI. This includes isolating a Mac Mini fleet of build
+          slaves, not trusting Jenkins as much as possible, automatically
+          building, signing, and publishing packages to AWS S3, doing the same
+          for OS X kernel extension code, adding 2-factor to everything.
         </p>
       </div>
     </div>
@@ -329,8 +337,8 @@ const IndexPage = () => (
 
     <div className={styles.sectionSubheader}>
       {`We're`} here to answer whatever you would like to know about QueryCon.
-      Please see the FAQ and {`don't`} hesitate to contact us if you have further
-      questions or concerns.
+      Please see the FAQ and {`don't`} hesitate to contact us if you have
+      further questions or concerns.
     </div>
 
     <div className={styles.prominentCTAs}>

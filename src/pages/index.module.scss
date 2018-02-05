@@ -480,13 +480,14 @@
 
 .preConfMainVideo {
   background-color: $black;
+  border: none;
   height: 300px;
   margin-bottom: 30px;
   width: 500px;
 
-  @media (max-width: $mobile-width) {
-    height: auto;
-    width: 100%;
+  @media (max-width: 550px) {
+    height: 194px;
+    width: 350px;
   }
 }
 
