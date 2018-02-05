@@ -3,7 +3,6 @@ import classNames from 'classnames'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import MediaQuery from 'react-responsive'
-import ReactGA from 'react-ga'
 
 import Button from '../components/buttons/Button'
 import FeatureTile from '../components/FeatureTile'
@@ -58,18 +57,10 @@ import styles from './index.module.scss'
 import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
 import videoPalaceOfFineArtsWebM from './palace-fine-arts.webm'
 
-ReactGA.initialize('UA-79943921-2')
-
 const MOBILE_WIDTH = 800
 const cx = classNames.bind(styles)
 
 class IndexPage extends Component {
-  componentDidMount () {
-    if (process.env.NODE_ENV === 'production') {
-      ReactGA.pageview(window.location.pathname)
-    }
-  }
-
   render() {
     return (
       <div className={styles.pageWrapper}>
