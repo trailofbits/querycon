@@ -12,7 +12,6 @@
 }
 
 .link {
-  color: $eggshell;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: .6px;
@@ -23,4 +22,14 @@
   &:hover {
     color: $hot-pink;
   }
+}
+
+.linkLight {
+  @extend .link;
+  color: $eggshell;
+}
+
+.linkDark {
+  @extend .link;
+  color: $purple-gray;
 }

@@ -18,7 +18,7 @@ const CodeOfConduct = () => {
       </Helmet>
       <div>
         <div className={styles.desktop}>
-          <Header />
+          <Header dark />
         </div>
         <div className={styles.mobile}>
           <MobileHeader />

@@ -63,7 +63,7 @@ const FAQ = () => {
         <meta name="description" content="Frequently Asked Questions" />
       </Helmet>
       <MediaQuery minWidth={DESKTOP_MIN_WIDTH}>
-        <Header />
+        <Header dark />
       </MediaQuery>
 
       <MediaQuery maxWidth={MOBILE_MAX_WIDTH}>
