@@ -1,0 +1,161 @@
+@import '../styles/variables';
+
+.heroSection {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  text-align: center;
+}
+
+.header {
+  color: $midnight-blue;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: .83;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 36px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.heroImage {
+  @media screen and (max-width: $mobile-width) {
+    max-width: 90%;
+  }
+}
+
+.contactUsBar {
+  background-color: $cookie-monster-blue;
+  margin-top: 110px;
+  width: 100%;
+}
+
+.contactUsContent {
+  color: $white;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: .9;
+  text-align: left;
+
+  @media screen and (max-width: $mobile-width) {
+    display: block;
+    line-height: 1.5;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 11px;
+    text-align: center;
+  }
+}
+
+.contactUsButton {
+  background-color: $white;
+  border: 0;
+  border-radius: 4px;
+  color: $cookie-monster-blue;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 11px;
+  margin-left: 20px;
+  margin-top: 11px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: $off-white;
+  }
+
+  &:active {
+    top: 1px;
+  }
+}
+
+.questions {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 93px;
+  max-width: 600px;
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.borderBottom {
+  background-color: rgba(32, 37, 50, 0.14);
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+}
+
+.contactUsContainer {
+  text-align: center;
+}
+
+.bottomImage {
+  margin-top: 80px;
+  max-width: 100%;
+}
+
+.bottomText {
+  color: rgba(0, 18, 95, 0.56);
+  font-size: 24px;
+  line-height: 1.67;
+  margin-top: 55px;
+  text-align: center;
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.bottomButton {
+  background-color: $cookie-monster-blue;
+  border: 0;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 40px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 240px;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: $cookie-monster-dark-blue;
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    width: 50%;
+  }
+}

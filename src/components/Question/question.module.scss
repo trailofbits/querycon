@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.questionContainer {
+  margin-bottom: 50px;
+}
+
+.question {
+  color: $hot-pink;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  text-align: center;
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 22px;
+  }
+}
+
+.answer {
+  color: #202532;
+  font-size: 18px;
+  line-height: 1.78;
+  text-align: justify;
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
