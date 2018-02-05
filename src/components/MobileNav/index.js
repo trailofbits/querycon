@@ -55,9 +55,16 @@ class MobileNav extends Component {
 
             <button
               className={styles.link}
-              onClick={this.handleClick('#learning')}
+              onClick={this.handleClick('/conduct')}
             >
-              Learning
+              Conduct
+            </button>
+
+            <button
+              className={styles.link}
+              onClick={this.handleClick('/faq')}
+            >
+              FAQs
             </button>
           </div>
         </div>
