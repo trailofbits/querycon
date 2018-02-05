@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import MediaQuery from 'react-responsive'
 
+import imgChrisLongCode from './chris-long-code.png'
+import imgMikeSpeaking from './mike-speaking.png'
+import imgTelescopeMan from './telescope-man.png'
+import imgTrailOfBitsPage from './trail-of-bits-page.png'
 import styles from './media-links.module.scss'
 
 const MOBILE_WIDTH = 800
@@ -14,76 +18,61 @@ class MediaLinks extends Component {
       >
         <a
           className={styles.preConfLink}
-          href="http://www.catster.com/wp-content/uploads/2017/06/small-kitten-meowing.jpg"
+          href="https://www.youtube.com/watch?v=bcfg4VLyIHw"
           target="_blank"
         >
           <img
             alt=""
             className={styles.preConfLinkImg}
-            src="http://www.catster.com/wp-content/uploads/2017/06/small-kitten-meowing.jpg"
+            src={imgMikeSpeaking}
           />
           <h4 className={styles.preConfLinkTitle}>
-            Incidence Response and Threat Hunting with Osquery
+            Introduction to Osquery - Mike Arpaia
           </h4>
         </a>
 
         <a
           className={styles.preConfLink}
-          href="http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg"
+          href="https://blog.kolide.com/monitoring-macos-hosts-with-osquery-ba5dcc83122d"
           target="_blank"
         >
           <img
             alt=""
             className={styles.preConfLinkImg}
-            src="http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg"
+            src={imgTelescopeMan}
           />
           <h4 className={styles.preConfLinkTitle}>
-            Incidence Response and Threat Hunting with Osquery
+            Monitoring macOS Hosts with Osquery - Zach Wasserman
           </h4>
         </a>
 
         <a
           className={styles.preConfLink}
-          href="http://www.petsworld.in/blog/wp-content/uploads/2014/09/cute-kittens.jpg"
+          href="https://medium.com/@palantir/osquery-across-the-enterprise-3c3c9d13ec55"
           target="_blank"
         >
           <img
             alt=""
             className={styles.preConfLinkImg}
-            src="http://www.petsworld.in/blog/wp-content/uploads/2014/09/cute-kittens.jpg"
+            src={imgChrisLongCode}
           />
           <h4 className={styles.preConfLinkTitle}>
-            Incidence Response and Threat Hunting with Osquery
+            Osquery Across The Enterprise - Chris Long
           </h4>
         </a>
 
         <a
           className={styles.preConfLink}
-          href="https://vetstreet.brightspotcdn.com/dims4/default/beb5999/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F00%2Fea%2F576b21fc4f1482d5ff121dc34623%2FNorwegian-Forest-Cat-AP-ZYVRVP-645sm3614.jpg"
+          href="https://blog.trailofbits.com/2017/11/09/how-are-teams-currently-using-osquery/"
           target="_blank"
         >
           <img
             alt=""
             className={styles.preConfLinkImg}
-            src="https://vetstreet.brightspotcdn.com/dims4/default/beb5999/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F00%2Fea%2F576b21fc4f1482d5ff121dc34623%2FNorwegian-Forest-Cat-AP-ZYVRVP-645sm3614.jpg"
+            src={imgTrailOfBitsPage}
           />
           <h4 className={styles.preConfLinkTitle}>
-            Incidence Response and Threat Hunting with Osquery
-          </h4>
-        </a>
-
-        <a
-          className={styles.preConfLink}
-          href="http://www.catster.com/wp-content/uploads/2017/05/cat-eating-food-dish-shutterstock_361821539.jpg"
-          target="_blank"
-        >
-          <img
-            alt=""
-            className={styles.preConfLinkImg}
-            src="http://www.catster.com/wp-content/uploads/2017/05/cat-eating-food-dish-shutterstock_361821539.jpg"
-          />
-          <h4 className={styles.preConfLinkTitle}>
-            Incidence Response and Threat Hunting with Osquery
+            How Are Teams Using Osquery? - Trail of Bits
           </h4>
         </a>
       </div>
