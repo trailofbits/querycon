@@ -9,7 +9,9 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <MediaQuery minWidth={MOBILE_WIDTH + 1}>
-        <div className={styles.copyright}>&copy; Kolide 2018</div>
+        <a className={styles.copyright} href="https://kolide.com">
+          &copy; Kolide 2018
+        </a>
       </MediaQuery>
 
       <MediaQuery maxWidth={MOBILE_WIDTH}>
@@ -46,7 +48,9 @@ const Footer = () => {
       </section>
 
       <MediaQuery maxWidth={MOBILE_WIDTH}>
-        <div className={styles.copyright}>&copy; Kolide 2018</div>
+        <a className={styles.copyright} href="https://kolide.com">
+          &copy; Kolide 2018
+        </a>
       </MediaQuery>
     </footer>
   )
