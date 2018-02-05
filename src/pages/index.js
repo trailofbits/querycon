@@ -172,19 +172,25 @@ const IndexPage = () => (
     </h2>
 
     <div className={styles.passFeatures}>
-      <FeatureTile title="Full Access 2 Day Conference" url="">
-        Kolide provides security professionals the interface and tooling to
-        deploy and manage osquery across every endpoint in your organization.
+      <FeatureTile title="Full Conference Access" url="">
+        Registration grants you full access to our two-day single track
+        conference, packed with Osquery experts ranging from the Osquery
+        creators and leaders to major open-source contributors and community
+        members Land some of {`Osquery's`} most prolific enterprise users.
       </FeatureTile>
 
       <FeatureTile title="After Hours Cocktail Party" url="">
-        Join us after Day 1 of the conference for some appetizers and drinks!
-        Location to be announced soon!
+        After a long day of talks, spend time imbibing with Osquery leaders,
+        contributors, speakers, and other conference goers at this attendee-only
+        networking event. Classic cocktails and delicious appetizers are on us!
+        Location to be announced soon.
       </FeatureTile>
 
-      <FeatureTile title="Entry to Osquery Hackathon" url="">
-        At Kolide we practice what we preach. See how we handle our own internal
-        security by implementing industry standard best practices.
+      <FeatureTile title="Entry to Osquery Workshop" url="">
+        Inspired by the talks? The community workshop (lead by Victor Vrantchan
+        of Kolide) lets you put your ideas into action in a communal setting
+        where you can get hands-on experience guided by experts, collaborate on
+        issues, and network with community members.
       </FeatureTile>
     </div>
 
