@@ -209,7 +209,7 @@ const IndexPage = () => (
       image3x={imgHeadshotNickAnderson3x}
       name="Nick Anderson"
       presentation="Deploying osquery at scale in massive production environments"
-      title="Senior Security Engineer"
+      title="Security Engineer"
     />
 
     <div className={styles.speakers}>
@@ -228,7 +228,7 @@ const IndexPage = () => (
         image2x={imgHeadshotLaurenPearl2x}
         image3x={imgHeadshotLaurenPearl3x}
         name="Lauren Pearl"
-        title="Security Engineer"
+        title="Head of Strategy and Ops"
       />
 
       <SpeakerTile
@@ -245,8 +245,8 @@ const IndexPage = () => (
         image={imgHeadshotChrisLong}
         image2x={imgHeadshotChrisLong2x}
         image3x={imgHeadshotChrisLong3x}
-        name="Christoper Long"
-        title="Chief Security Specialist"
+        name="Chris Long"
+        title="Security Engineer"
       />
 
       <SpeakerTile
