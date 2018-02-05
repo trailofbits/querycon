@@ -54,32 +54,14 @@
 
 .contactUsButton {
   background-color: $white;
-  border: 0;
-  border-radius: 4px;
   color: $cookie-monster-blue;
-  cursor: pointer;
   display: inline-block;
-  font-size: 18px;
-  font-weight: 900;
   margin-bottom: 11px;
   margin-left: 20px;
   margin-top: 11px;
-  padding: 10px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  width: 160px;
-
-  &:focus {
-    outline: 0;
-  }
 
   &:hover {
     background-color: $off-white;
-  }
-
-  &:active {
-    top: 1px;
   }
 }
 
@@ -128,34 +110,7 @@
 }
 
 .bottomButton {
-  background-color: $cookie-monster-blue;
-  border: 0;
-  border-radius: 4px;
-  color: $white;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 900;
   margin-top: 40px;
-  padding: 10px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  width: 240px;
-
-  &:focus {
-    outline: 0;
-  }
-
-  &:hover {
-    background-color: $cookie-monster-dark-blue;
-  }
-
-  &:active {
-    top: 1px;
-  }
-
-  @media screen and (max-width: $mobile-width) {
-    width: 50%;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }

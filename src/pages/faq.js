@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import MediaQuery from 'react-responsive'
 
+import Button from '../components/buttons/Button'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import MobileHeader from '../components/MobileHeader'
@@ -79,7 +80,9 @@ const FAQ = () => {
           <span className={styles.contactUsContent}>
             {"Don't"} see your question below? {"Don't"} hesitate to reach out:
           </span>
-          <a href="mailto:info@querycon.io" className={styles.contactUsButton}>Contact Us</a>
+          <Button url="mailto:info@querycon.io" className={styles.contactUsButton}>
+            Contact Us
+          </Button>
         </div>
       </div>
 
@@ -107,7 +110,9 @@ const FAQ = () => {
           </div>
         </div>
 
-        <a href="mailto:info@querycon.io" className={styles.bottomButton}>Contact Us</a>
+        <Button url="mailto:info@querycon.io" className={styles.bottomButton}>
+          Contact Us
+        </Button>
       </div>
 
       <Footer />
