@@ -1,10 +1,13 @@
 @import '../../styles/variables.scss';
 
 .speakerTile {
-  margin-bottom: 10px;
+  flex: 1;
+  margin-bottom: 40px;
+  min-width: 250px;
   text-align: center;
 
   @media(max-width: $mobile-width) {
+    margin-bottom: 30px;
     width: 50%;
   }
 }

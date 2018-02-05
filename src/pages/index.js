@@ -12,10 +12,32 @@ import imgAirbnb from './airbnb.svg'
 import imgExpedia from './expedia.svg'
 import imgFAQ from './faq.svg'
 import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
-import imgHeadshotChristopherLong from './headshot-christopher-long.jpg'
+import imgHeadshotBenHughes2x from './headshot-ben-hughes-2x.jpg'
+import imgHeadshotBenHughes3x from './headshot-ben-hughes-3x.jpg'
+import imgHeadshotChrisLong from './headshot-chris-long.jpg'
+import imgHeadshotChrisLong2x from './headshot-chris-long-2x.jpg'
+import imgHeadshotChrisLong3x from './headshot-chris-long-3x.jpg'
 import imgHeadshotLaurenPearl from './headshot-lauren-pearl.jpg'
-import imgHeadshotMike from './headshot-mike.jpg'
+import imgHeadshotLaurenPearl2x from './headshot-lauren-pearl-2x.jpg'
+import imgHeadshotLaurenPearl3x from './headshot-lauren-pearl-3x.jpg'
+import imgHeadshotMikeArpaia from './headshot-mike-arpaia.jpg'
+import imgHeadshotMikeArpaia2x from './headshot-mike-arpaia-2x.jpg'
+import imgHeadshotMikeArpaia3x from './headshot-mike-arpaia-3x.jpg'
+import imgHeadshotMikeMyers from './headshot-mike-myers.jpg'
+import imgHeadshotMikeMyers2x from './headshot-mike-myers-2x.jpg'
+import imgHeadshotMikeMyers3x from './headshot-mike-myers-3x.jpg'
+import imgHeadshotMitchellGrenier from './headshot-mitchell-grenier.jpg'
+import imgHeadshotMitchellGrenier2x from './headshot-mitchell-grenier-2x.jpg'
+import imgHeadshotMitchellGrenier3x from './headshot-mitchell-grenier-3x.jpg'
 import imgHeadshotNickAnderson from './headshot-nick-anderson.png'
+import imgHeadshotNickAnderson2x from './headshot-nick-anderson-2x.png'
+import imgHeadshotNickAnderson3x from './headshot-nick-anderson-3x.png'
+import imgHeadshotRobFry from './headshot-rob-fry.jpg'
+import imgHeadshotRobFry2x from './headshot-rob-fry-2x.jpg'
+import imgHeadshotRobFry3x from './headshot-rob-fry-3x.jpg'
+import imgHeadshotTeddyReed from './headshot-ted-reed.jpg'
+import imgHeadshotTeddyReed2x from './headshot-ted-reed-2x.jpg'
+import imgHeadshotTeddyReed3x from './headshot-ted-reed-3x.jpg'
 import imgHeroLogo from './querycon-large.svg'
 import imgMegaphone from './megaphone.svg'
 import imgMikeStage1 from './mike-stage-1.png'
@@ -177,6 +199,8 @@ const IndexPage = () => (
     <MainSpeaker
       company="Facebook"
       image={imgHeadshotNickAnderson}
+      image2x={imgHeadshotNickAnderson2x}
+      image3x={imgHeadshotNickAnderson3x}
       name="Nick Anderson"
       presentation="Deploying osquery at scale in massive production environments"
       title="Senior Security Engineer"
@@ -184,15 +208,10 @@ const IndexPage = () => (
 
     <div className={styles.speakers}>
       <SpeakerTile
-        company="Stripe"
-        image={imgHeadshotBenHughes}
-        name="Ben Hughes"
-        title="Security Jerk"
-      />
-
-      <SpeakerTile
         company="Kolide"
-        image={imgHeadshotMike}
+        image={imgHeadshotMikeArpaia}
+        image2x={imgHeadshotMikeArpaia2x}
+        image3x={imgHeadshotMikeArpaia3x}
         name="Mike Arpaia"
         title="Co-Founder & CTO"
       />
@@ -200,15 +219,64 @@ const IndexPage = () => (
       <SpeakerTile
         company="Trail of Bits"
         image={imgHeadshotLaurenPearl}
+        image2x={imgHeadshotLaurenPearl2x}
+        image3x={imgHeadshotLaurenPearl3x}
         name="Lauren Pearl"
         title="Security Engineer"
       />
 
       <SpeakerTile
+        company="Stackrox, Netflix"
+        image={imgHeadshotRobFry}
+        image2x={imgHeadshotRobFry2x}
+        image3x={imgHeadshotRobFry3x}
+        name="Rob Fry"
+        title="Security Leader"
+      />
+
+      <SpeakerTile
         company="Palantir"
-        image={imgHeadshotChristopherLong}
+        image={imgHeadshotChrisLong}
+        image2x={imgHeadshotChrisLong2x}
+        image3x={imgHeadshotChrisLong3x}
         name="Christoper Long"
         title="Chief Security Specialist"
+      />
+
+      <SpeakerTile
+        company="Facebook"
+        image={imgHeadshotTeddyReed}
+        image2x={imgHeadshotTeddyReed2x}
+        image3x={imgHeadshotTeddyReed3x}
+        name="Teddy Reed"
+        title="Security Engineering Manager"
+      />
+
+      <SpeakerTile
+        company="Stripe"
+        image={imgHeadshotBenHughes}
+        image2x={imgHeadshotBenHughes2x}
+        image3x={imgHeadshotBenHughes3x}
+        name="Ben Hughes"
+        title="Security Jerk"
+      />
+
+      <SpeakerTile
+        company="Trail of Bits"
+        image={imgHeadshotMikeMyers}
+        image2x={imgHeadshotMikeMyers2x}
+        image3x={imgHeadshotMikeMyers3x}
+        name="Mike Myers"
+        title="Security Researcher"
+      />
+
+      <SpeakerTile
+        company="Facebook"
+        image={imgHeadshotMitchellGrenier}
+        image2x={imgHeadshotMitchellGrenier2x}
+        image3x={imgHeadshotMitchellGrenier3x}
+        name="Mitchell Grenier"
+        title="Security Engineer"
       />
     </div>
 

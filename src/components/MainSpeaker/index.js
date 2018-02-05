@@ -5,13 +5,26 @@ import styles from './main-speaker.module.scss'
 
 const MOBILE_WIDTH = 800
 
-const MainSpeaker = ({ company, image, name, presentation, title }) => {
+const MainSpeaker = ({
+  company,
+  image,
+  image2x,
+  image3x,
+  name,
+  presentation,
+  title,
+}) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.mainSpeaker}>
         <MediaQuery minWidth={MOBILE_WIDTH + 1}>
           <div className={styles.headshot}>
-            <img alt={name} className={styles.headshotImg} src={image} />
+            <img
+              alt={name}
+              className={styles.headshotImg}
+              src={image}
+              srcSet={`${image2x} 2x, ${image3x} 3x`}
+            />
           </div>
         </MediaQuery>
 
@@ -40,4 +53,3 @@ const MainSpeaker = ({ company, image, name, presentation, title }) => {
 }
 
 export default MainSpeaker
-
