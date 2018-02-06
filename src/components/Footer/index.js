@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import MediaQuery from 'react-responsive'
 
 import styles from './footer.module.scss'
@@ -50,23 +51,23 @@ const Footer = () => {
       <section className={styles.links}>
         <ul>
           <li className={styles.li}>
-            <a href="/#speakers">Speakers</a>
+            <Link to="/#speakers">Speakers</Link>
           </li>
 
           <li className={styles.li}>
-            <a href="/#location">Venue</a>
+            <Link to="/#location">Venue</Link>
           </li>
 
           <li className={styles.li}>
-            <a href="/#learning">Learning</a>
+            <Link to="/#learning">Learning</Link>
           </li>
 
           <li className={styles.li}>
-            <a href="/conduct">Conduct</a>
+            <Link to="/conduct">Conduct</Link>
           </li>
 
           <li className={styles.li}>
-            <a href="/faq">FAQs</a>
+            <Link to="/faq">FAQs</Link>
           </li>
         </ul>
       </section>
