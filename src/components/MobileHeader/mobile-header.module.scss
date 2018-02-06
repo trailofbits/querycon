@@ -3,14 +3,14 @@
 .header {
   background-color: $white;
   background-image: url('../../pages/querycon.svg');
-  background-position: center 25px;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  height: 66px;
+  display: flex;
+  align-items: center;
+  height: 50px;
 }
 
 .nav {
-  left: 16px;
-  position: relative;
-  top: 38px;
+  margin-left: 15px;
 }
