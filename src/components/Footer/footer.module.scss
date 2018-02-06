@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .footer {
-  background-color: $eggshell;
+  background-color: $cloud;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
@@ -16,7 +16,7 @@
 .footerBranding {
   background: url('../../pages/querycon.svg') left center no-repeat;
   background-size: 48px 48px;
-  color: $lavender;
+  color: $grape;
   font-size: 18px;
   font-weight: 900;
   height: 48px;
@@ -28,7 +28,7 @@
 }
 
 .header {
-  color: $lavender;
+  color: $grape;
   font-size: 16px;
   letter-spacing: 0.6px;
   text-align: left;
@@ -43,7 +43,7 @@
   }
 
   > a {
-    color: $lavender;
+    color: $grape;
     font-size: 16px;
     font-weight: 700;
     text-align: left;
