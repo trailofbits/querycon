@@ -432,7 +432,12 @@ class IndexPage extends Component {
         </div>
 
         <div className={styles.prominentCTAs}>
-          <ProminentCta heading="Read the FAQ" icon={imgFAQ} href="/faq" />
+          <ProminentCta
+            heading="Read the FAQ"
+            icon={imgFAQ}
+            internal
+            href="/faq"
+          />
 
           <ProminentCta
             heading="Hit Us Up on Twitter"
