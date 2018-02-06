@@ -41,14 +41,14 @@ class MobileNav extends Component {
           <div className={styles.navItems}>
             <button
               className={styles.link}
-              onClick={this.handleClick('#speakers')}
+              onClick={this.handleClick('/#speakers')}
             >
               Speakers
             </button>
 
             <button
               className={styles.link}
-              onClick={this.handleClick('#location')}
+              onClick={this.handleClick('/#location')}
             >
               Location
             </button>
