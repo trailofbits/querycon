@@ -50,15 +50,23 @@ const Footer = () => {
       <section className={styles.links}>
         <ul>
           <li className={styles.li}>
-            <a href="#speakers">Speakers</a>
+            <a href="/#speakers">Speakers</a>
           </li>
 
           <li className={styles.li}>
-            <a href="#location">Venue</a>
+            <a href="/#location">Venue</a>
           </li>
 
           <li className={styles.li}>
-            <a href="#learning">Learning</a>
+            <a href="/#learning">Learning</a>
+          </li>
+
+          <li className={styles.li}>
+            <a href="/conduct">Conduct</a>
+          </li>
+
+          <li className={styles.li}>
+            <a href="/faq">FAQs</a>
           </li>
         </ul>
       </section>
