@@ -198,7 +198,7 @@ class IndexPage extends Component {
           </FeatureTile>
 
           <FeatureTile title="Entry to Osquery Workshop" url="">
-            Inspired by the talks? The community workshop (lead by Victor
+            Inspired by the talks? The community workshop (led by Victor
             Vrantchan of Kolide) lets you put your ideas into action in a
             communal setting where you can get hands-on experience guided by
             experts, collaborate on issues, and network with community members.
