@@ -40,7 +40,7 @@ const Footer = () => {
           <li className={styles.li}>
             <a
               className={styles.registerLink}
-              href="https://www.eventbrite.com/edit?eid=42317323253#"
+              href="https://www.eventbrite.com/e/querycon-tickets-42317323253"
             >
               Register Now
             </a>
