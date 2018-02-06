@@ -187,7 +187,7 @@ class IndexPage extends Component {
             Registration grants you full access to our two-day single track
             conference, packed with Osquery experts ranging from the Osquery
             creators and leaders to major open-source contributors and community
-            members Land some of {`Osquery's`} most prolific enterprise users.
+            members.
           </FeatureTile>
 
           <FeatureTile title="After Hours Cocktail Party" url="">
@@ -220,7 +220,6 @@ class IndexPage extends Component {
           image2x={imgHeadshotNickAnderson2x}
           image3x={imgHeadshotNickAnderson3x}
           name="Nick Anderson"
-          presentation="Deploying osquery at scale in massive production environments"
           title="Security Engineer"
         />
 
@@ -276,7 +275,7 @@ class IndexPage extends Component {
             image2x={imgHeadshotBenHughes2x}
             image3x={imgHeadshotBenHughes3x}
             name="Ben Hughes"
-            title="Security Jerk"
+            title="Security Engineer"
           />
 
           <SpeakerTile

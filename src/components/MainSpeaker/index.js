@@ -43,9 +43,6 @@ const MainSpeaker = ({
             </div>
           </div>
 
-          <div className={styles.break} />
-          <h4 className={styles.presentationHeader}>Presentation</h4>
-          <div className={styles.presentation}>{presentation}</div>
         </div>
       </div>
     </div>
