@@ -36,7 +36,22 @@ const questions = [
       'No, tickets can only be purchased for the whole conference at once.',
   },
   {
-    questionLine1: 'Will you have any tutorial- or workshop-only days?',
+    questionLine1: 'Will you be posting more details about the talks?',
+    answer:
+      'Yes. Once CFP is closed, and topics have been solidified, we will be announcing more details.',
+  },
+  {
+    questionLine1: 'Will this event be recorded?',
+    answer:
+      'Yes. The presentations as well as portions of the community day will be recorded and shared after the event.',
+  },
+  {
+    questionLine1: 'Will there be a live stream of the event?',
+    answer:
+      'No. There will not be a live stream of the event, but we will be posting recordings of the talks as well as interesting content from the community day after the event.',
+  },
+  {
+    questionLine1: 'Will you have any tutorial or workshop-only days?',
     answer:
       'We will feature a Community Day that will be similar to a workshop style session at QueryCon2018. This will occur in the afternoon on the second day.',
   },
