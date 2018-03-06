@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.hidden {
+  display: none;
+}
+
+.h2 {
+  font-size: 46px;
+  padding-top: 100px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 94px;
+  width: 545px;
+}

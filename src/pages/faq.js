@@ -8,9 +8,8 @@ import Header from '../components/Header'
 import MobileHeader from '../components/MobileHeader'
 import Question from '../components/Question'
 import styles from './faq.module.scss'
+import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from '../util/constants'
 
-const MOBILE_MAX_WIDTH = 800
-const DESKTOP_MIN_WIDTH = 801
 const questions = [
   {
     questionLine1: 'When does the conference start on May 31st?',
@@ -94,7 +93,7 @@ class FAQ extends Component {
           <Header dark />
         </MediaQuery>
 
-        <MediaQuery maxWidth={MOBILE_MAX_WIDTH}>
+        <MediaQuery maxWidth={MOBILE_WIDTH}>
           <MobileHeader />
         </MediaQuery>
 
