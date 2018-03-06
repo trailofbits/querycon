@@ -74,7 +74,7 @@ class CodeOfConduct extends Component {
               <Paragraph>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</Paragraph>
               <Paragraph>We expect participants to follow these rules at all conference venues and conference-related social events.</Paragraph>
               <div className={styles.contentParagraphSource}>
-                Original source and credit: <a className={styles.inlineLink} href="http://2012.jsconf.us/#/about" target="_blank">http://2012.jsconf.us/#/about</a>
+                Original source and credit: <a className={styles.inlineLink} href="http://2012.jsconf.us/#/about" rel="noopener noreferrer" target="_blank">http://2012.jsconf.us/#/about</a>
               </div>
             </div>
           </div>

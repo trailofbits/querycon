@@ -15,6 +15,7 @@ const Meta = () => (
       Drone footage used with permission from{` `}
       <a
         href="https://www.youtube.com/channel/UC2rFASLn1FmCYqyPgxinNNw"
+        rel="noopener noreferrer"
         target="_blank"
       >
         Kendal Omdahl

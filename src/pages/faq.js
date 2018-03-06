@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import MediaQuery from 'react-responsive'
 
 import Button from '../components/buttons/Button'
@@ -82,12 +80,12 @@ const questions = [
 
 class FAQ extends Component {
   componentDidMount() {
-    ReactDOM.findDOMNode(this).scrollTop = 0
+    this.node.scrollTop = 0
   }
 
   render() {
     return (
-      <div>
+      <div ref={node => (this.node = node)}>
         <Helmet>
           <title>QueryCon18 - FAQs</title>
           <meta name="description" content="Frequently Asked Questions" />
@@ -102,7 +100,7 @@ class FAQ extends Component {
 
         <div className={styles.heroSection}>
           <div className={styles.header}>Frequently Asked Questions</div>
-          <img className={styles.heroImage} src={require('./faq-image.svg')} />
+          <img alt="" className={styles.heroImage} src={require('./faq-image.svg')} />
           <div className={styles.contactUsBar}>
             <span className={styles.contactUsContent}>
               {"Don't"} see your question below? {"Don't"} hesitate to reach
