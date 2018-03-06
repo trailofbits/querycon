@@ -3,8 +3,7 @@ import Link from 'gatsby-link'
 import MediaQuery from 'react-responsive'
 
 import styles from './footer.module.scss'
-
-const MOBILE_WIDTH = 800
+import { MOBILE_WIDTH } from '../../util/constants'
 
 const Meta = () => (
   <div className={styles.meta}>

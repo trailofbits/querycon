@@ -56,8 +56,8 @@ import SpeakerTile from '../components/SpeakerTile'
 import styles from './index.module.scss'
 import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
 import videoPalaceOfFineArtsWebM from './palace-fine-arts.webm'
+import { MOBILE_WIDTH } from '../util/constants'
 
-const MOBILE_WIDTH = 800
 const cx = classNames.bind(styles)
 
 class IndexPage extends Component {

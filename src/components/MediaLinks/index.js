@@ -6,8 +6,7 @@ import imgMikeSpeaking from './mike-speaking.png'
 import imgTelescopeMan from './telescope-man.png'
 import imgTrailOfBitsPage from './trail-of-bits-page.png'
 import styles from './media-links.module.scss'
-
-const MOBILE_WIDTH = 800
+import { MOBILE_WIDTH } from '../../util/constants'
 
 class MediaLinks extends Component {
   render() {

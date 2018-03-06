@@ -2,8 +2,7 @@ import React from 'react'
 import MediaQuery from 'react-responsive'
 
 import styles from './main-speaker.module.scss'
-
-const MOBILE_WIDTH = 800
+import { MOBILE_WIDTH } from '../../util/constants'
 
 const MainSpeaker = ({
   company,
