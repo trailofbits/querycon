@@ -24,7 +24,7 @@ class ProgramPage extends Component {
   get activeTab() {
     const hashLocation = this.props.location.hash.replace('#', '')
 
-    if (hashLocation === SPEAKERS || WORKSHOP) {
+    if (hashLocation === SPEAKERS || hashLocation === WORKSHOP) {
       return hashLocation
     } else {
       return KEYNOTES
