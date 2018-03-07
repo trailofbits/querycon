@@ -18,13 +18,17 @@ const WORKSHOP = 'workshop'
 
 class ProgramPage extends Component {
   componentWillMount() {
-    let activeTab = this.props.location.hash.replace('#', '')
+    this.setState({ activeTab: this.activeTab })
+  }
 
-    if (!(activeTab === SPEAKERS || WORKSHOP)) {
-      activeTab = KEYNOTES
+  get activeTab() {
+    const hashLocation = this.props.location.hash.replace('#', '')
+
+    if (hashLocation === SPEAKERS || WORKSHOP) {
+      return hashLocation
+    } else {
+      return KEYNOTES
     }
-
-    this.setState({ activeTab })
   }
 
   showContent = tabName => () => {
