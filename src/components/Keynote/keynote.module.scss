@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  padding: 67px 0;
+  width: 100%;
+}
+
+.keynote {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.headshotImg {
+  width: 300px;
+}
+
+.info {
+  margin-left: 60px;
+}
+
+.name {
+  color: $midnight-blue;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.company {
+  color: $cookie-monster-blue;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.break {
+  background-color: $light-gray;
+  height: 2px;
+  margin-bottom: 25px;
+  width: 360px;
+}
+
+.title {
+  color: $hot-pink;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+  text-align: left;
+}
+
+.info p {
+  color: $dark-gray;
+  font-size: 18px;
+  line-height: 1.67;
+  margin: 15px 0;
+  text-align: left;
+}

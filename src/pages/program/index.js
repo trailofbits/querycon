@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import classNames from 'classnames'
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
@@ -25,15 +24,6 @@ import Tab from '../../components/Tab'
 // import imgHeadshotMitchellGrenier from './headshot-mitchell-grenier.jpg'
 // import imgHeadshotMitchellGrenier2x from './headshot-mitchell-grenier-2x.jpg'
 // import imgHeadshotMitchellGrenier3x from './headshot-mitchell-grenier-3x.jpg'
-// import imgHeadshotNickAnderson from './headshot-nick-anderson.png'
-// import imgHeadshotNickAnderson2x from './headshot-nick-anderson-2x.png'
-// import imgHeadshotNickAnderson3x from './headshot-nick-anderson-3x.png'
-// import imgHeadshotRobFry from './headshot-rob-fry.jpg'
-// import imgHeadshotRobFry2x from './headshot-rob-fry-2x.jpg'
-// import imgHeadshotRobFry3x from './headshot-rob-fry-3x.jpg'
-// import imgHeadshotTeddyReed from './headshot-ted-reed.jpg'
-// import imgHeadshotTeddyReed2x from './headshot-ted-reed-2x.jpg'
-// import imgHeadshotTeddyReed3x from './headshot-ted-reed-3x.jpg'
 import Keynotes from '../../components/Keynotes'
 import Speakers from '../../components/Speakers'
 import Workshop from '../../components/Workshop'
@@ -45,13 +35,14 @@ const SPEAKERS = 'speakers'
 const WORKSHOP = 'workshop'
 
 class ProgramPage extends Component {
-  state = {
-    activeTab: KEYNOTES,
-  }
-
   componentWillMount() {
-    const { hash } = this.props.location
-    this.setState({ activeTab: hash.replace('#', '') })
+    let activeTab = this.props.location.hash.replace('#', '')
+
+    if (!(activeTab === SPEAKERS || WORKSHOP)) {
+      activeTab = KEYNOTES
+    }
+
+    this.setState({ activeTab })
   }
 
   showContent = tabName => () => {
@@ -102,7 +93,11 @@ class ProgramPage extends Component {
           />
         </div>
 
+        <div className={styles.sectionBreak} />
+
         <ProgramSections activeTab={activeTab} />
+
+        <Footer />
       </div>
     )
   }
