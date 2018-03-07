@@ -10,14 +10,29 @@
   display: flex;
   margin: 0 auto;
   max-width: 950px;
+
+  @media(max-width: $wide-mobile-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 30px;
+  }
 }
 
 .headshotImg {
   width: 300px;
+
+  @media(max-width: $wide-mobile-width) {
+    margin-bottom: 20px;
+    width: 100px;
+  }
 }
 
 .info {
   margin-left: 60px;
+
+  @media(max-width: $wide-mobile-width) {
+    margin-left: 0;
+  }
 }
 
 .name {
@@ -34,6 +49,11 @@
   font-size: 18px;
   letter-spacing: 4px;
   text-transform: uppercase;
+
+  @media(max-width: $mobile-width) {
+    display: block;
+    margin-top: 5px;
+  }
 }
 
 .break {
@@ -41,6 +61,10 @@
   height: 2px;
   margin-bottom: 25px;
   width: 360px;
+
+  @media(max-width: $extra-narrow-mobile-width) {
+    width: 80%;
+  }
 }
 
 .title {
