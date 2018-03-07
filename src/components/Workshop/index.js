@@ -4,10 +4,9 @@ import imgHeadshotMikeArpaia from '../../pages/headshot-mike-arpaia.jpg'
 import imgHeadshotMikeArpaia2x from '../../pages/headshot-mike-arpaia-2x.jpg'
 import imgHeadshotMikeArpaia3x from '../../pages/headshot-mike-arpaia-3x.jpg'
 import Speaker from '../Speaker'
-import styles from '../Speakers/speakers.module.scss'
 
 const Workshop = ({ id }) => (
-  <section className={styles.speakers} id={id}>
+  <section id={id}>
     <Speaker
       company="Kolide"
       image={imgHeadshotMikeArpaia}

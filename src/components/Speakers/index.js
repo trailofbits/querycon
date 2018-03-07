@@ -19,10 +19,9 @@ import imgHeadshotMitchellGrenier from '../../pages/headshot-mitchell-grenier.jp
 import imgHeadshotMitchellGrenier2x from '../../pages/headshot-mitchell-grenier-2x.jpg'
 import imgHeadshotMitchellGrenier3x from '../../pages/headshot-mitchell-grenier-3x.jpg'
 import Speaker from '../Speaker'
-import styles from './speakers.module.scss'
 
 const Speakers = ({ id }) => (
-  <section className={styles.speakers} id={id}>
+  <section id={id}>
     <Speaker
       company="Trail of Bits"
       image={imgHeadshotLaurenPearl}
