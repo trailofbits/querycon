@@ -81,4 +81,8 @@
   line-height: 1.67;
   margin: 15px 0;
   text-align: left;
+
+  @media(max-width: $narrow-mobile-width) {
+    font-size: 16px;
+  }
 }
