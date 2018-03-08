@@ -4,11 +4,7 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
-  width: 488px;
-
-  @media(max-width: 850px) {
-    width: 400px;
-  }
+  width: 368px;
 }
 
 .link {

@@ -16,14 +16,9 @@ class MobileNav extends Component {
     this.setState({ open: true })
   }
 
-  handleClick = path => {
-    const { history } = this.props
-
-    return () => {
-      this.closeNav()
-      global.window.location = path
-      return false
-    }
+  handleClick = path => () => {
+    this.closeNav()
+    global.window.location = path
   }
 
   render() {
@@ -41,16 +36,16 @@ class MobileNav extends Component {
           <div className={styles.navItems}>
             <button
               className={styles.link}
-              onClick={this.handleClick('/#speakers')}
+              onClick={this.handleClick('/')}
             >
-              Speakers
+              Home
             </button>
 
             <button
               className={styles.link}
-              onClick={this.handleClick('/#location')}
+              onClick={this.handleClick('/program')}
             >
-              Location
+              Program
             </button>
 
             <button

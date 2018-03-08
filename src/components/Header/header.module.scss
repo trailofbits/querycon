@@ -10,6 +10,10 @@
 
 .navigation {
   display: flex;
-  justify-content: space-between;
-  width: 700px;
+  justify-content: flex-end;
+  width: 600px;
+}
+
+.registerButton {
+  margin-left: 30px;
 }
