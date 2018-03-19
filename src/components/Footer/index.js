@@ -3,8 +3,7 @@ import Link from 'gatsby-link'
 import MediaQuery from 'react-responsive'
 
 import styles from './footer.module.scss'
-
-const MOBILE_WIDTH = 800
+import { MOBILE_WIDTH } from '../../util/constants'
 
 const Meta = () => (
   <div className={styles.meta}>
@@ -16,6 +15,7 @@ const Meta = () => (
       Drone footage used with permission from{` `}
       <a
         href="https://www.youtube.com/channel/UC2rFASLn1FmCYqyPgxinNNw"
+        rel="noopener noreferrer"
         target="_blank"
       >
         Kendal Omdahl

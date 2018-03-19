@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.description {
+  color: $dark-gray;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 auto 300px;
+  text-align: center;
+  width: 560px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 200px;
+    text-align: justify;
+    width: 90%;
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "parser": "babel-eslint",
+  "globals": {
+    "document": true,
+    "window": true,
+    "expect": true,
+    "beforeEach": true,
+    "describe": true,
+    "test": true,
+    "jest": true
+  },
+  "rules": {
+    "arrow-body-style": [1, "as-needed"],
+    "class-methods-use-this": "off",
+    "func-names": ["error", "never"],
+    "global-require": "off",
+    "import/no-webpack-loader-syntax": "off",
+    "import/order": ["error", { "groups": [] }],
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-else-return": "off",
+    "no-return-assign": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "local",
+        "varsIgnorePattern": "_",
+        "args": "after-used",
+        "argsIgnorePattern": "_"
+      }
+    ],
+    "no-use-before-define": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "ignore"
+  },
+  "settings": {
+    "import/core-modules": [
+      "react",
+      "react-dom"
+    ]
+  }
+}

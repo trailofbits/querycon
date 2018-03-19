@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  border-bottom: 2px solid $light-gray;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  width: auto;
+
+  @media(max-width: $mobile-width) {
+    padding: 40px 20px;
+  }
+}
+
+.presentationTopic {
+  color: $grape;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 2.75;
+  text-transform: uppercase;
+}
+
+.presentationName {
+  color: $hot-pink;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: normal;
+  line-height: 1.43;
+}
+
+.speaker p {
+  color: $dark-gray;
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.33;
+  margin: 15px 0;
+
+  @media(max-width: $narrow-mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.speakerInfo {
+  align-items: center;
+  display: flex;
+}
+
+.headshot {
+  margin-right: 20px;
+  position: relative;
+  top: 8px;
+}
+
+.headshotImg {
+  width: 100px;
+  height: auto;
+}
+
+.name {
+  color: $midnight-blue;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.1px;
+  line-height: 1.43;
+}
+
+.title {
+  color: $dark-gray;
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.33;
+
+  @media(max-width: $narrow-mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.company {
+  @media(max-width: $extra-narrow-mobile-width) {
+    display: block;
+  }
+}
+
+.otherDescriptor {
+  @media(max-width: $narrow-mobile-width) {
+    display: block;
+  }
+}

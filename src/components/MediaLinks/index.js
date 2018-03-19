@@ -6,8 +6,7 @@ import imgMikeSpeaking from './mike-speaking.png'
 import imgTelescopeMan from './telescope-man.png'
 import imgTrailOfBitsPage from './trail-of-bits-page.png'
 import styles from './media-links.module.scss'
-
-const MOBILE_WIDTH = 800
+import { MOBILE_WIDTH } from '../../util/constants'
 
 class MediaLinks extends Component {
   render() {
@@ -19,6 +18,7 @@ class MediaLinks extends Component {
         <a
           className={styles.preConfLink}
           href="https://www.youtube.com/watch?v=bcfg4VLyIHw"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -34,6 +34,7 @@ class MediaLinks extends Component {
         <a
           className={styles.preConfLink}
           href="https://blog.kolide.com/monitoring-macos-hosts-with-osquery-ba5dcc83122d"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -49,6 +50,7 @@ class MediaLinks extends Component {
         <a
           className={styles.preConfLink}
           href="https://medium.com/@palantir/osquery-across-the-enterprise-3c3c9d13ec55"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -64,6 +66,7 @@ class MediaLinks extends Component {
         <a
           className={styles.preConfLink}
           href="https://blog.trailofbits.com/2017/11/09/how-are-teams-currently-using-osquery/"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img

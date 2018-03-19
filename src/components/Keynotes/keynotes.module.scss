@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.separator {
+  background-image:
+    linear-gradient(to right, $white, transparent, transparent 80%),
+    linear-gradient(to left, $white, transparent, transparent 80%),
+    linear-gradient(to bottom, $lighter-gray, $white);
+  height: 50px;
+  width: 100%;
+}

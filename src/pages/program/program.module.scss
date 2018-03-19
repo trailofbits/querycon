@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.hidden {
+  display: none;
+}
+
+.h2 {
+  font-size: 46px;
+  padding-top: 100px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 94px;
+  max-width: 640px;
+  padding: 0 20px;
+
+  @media(max-width: $narrow-mobile-width) {
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 0 40px;
+  }
+}
+
+.sectionBreak {
+  background-color: $light-gray;
+  height: 2px;
+  margin: 0 auto;
+  max-width: 900px;
+
+  @media(max-width: $wide-mobile-width) {
+    width: 80%;
+  }
+}
+
+.bullets {
+  margin-left: 10px;
+  li {
+    list-style-type: none;
+  }
+li:before {
+    content: '\2022';
+    color: #ff287a;
+    padding-right: 12px
+}
+
+}

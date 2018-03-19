@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import MediaQuery from 'react-responsive'
 
 import Button from '../components/buttons/Button'
@@ -10,9 +8,8 @@ import Header from '../components/Header'
 import MobileHeader from '../components/MobileHeader'
 import Question from '../components/Question'
 import styles from './faq.module.scss'
+import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from '../util/constants'
 
-const MOBILE_MAX_WIDTH = 800
-const DESKTOP_MIN_WIDTH = 801
 const questions = [
   {
     questionLine1: 'When does the conference start on May 31st?',
@@ -34,11 +31,6 @@ const questions = [
     questionLine1: 'Can I buy a ticket for just one day?',
     answer:
       'No, tickets can only be purchased for the whole conference at once.',
-  },
-  {
-    questionLine1: 'Will you be posting more details about the talks?',
-    answer:
-      'Yes. Once CFP is closed, and topics have been solidified, we will be announcing more details.',
   },
   {
     questionLine1: 'Will this event be recorded?',
@@ -87,12 +79,12 @@ const questions = [
 
 class FAQ extends Component {
   componentDidMount() {
-    ReactDOM.findDOMNode(this).scrollTop = 0
+    this.node.scrollTop = 0
   }
 
   render() {
     return (
-      <div>
+      <div ref={node => (this.node = node)}>
         <Helmet>
           <title>QueryCon18 - FAQs</title>
           <meta name="description" content="Frequently Asked Questions" />
@@ -101,13 +93,13 @@ class FAQ extends Component {
           <Header dark />
         </MediaQuery>
 
-        <MediaQuery maxWidth={MOBILE_MAX_WIDTH}>
+        <MediaQuery maxWidth={MOBILE_WIDTH}>
           <MobileHeader />
         </MediaQuery>
 
         <div className={styles.heroSection}>
           <div className={styles.header}>Frequently Asked Questions</div>
-          <img className={styles.heroImage} src={require('./faq-image.svg')} />
+          <img alt="" className={styles.heroImage} src={require('./faq-image.svg')} />
           <div className={styles.contactUsBar}>
             <span className={styles.contactUsContent}>
               {"Don't"} see your question below? {"Don't"} hesitate to reach

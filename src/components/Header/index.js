@@ -13,7 +13,7 @@ const Header = props => (
     <div className={styles.navigation}>
       <Nav dark={props.dark} />
 
-      <RegisterButton />
+      <RegisterButton className={styles.registerButton} />
     </div>
   </div>
 )

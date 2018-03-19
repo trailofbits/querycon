@@ -60,7 +60,7 @@
 }
 
 .sectionSubheader {
-  color: $purple-gray;
+  color: $grape;
   font-size: 24px;
   line-height: 1.67;
   margin: 0 auto;
@@ -96,11 +96,25 @@
   margin-bottom: 72px;
   text-align: center;
   text-transform: uppercase;
+  & > a {
+    text-decoration: none;
+  }
+
+  & > a > img {
+    position: relative;
+    top: 10px;
+  }
+
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
     letter-spacing: 4px;
     margin-bottom: 52px;
+
+    & > a > img {
+      top: 14px;
+    }
+
   }
 }
 
@@ -344,7 +358,7 @@
 }
 
 .reserveSub {
-  color: $purple-gray;
+  color: $grape;
   font-size: 30px;
   text-align: center;
 
