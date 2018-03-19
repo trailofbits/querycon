@@ -17,9 +17,7 @@ const Question = props => {
         </div>
       }
 
-      <div className={styles.answer}>
-        {answer}
-      </div>
+      <div className={styles.answer} dangerouslySetInnerHTML={{__html: answer}}></div>
     </div>
   )
 }

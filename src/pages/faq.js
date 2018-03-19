@@ -18,12 +18,12 @@ const questions = [
     questionLine1: 'When does the conference start on May 31st?',
     questionLine2: 'When does it end on June 1st?',
     answer:
-      'On the first day, there will be check-ins and breakfast starting at 9:00 AM. Open remarks begin at 10:00 AM, and the first presentation will begin around 10:30 AM. The conference portion of the day will end at 4:00 PM, when people can make their way to the after-hours event, which will begin at 5:00 PM. On June 1st, presentations will be complete at noon, and our Community Day will commence after lunch, and wrap up at 4:00 PM.',
+      'On the first day, there will be check-ins and breakfast starting at 8:00 AM. Open remarks begin at 9:00 AM, and the first presentation will begin around 10:00 AM. The conference portion of the day will end around 4:30 PM, when people can make their way to the after-hours event, which will begin at 5:00 PM. On June 1st, presentations will be complete at noon, and our Community Day will commence after lunch, and wrap up at 4:00 PM.',
   },
   {
     questionLine1: 'Is breakfast provided? What about lunch and dinner?',
     answer:
-      'We will provide a light breakfast on both days at 9:00 AM until 9:45 AM. We also provide a full lunch and afternoon snack, but not dinner. Light appetizers and beverages will be served at the after-hours social event on Thursday. Coffee, tea, and water are served throughout both conference days.',
+      'We will provide a light breakfast on both days at 8:00 AM until 9:00 AM. We also provide a full lunch and snack throughout the day. Coffee, tea, and water are served throughout both conference days. Food and drink will be served at the after-hours social event at <a href="http://www.schroederssf.com/" target="_blank">Schroder\'s Restaurant</a>.',
   },
   {
     questionLine1: 'Are there any ticket discounts available?',
@@ -59,6 +59,11 @@ const questions = [
     questionLine1: 'How far away is the conference venue from the airport?',
     answer:
       'Approximately 20 miles from the airport, in San Francisco’s Marina/Presidio district.',
+  },
+  {
+    questionLine1: 'Is parking available at the venue?',
+    answer:
+      'There is <a href="https://www.google.com/maps/place/Parking+Area/@37.8062268,-122.4484005,18.54z/data=!4m12!1m6!3m5!1s0x808586d4bce240b9:0x3e7cf9a5c17c2c57!2sLittle+Marina+Green+Picnic+Area!8m2!3d37.805771!4d-122.4479267!3m4!1s0x808586d35950766d:0xade0d65df8f7410!8m2!3d37.8065216!4d-122.4477419" target="_blank">a free parking lot</a> in the Little Marina Green picnic area (right next to the venue)',
   },
   {
     questionLine1: 'Can I sponsor this conference?',
