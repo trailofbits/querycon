@@ -146,7 +146,7 @@ const Speakers = ({ id }) => (
       name="Michael Lynn"
       presentationName="Fact Finding"
       presentationTopic="Osquery Development"
-      title="Security Engineer"
+      title="Client Platform Engineer"
     >
       <p>
         The macOS UI provides a large amount of device information - but not
