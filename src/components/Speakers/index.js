@@ -41,7 +41,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotTeddyReed2x}
       image3x={imgHeadshotTeddyReed3x}
       name="Teddy Reed"
-      presentationName="The Scary Parts of osquery"
+      presentationName="The Scary Parts of Osquery"
       presentationTopic="Osquery Internals"
       title="Security Engineering Manager"
     >
@@ -63,7 +63,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotLaurenPearl2x}
       image3x={imgHeadshotLaurenPearl3x}
       name="Lauren Pearl"
-      presentationName="Three Super Features That Could Transform osquery"
+      presentationName="Three Super Features That Could Transform Osquery"
       presentationTopic="Osquery Development"
       title="Security Engineer"
     >
@@ -81,7 +81,7 @@ const Speakers = ({ id }) => (
       </p>
       <p>
         Finally, we’ll walk through the steps to get there with high-level development
-        plans for making these Osquery Super Features a reality.
+        plans for making these osquery Super Features a reality.
       </p>
     </Speaker>
 
@@ -126,7 +126,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotMitchellGrenier2x}
       image3x={imgHeadshotMitchellGrenier3x}
       name="Mitchell Grenier"
-      presentationName="Catching Everything with osquery Events"
+      presentationName="Catching Everything With Osquery Events"
       presentationTopic="Osquery Development"
       title="Security Engineer"
     >
@@ -164,7 +164,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotMikeMyers2x}
       image3x={imgHeadshotMikeMyers3x}
       name="Mike Myers"
-      presentationName="The Osquery Extensions Skunkworks Project: Unconventional Uses for osquery"
+      presentationName="The Osquery Extensions Skunkworks Project: Unconventional Uses for Osquery"
       presentationTopic="Osquery Development"
       title="Security Researcher"
     >
@@ -195,8 +195,8 @@ const Speakers = ({ id }) => (
     >
       <p>
         Learn about core functions and architecture of Zentral.
-        Zentral is a open source hub to process event streams from Osquery and
-        other sources into the ElasticStack. Besides support for distinct Osquery
+        Zentral is a open source hub to process event streams from osquery and
+        other sources into the ElasticStack. Besides support for distinct osquery
         features like file carving, Zentral provides numerous integrations for
         inventory acquisition and alerting.
       </p>
@@ -209,7 +209,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotChrisLong2x}
       image3x={imgHeadshotChrisLong3x}
       name="Chris Long"
-      presentationName="Practical System Auditing with osquery"
+      presentationName="Practical System Auditing with Osquery"
       presentationTopic="Production Osquery"
       title="Security Engineer"
     >
