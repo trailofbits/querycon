@@ -151,7 +151,7 @@ const Speakers = ({ id }) => (
       <p>
         The macOS UI provides a large amount of device information - but not
         every interface has a counterpart command-line tool providing access
-        o the same details. This talk will focus on using tools like Hopper
+        to the same details. This talk will focus on using tools like Hopper
         to reverse engineer the code and APIs behind information displays
         you see everyday and how to integrate access to them into your own
         tools.
