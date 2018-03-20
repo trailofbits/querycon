@@ -120,10 +120,10 @@ const IndexPage = () => (
     <p className={styles.leader}>
       Join us for a 2-day <strong>Osquery</strong> conference at the{' '}
       <strong>Palace of Fine Arts Innovation Hangar</strong> focused on bringing
-      security, devops, macadmins, and other experts in the osquery community
+      security, devops, macadmins, and other experts in the Osquery community
       together. With talks from industry juggernauts and the{' '}
-      <strong>creators of osquery</strong>, discussion will focus on emergent
-      topics that affect the landscape {`&`} development of osquery.
+      <strong>creators of Osquery</strong>, discussion will focus on emergent
+      topics that affect the landscape {`&`} development of Osquery.
     </p>
 
     <div className={styles.leaderSub}>
@@ -140,9 +140,9 @@ const IndexPage = () => (
       <div className={styles.leaderSub1}>
         <h3>Osquery Expertise for Big and Small</h3>
         <p>
-          {`We've`} brought together the biggest names in the osquery community
+          {`We've`} brought together the biggest names in the Osquery community
           to speak and discuss on a variety of use-cases and issues. No matter
-          whether you are an osquery expert or are installing it for the first
+          whether you are an Osquery expert or are installing it for the first
           time there is something for you:
         </p>
       </div>
@@ -199,7 +199,7 @@ const IndexPage = () => (
     <h2 className={styles.sectionHeader}>Featured Speakers</h2>
 
     <div className={styles.sectionSubheader}>
-      We are bringing the brightest and best of the osquery community together.
+      We are bringing the brightest and best of the Osquery community together.
     </div>
 
     <MainSpeaker
@@ -340,7 +340,7 @@ const IndexPage = () => (
     <h2 className={styles.sectionHeader}>Pre-Conference Learning</h2>
 
     <div className={styles.sectionSubheader}>
-      Brush up on your osquery understanding with some of the resources below:
+      Brush up on your Osquery understanding with some of the resources below:
     </div>
 
     <div className={styles.preConfMain}>
@@ -359,7 +359,7 @@ const IndexPage = () => (
         </h3>
 
         <p className={styles.preConfMainDescription}>
-          {`Facebook's`} osquery is a Linux and OS X intrusion detection and
+          {`Facebook's`} Osquery is a Linux and OS X intrusion detection and
           response tool. It supports 10 OS flavors and is continuously built for
           8 of those. It is very important that the infrastructure used to test,
           build, and publish security software be secure itself. This discussion
