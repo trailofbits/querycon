@@ -159,14 +159,14 @@ const Speakers = ({ id }) => (
     </Speaker>
 
     <Speaker
-      company="Facebook"
+      company="Trail of Bits"
       image={imgHeadshotMikeMyers}
       image2x={imgHeadshotMikeMyers2x}
       image3x={imgHeadshotMikeMyers3x}
       name="Mike Myers"
       presentationName="The Osquery Extensions Skunkworks Project: Unconventional Uses for osquery"
       presentationTopic="Osquery Development"
-      title="Security Engineer"
+      title="Security Researcher"
     >
       <p>
         Facebook created osquery with certain guiding principles: don't pry
