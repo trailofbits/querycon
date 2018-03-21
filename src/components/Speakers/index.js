@@ -221,7 +221,7 @@ const Speakers = ({ id }) => (
         and digging through documentation on it can be quite perplexing.
         During this talk we'll cover:
         <ul className={styles.bullets}>
-          <li>A basic overview audit framework</li>
+          <li>A basic overview of the audit framework</li>
           <li>Building a basic osquery auditing configuration</li>
           <li>Fine-tune auditing configurations to minimize performance impact against your systems</li>
         </ul>
