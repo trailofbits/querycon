@@ -27,6 +27,21 @@ import imgHeadshotMitchellGrenier3x from '../../pages/headshot-mitchell-grenier-
 import imgHeadshotTeddyReed from '../../pages/headshot-ted-reed.jpg'
 import imgHeadshotTeddyReed2x from '../../pages/headshot-ted-reed-2x.jpg'
 import imgHeadshotTeddyReed3x from '../../pages/headshot-ted-reed-3x.jpg'
+import imgHeadshotSamuelKeeley from '../../pages/headshot-samuel-keeley.jpg'
+import imgHeadshotSamuelKeeley2x from '../../pages/headshot-samuel-keeley-2x.jpg'
+import imgHeadshotSamuelKeeley3x from '../../pages/headshot-samuel-keeley-3x.jpg'
+import imgHeadshotScottLundgren from '../../pages/headshot-scott-lundgren.jpg'
+import imgHeadshotScottLundgren2x from '../../pages/headshot-scott-lundgren-2x.jpg'
+import imgHeadshotScottLundgren3x from '../../pages/headshot-scott-lundgren-3x.jpg'
+import imgHeadshotMilanShah from '../../pages/headshot-milan-shah.jpg'
+import imgHeadshotMilanShah2x from '../../pages/headshot-milan-shah-2x.jpg'
+import imgHeadshotMilanShah3x from '../../pages/headshot-milan-shah-3x.jpg'
+import imgHeadshotForestMonsen from '../../pages/headshot-forest-monsen.jpg'
+import imgHeadshotForestMonsen2x from '../../pages/headshot-forest-monsen-2x.jpg'
+import imgHeadshotForestMonsen3x from '../../pages/headshot-forest-monsen-3x.jpg'
+import imgHeadshotSteffanHaas from '../../pages/headshot-steffan-haas.jpg'
+import imgHeadshotSteffanHaas2x from '../../pages/headshot-steffan-haas-2x.jpg'
+import imgHeadshotSteffanHaas3x from '../../pages/headshot-steffan-haas-3x.jpg'
 
 import styles from '../../pages/program/program.module.scss'
 
@@ -233,6 +248,146 @@ const Speakers = ({ id }) => (
         how to gain greater visibility into high-value systems, scale an
         auditing deployment, or simply learn more about osquery's auditing
         features.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="Carbon Black"
+      image={imgHeadshotScottLundgren}
+      image2x={imgHeadshotScottLundgren2x}
+      image3x={imgHeadshotScottLundgren3x}
+      name="Scott Lundgren"
+      presentationName="An Outsider's Journey to Join the Osquery Community"
+      presentationTopic="Osquery Development"
+      title="Chief Architect"
+    >
+      <p>
+        Imagine this: You discover osquery and find love at first sight. You have
+        experience writing native systems code and ideas about new queries and want to
+        do the right thing. A documented journey of an outside dev attempt to
+        find his way in the community and make a meaningful contribution.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="Airbnb"
+      image={imgHeadshotSamuelKeeley}
+      image2x={imgHeadshotSamuelKeeley2x}
+      image3x={imgHeadshotSamuelKeeley3x}
+      name="Samuel Keeley"
+      presentationName="How I Wrote Crazy Queries to Find Crazy Software Vulnerabilities"
+      presentationTopic="Osquery Development"
+      title="Security Engineer"
+    >
+      <p>
+        Sometimes you discover an issue with software on your Mac which should
+        be considered a vulnerability and want to know more about it.
+        Does it affect other software? Does it affect other Macs in my fleet?
+        How serious is this problem? How can I fix it?
+      </p>
+
+      <p>
+        In this case, the issue is a vulnerability which is common to a large
+        number of third party software packages for the Mac. osquery’s stock
+        packs might give us some information, but to truly find all of the
+        cases we must craft a complex query to run locally. There will be JOINs.
+        There will be ORs. There will be substations.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="Uptycs"
+      image={imgHeadshotMilanShah}
+      image2x={imgHeadshotMilanShah2x}
+      image3x={imgHeadshotMilanShah3x}
+      name="Milan Shah"
+      presentationName="Osquery and Docker Containers"
+      presentationTopic="Production Osquery"
+      title="Co-Founder and CTO"
+    >
+      <p>
+        In the past, osquery had major limitations in support for providing
+        visibility into Docker containers. With the recent addition of 14
+        Docker related tables in osquery, new opportunities exist to address
+        major use cases around resource optimization, intrusion detection
+        and compliance for Docker environments. Combined with information
+        from Kubernetes and SWARM – osquery can now help provide visibility
+        across a containerized application.
+      </p>
+
+      <p>
+        In this talk, we will explore
+        the recent Docker table additions to osquery, expose existing
+        limitations to help guide future osquery developments and discuss the
+        growing implications of osquery in a serverless world. Attendees will
+        leave this session with an understanding of whether or not osquery can
+        meet their needs for securing and monitoring a Docker container
+        environment.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="Netflix"
+      image={imgHeadshotForestMonsen}
+      image2x={imgHeadshotForestMonsen2x}
+      image3x={imgHeadshotForestMonsen3x}
+      name="Forest Monsen"
+      presentationName="An Osquery-Based Differencing Engine for Incident Response"
+      presentationTopic="Osquery Tools"
+      title="Senior Security Engineer"
+    >
+      <p>
+        During a security incident on your cloud architecture, how far have
+        attackers penetrated? How many instances have they touched, and
+        what have they done there? Diffy will help. Using osquery, and
+        a selection of simple differencing and more sophisticated clustering
+        methods, Diffy will quickly point you to those instances requiring
+        further digital forensics actions.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="University of Hamburg"
+      image={imgHeadshotSteffanHaas}
+      image2x={imgHeadshotSteffanHaas2x}
+      image3x={imgHeadshotSteffanHaas3x}
+      name="Steffen Haas"
+      presentationName="Bro-Osquery"
+      presentationTopic="Osquery Tools"
+      title="Security Researcher and PhD Student"
+    >
+      <p>
+        Osquery comes with a powerful SQL abstractions layer to query hosts for
+        various information that can be leveraged e.g. for network security.
+        In standard deployment however, the hosts simply execute a statically
+        defined schedule of queries, whose results might be useful for later
+        analysis. Logs are forwarded to a central storage and can then be processed
+        via arbitrary additional tools. With bro-osquery, we go beyond
+        his standard use case with respect to several aspects.
+      </p>
+
+      <p>
+        The intention of bro-osquery is to collect host and network data by a common
+        platform and to provide the ability to correlate them for network monitoring
+        and intrusion detection. When monitoring either hosts or the network alone,
+        the other one is a blind spot in your monitoring. But when monitoring both,
+        information from hosts and network can perfectly complement each other.
+        With their correlation, you gain more detailed knowledge about the
+        activities of hosts and achieve a better visibility on the complete
+        network infrastructure. The principle of correlation is to link host
+        information for processes that emit traffic with network information
+        for the corresponding packets.
+      </p>
+
+      <p>
+        In bro-osquery we implement this concept for the host monitor osquery and
+        the Bro network IDS. By establishing a bi-directional publish-subscribe
+        communication between osquery hosts and Bro, they can directly exchange
+        data, i.e., SQL queries and their results. We provide a framework of Bro
+        scripts that allows to run custom queries against all, individuals,
+        or specific groups of hosts. Bro dynamically controls the query schedule
+        of the hosts, retrieves and processes the corresponding data, and it
+        can even asynchronously query hosts on demand for additional data.
       </p>
     </Speaker>
   </section>
