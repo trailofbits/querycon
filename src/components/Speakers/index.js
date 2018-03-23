@@ -42,6 +42,9 @@ import imgHeadshotForestMonsen3x from '../../pages/headshot-forest-monsen-3x.jpg
 import imgHeadshotSteffanHaas from '../../pages/headshot-steffan-haas.jpg'
 import imgHeadshotSteffanHaas2x from '../../pages/headshot-steffan-haas-2x.jpg'
 import imgHeadshotSteffanHaas3x from '../../pages/headshot-steffan-haas-3x.jpg'
+import imgHeadshotRobFry from '../../pages/headshot-rob-fry.jpg'
+import imgHeadshotRobFry2x from '../../pages/headshot-rob-fry-2x.jpg'
+import imgHeadshotRobFry3x from '../../pages/headshot-rob-fry-3x.jpg'
 
 import styles from '../../pages/program/program.module.scss'
 
@@ -390,6 +393,48 @@ const Speakers = ({ id }) => (
         can even asynchronously query hosts on demand for additional data.
       </p>
     </Speaker>
+
+    <Speaker
+      company="Stripe"
+      image={imgHeadshotBenHughes}
+      image2x={imgHeadshotBenHughes2x}
+      image3x={imgHeadshotBenHughes3x}
+      name="Ben Hughes"
+      presentationName="Osquery, He Knows Me"
+      presentationTopic="Production Osquery"
+      title="Security Engineer"
+    >
+      <p>
+        This talk, aimed at everyone, highlights the journey from before
+        Osquery in my time with the Etsy security team, and some of the
+        tooling and problems we faced. The wrong decisions I've made, so you
+        can learn from my foolish hubris. To a number of thousand deployment
+        of Osquery (and fleet and some not so fleet) at Stripe.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="JASK"
+      image={imgHeadshotRobFry}
+      image2x={imgHeadshotRobFry2x}
+      image3x={imgHeadshotRobFry3x}
+      name="Rob Fry"
+      presentationName="SOC, aka Throw More People at the Problem"
+      presentationTopic="People vs Tools"
+      title="VP of Engineering"
+    >
+      <p>
+        The 'age of the API', security orchestration, big data & ML have all
+        come and gone, but SOCs are still outmanned and outgunned. There is
+        now an ability to integrate systems, store large amounts of data
+        and leverage algorithms to do what a SOC analyst does with machine
+        speed, but how does a company leverage this data and these
+        capabilities? Come see a history of these technologies applied
+        to security and lessons learned on how to apply them.
+      </p>
+    </Speaker>
+
+
   </section>
 )
 
