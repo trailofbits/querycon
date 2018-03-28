@@ -278,23 +278,16 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotSamuelKeeley2x}
       image3x={imgHeadshotSamuelKeeley3x}
       name="Samuel Keeley"
-      presentationName="How I Wrote Crazy Queries to Find Crazy Software Vulnerabilities"
+      presentationName="The power of SQL: Complex queries at your fingertips"
       presentationTopic="Osquery Development"
       title="Security Engineer"
     >
       <p>
-        Sometimes you discover an issue with software on your Mac which should
-        be considered a vulnerability and want to know more about it.
-        Does it affect other software? Does it affect other Macs in my fleet?
-        How serious is this problem? How can I fix it?
+       Out of the box, osquery comes with many tables covering a wide array of information.  When getting started, you might write queries against these tables to reveal specific information about services, files, applications, or similar that can be parsed with a tool like Zentral or Streamalert. However, these indvidual results might not paint the whole picture about the state of your fleet, especially if there are multiple conditions which need to be met and checked.
       </p>
 
       <p>
-        In this case, the issue is a vulnerability which is common to a large
-        number of third party software packages for the Mac. osquery’s stock
-        packs might give us some information, but to truly find all of the
-        cases we must craft a complex query to run locally. There will be JOINs.
-        There will be ORs. There will be substations.
+        By deeply diving into the power of SQL syntax we can make use of multiple tables and queries at the same time to find answers to complex questions, such as identifying software misconfigurations which lead to security vulnerabilties.  Instead of relying solely on basic results and having to piece together data on the backend, we can use osquery to directly find complex state of processes, files, and other system states which are in need of remediation.  The SQL interface for osquery is a unique one, but we will use it to find information which no other tool could give us in a simple way, and we will do it in just one (long) line.
       </p>
     </Speaker>
 
