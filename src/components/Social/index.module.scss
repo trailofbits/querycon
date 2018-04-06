@@ -1,29 +1,39 @@
 @import '../../styles/variables.scss';
 
-.socialDescription {
+.social {
   color: $dark-gray;
   font-size: 20px;
   line-height: 1.6;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   text-align: center;
   width: 560px;
 
   @media (max-width: $mobile-width) {
     font-size: 18px;
     line-height: 1.67;
-    margin-bottom: 20px;
     text-align: justify;
     width: 90%;
   }
-}
 
-.primaryImage {
-  display: block;
-  margin: 50px auto;
-  max-width: 545px;
-  width: 100%;
-  border-radius: 10px;
-  @media (max-width: $mobile-width) {
-    margin: 20px auto;
+  & > h1 {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 30px;
+    @media (max-width: $mobile-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .primaryImage {
+    display: block;
+    margin: 50px auto;
+    max-width: 545px;
+    width: 100%;
+    border-radius: 10px;
+    @media (max-width: $mobile-width) {
+      margin: 20px auto;
+    }
   }
 }

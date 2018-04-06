@@ -1,52 +1,44 @@
 @import '../../styles/variables.scss';
 
-.description {
+.workshop {
   color: $dark-gray;
   font-size: 20px;
   line-height: 1.6;
-  margin: 0 auto 300px;
-  text-align: center;
+  margin: 0 auto;
   width: 560px;
 
   @media (max-width: $mobile-width) {
     font-size: 18px;
     line-height: 1.67;
-    margin-bottom: 200px;
     text-align: justify;
     width: 90%;
   }
-}
 
-
-.workshopDescription {
-  color: $dark-gray;
-  font-size: 20px;
-  line-height: 1.6;
-  margin: 0 auto 30px;
-  width: 560px;
-
-  @media (max-width: $mobile-width) {
-    font-size: 18px;
-    line-height: 1.67;
-    margin-bottom: 20px;
-    text-align: justify;
-    width: 90%;
+  p {
+    margin-bottom: 30px;
+    @media (max-width: $mobile-width) {
+      margin-bottom: 20px;
+    }
   }
-}
 
-.bullets {
-  margin-left: 10px;
-  li {
-    list-style-type: none;
+  & > h1 {
+    text-align: center;
   }
-  li:before {
-      content: '\2022';
-      color: #ff287a;
-      padding-right: 12px
-  }
-}
 
-.contactLink {
-  text-decoration: none;
-  font-weight: bold;
+  .bullets {
+    margin-left: 10px;
+    li {
+      list-style-type: none;
+    }
+    li:before {
+        content: '\2022';
+        color: #ff287a;
+        padding-right: 12px
+    }
+  }
+
+  .contactLink {
+    text-decoration: none;
+    font-weight: bold;
+  }
 }

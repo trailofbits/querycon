@@ -3,9 +3,9 @@ import styles from './index.module.scss';
 import DiningImage from '../../pages/dining.jpg';
 
 const Social = ({ id }) => (
-  <section id={id}>
-    <p className={styles.socialDescription}>
-     <h1>Social Event at Schroeder's</h1>
+  <section id={id} className={styles.social}>
+    <h1>Social Event at Schroeder's</h1>
+    <p>
       <a href="http://www.schroederssf.com/" target="_blank">
         <img src={DiningImage} className={styles.primaryImage} />
       </a>
