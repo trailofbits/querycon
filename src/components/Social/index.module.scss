@@ -2,15 +2,13 @@
 
 .social {
   color: $dark-gray;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   margin: 0 auto;
   text-align: center;
   width: 560px;
 
   @media (max-width: $mobile-width) {
-    font-size: 18px;
-    line-height: 1.67;
     text-align: justify;
     width: 90%;
   }
