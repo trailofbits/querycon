@@ -48,6 +48,11 @@ const questions = [
       'We will feature a Community Day that will be similar to a workshop style session at QueryCon2018. This will occur in the afternoon on the second day.',
   },
   {
+    questionLine1: 'Should I bring a laptop?',
+    answer:
+      'While you will not need a laptop during the talks, we are holding a Community Workshop in the afternoon of the second day of the conference. This time will be used for hands-on activities, learning, networking, and collaborating with folks in the community. Bring your laptop if you want to participate!',
+  },
+  {
     questionLine1: 'How far away is the conference venue from the airport?',
     answer:
       'Approximately 20 miles from the airport, in San Francisco’s Marina/Presidio district.',

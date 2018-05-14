@@ -83,7 +83,7 @@ const Speakers = ({ id }) => (
       name="Lauren Pearl"
       presentationName="Three Super Features That Could Transform Osquery"
       presentationTopic="Osquery Development"
-      title="Security Engineer"
+      title="Head of Strategy and Operations"
     >
       <p>
         Not all features are created equally. Most features improve functionality.
