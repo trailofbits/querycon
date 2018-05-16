@@ -1,0 +1,85 @@
+@import '../../styles/variables.scss';
+
+.dayHeadings {
+  display: flex;
+  margin: 35px auto;
+  width: 900px;
+
+  @media (max-width: $wide-mobile-width) {
+    display: none;
+  }
+}
+
+.dayHeading {
+  color: $midnight-blue;
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+  width: 450px;
+}
+
+.mobileDayLinks {
+  display: none;
+
+  @media (max-width: $wide-mobile-width) {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+
+.mobileDayLink {
+  border: 1px solid $cookie-monster-blue;
+  border-radius: 6px;
+  color: $cookie-monster-blue;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 25px;
+  padding: 14px 52px;
+  text-decoration: none;
+}
+
+.dayHeadingMobile {
+  display: none;
+
+  @media (max-width: $wide-mobile-width) {
+    display: block;
+    font-size: 30px;
+    margin: 20px 0;
+    width: 95%;
+  }
+}
+
+.dayHeadingMobileDetail {
+  font-weight: normal;
+}
+
+.events {
+  display: flex;
+  margin: 0 auto;
+  width: 900px;
+
+  @media (max-width: $wide-mobile-width) {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.divider {
+  background-color: $grape-4;
+  margin: 0 29px;
+  width: 2px;
+
+  @media (max-width: $wide-mobile-width) {
+    display: none;
+  }
+}
+
+.day {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

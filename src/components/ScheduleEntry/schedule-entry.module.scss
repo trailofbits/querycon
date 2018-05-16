@@ -1,0 +1,169 @@
+@import '../../styles/variables.scss';
+
+.entry {
+  margin-bottom: 12px;
+  min-height: 104px;
+  width: 420px;
+
+  @media (max-width: $wide-mobile-width) {
+    margin-bottom: 20px;
+    max-width: 560px;
+    width: 95%;
+  }
+}
+
+.time {
+  border: 1px solid;
+  border-bottom: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: $white;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  height: 40px;
+  justify-content: space-around;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: $wide-mobile-width) {
+    justify-content: space-between;
+  }
+}
+
+.day {
+  display: none;
+
+  @media (max-width: $wide-mobile-width) {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+.entryBody {
+  border: 1px solid;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: none;
+  box-sizing: border-box;
+  padding: 24px 10px 16px;
+}
+
+.detailsToggle {
+  background: transparent;
+  border: none;
+  color: $cookie-monster-blue;
+  font-family: $primary-font;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.details {
+  p {
+    font-size: 16px;
+    margin: 10px auto;
+    width: 95%;
+  }
+
+  li {
+    list-style-position: inside;
+  }
+}
+
+.entry.break {
+  .time {
+    background-color: $grape-24;
+    border-color: $grape-24;
+  }
+
+  .entryBody {
+    border-color: $grape-24;
+  }
+}
+
+.entry.keynote {
+  .time {
+    background-color: $hot-pink;
+    border-color: $hot-pink;
+  }
+
+  .entryBody {
+    border-color: $hot-pink;
+  }
+}
+
+.entry.meal {
+  .time {
+    background-color: $yellow;
+    border-color: $yellow;
+  }
+
+  .entryBody {
+    border-color: $yellow;
+  }
+}
+
+.entry.talk {
+  .time {
+    background-color: $cookie-monster-blue;
+    border-color: $cookie-monster-blue;
+  }
+
+  .entryBody {
+    border-color: $cookie-monster-blue;
+  }
+}
+
+.entry.workshop {
+  .time {
+    background-color: $midnight-blue;
+    border-color: $midnight-blue;
+  }
+
+  .entryBody {
+    border-color: $midnight-blue;
+  }
+}
+
+.category {
+  color: $grape;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 9px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title {
+  color: $midnight-blue;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.speaker {
+  color: $cookie-monster-blue;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.details {
+  color: $grape;
+  font-size: 14px;
+  text-align: center;
+}

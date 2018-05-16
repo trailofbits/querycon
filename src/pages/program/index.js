@@ -5,15 +5,15 @@ import MediaQuery from 'react-responsive'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import MobileHeader from '../../components/MobileHeader'
-import Tab from '../../components/Tab'
-import Keynotes from '../../components/Keynotes'
-import Speakers from '../../components/Speakers'
-import Workshop from '../../components/Workshop'
+import Schedule from '../../components/Schedule'
 import Social from '../../components/Social'
+import Speakers from '../../components/Speakers'
+import Tab from '../../components/Tab'
+import Workshop from '../../components/Workshop'
 import styles from './program.module.scss'
 import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from '../../util/constants'
 
-const KEYNOTES = 'keynotes'
+const SCHEDULE = 'schedule'
 const SPEAKERS = 'speakers'
 const WORKSHOP = 'workshop'
 const SOCIAL = 'social'
@@ -29,7 +29,7 @@ class ProgramPage extends Component {
     if (hashLocation === SPEAKERS || hashLocation === WORKSHOP || hashLocation === SOCIAL) {
       return hashLocation
     } else {
-      return KEYNOTES
+      return SCHEDULE
     }
   }
 
@@ -60,10 +60,10 @@ class ProgramPage extends Component {
 
         <div className={styles.tabs}>
           <Tab
-            active={activeTab === KEYNOTES}
-            onClick={this.showContent(KEYNOTES)}
+            active={activeTab === SCHEDULE}
+            onClick={this.showContent(SCHEDULE)}
             size="large"
-            text="Keynote"
+            text="Schedule"
           />
 
           <Tab
@@ -106,7 +106,7 @@ const ProgramSections = ({ activeTab }) => {
   } else if (activeTab === SOCIAL) {
     return <Social id={SOCIAL} />
   } else {
-    return <Keynotes id={KEYNOTES} />
+    return <Schedule id={SCHEDULE} />
   }
 }
 
