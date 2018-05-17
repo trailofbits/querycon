@@ -231,7 +231,7 @@ const IndexPage = () => (
       />
 
       <SpeakerTile
-        company="Stackrox, Netflix"
+        company="JASK"
         image={imgHeadshotRobFry}
         image2x={imgHeadshotRobFry2x}
         image3x={imgHeadshotRobFry3x}
