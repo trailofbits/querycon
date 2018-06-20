@@ -331,7 +331,7 @@ const IndexPage = () => (
 
     <div className={styles.genericBanner}>
       <Link to="/program#speakers">
-        See The Full Program <img src={rightArrow} />
+        See The Full Program <img alt="" src={rightArrow} />
       </Link>
     </div>
 
