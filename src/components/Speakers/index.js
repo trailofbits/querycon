@@ -91,15 +91,17 @@ const Speakers = ({ id }) => (
         there are some common misconceptions surrounding the audit framework and
         digging through documentation on it can be quite perplexing. During this
         talk {`we'll`} cover:
-        <ul className={styles.bullets}>
-          <li>A basic overview of the audit framework</li>
-          <li>Building a basic osquery auditing configuration</li>
-          <li>
-            Fine-tune auditing configurations to minimize performance impact
-            against your systems
-          </li>
-        </ul>
       </p>
+
+      <ul className={styles.bullets}>
+        <li>A basic overview of the audit framework</li>
+        <li>Building a basic osquery auditing configuration</li>
+        <li>
+          Fine-tune auditing configurations to minimize performance impact
+          against your systems
+        </li>
+      </ul>
+
       <p>
         Palantir currently maintains an osquery deployment consisting of
         thousands of hosts with auditing enabled and collects upwards of 1

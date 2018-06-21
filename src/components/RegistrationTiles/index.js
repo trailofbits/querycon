@@ -3,8 +3,6 @@ import classNames from 'classnames'
 import MediaQuery from 'react-responsive'
 import moment from 'moment'
 
-import imgEarlyBird from './early-bird.svg'
-import imgNightOwl from './night-owl.svg'
 import RegisterButton from '../buttons/RegisterButton'
 import styles from './registration-tiles.module.scss'
 import { MOBILE_WIDTH } from '../../util/constants'
@@ -47,7 +45,7 @@ class RegistrationTiles extends Component {
 
           </div>
 
-          <MediaQuery minWidth={MOBILE_WIDTH + 1 }>
+          <MediaQuery minWidth={MOBILE_WIDTH + 1}>
             <div className={styles.registrationTile}>
               <div className={fullPriceTileClasses}>
                 <h3 className={styles.title}>Full Price</h3>

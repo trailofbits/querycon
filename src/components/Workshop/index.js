@@ -22,16 +22,18 @@ const Workshop = ({ id }) => (
       learn.
     </p>
 
+    <p>Suggested Topics:</p>
+
+    <ul className={styles.bullets}>
+      <li>Logging Pipelines: Using osquery with ELK</li>
+      <li>Getting started with TLS</li>
+      <li>SQL: Writing your queries to return the right results</li>
+      <li>SQL: Writing performant pipelines</li>
+      <li>Contributing to osquery: Your first table</li>
+      <li>Writing osquery plugins</li>
+    </ul>
+
     <p>
-      Suggested Topics:
-      <ul className={styles.bullets}>
-        <li>Logging Pipelines: Using osquery with ELK</li>
-        <li>Getting started with TLS</li>
-        <li>SQL: Writing your queries to return the right results</li>
-        <li>SQL: Writing performant pipelines</li>
-        <li>Contributing to osquery: Your first table</li>
-        <li>Writing osquery plugins</li>
-      </ul>
       Have a topic you’d be interested in? Want to facilitate one of the groups?{' '}
       <a className={styles.contactLink} href="mailto:info@querycon.io">
         Drop us a line!

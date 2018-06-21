@@ -8,7 +8,7 @@ import imgMichaelLynn from './michael-lynn@2x.jpg'
 import imgMikeMyers from './mike-myers@2x.jpg'
 import imgMilanShah from './milan-shah@2x.jpg'
 import imgMitchellGrenier from './mitchell-grenier@2x.jpg'
-import imgSamuelKeeley from './samuel-keeley@2x.jpg'
+import _imgSamuelKeeley from './samuel-keeley@2x.jpg'
 import imgScottLundgren from './scott-lundgren@2x.jpg'
 import imgTeddyReed from './teddy-reed@2x.jpg'
 import styles from './videos.module.scss'
@@ -180,23 +180,6 @@ class Videos extends Component {
             Ben Hughes
             <span className={styles.org}>{` `}(Stripe)</span>
             <span className={styles.title}>Osquery, He Knows Me</span>
-          </h4>
-        </a>
-
-        <a
-          className={styles.preConfLink}
-          href="https://www.youtube.com/watch?v=C0tUa-IXb8w"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img alt="" className={styles.preConfLinkImg} src={imgSamuelKeeley} />
-
-          <h4 className={styles.preConfLinkTitle}>
-            Samuel Keeley
-            <span className={styles.org}>{` `}(AirBnB)</span>
-            <span className={styles.title}>
-              The Power of SQL: Complex queries at Your Fingertips
-            </span>
           </h4>
         </a>
       </div>

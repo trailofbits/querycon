@@ -17,7 +17,10 @@ const Question = props => {
         </div>
       }
 
-      <div className={styles.answer} dangerouslySetInnerHTML={{__html: answer}}></div>
+      <div
+        className={styles.answer}
+        dangerouslySetInnerHTML={{__html: answer}} // eslint-disable-line react/no-danger
+      />
     </div>
   )
 }

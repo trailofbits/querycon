@@ -21,8 +21,8 @@ const Keynotes = ({ id }) => (
         dramatically. Not only have the number of contributions to the agent
         dramatically bumped, so has the number of platforms we support and
         richness of discussions in our community around best leveraging osquery.
-        We'll explore how our community has grown, problems we faced/still face,
-        and the directions we're hoping to push the community forward.
+        {`We'll`} explore how our community has grown, problems we faced/still face,
+        and the directions {`we're`} hoping to push the community forward.
       </p>
     </Keynote>
   </section>

@@ -9,7 +9,7 @@ const FeatureTile = ({ children, title, url }) => (
   <div className={styles.featureTile}>
     <h3 className={styles.title}>{title}</h3>
     <p>{children}</p>
-    { url && <Link to={url} className={styles.learnMoreLink}>Learn More <img src={rightArrow}/></Link>}
+    {url && <Link to={url} className={styles.learnMoreLink}>Learn More <img alt="" src={rightArrow} /></Link>}
   </div>
 )
 
