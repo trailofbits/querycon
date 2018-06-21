@@ -114,7 +114,10 @@ const IndexPage = () => (
       <h2 className={styles.supplementaryHeader}>QueryCon18</h2>
     </MediaQuery>
 
-    <h2 className={cx(styles.sectionHeader, styles.sectionHeaderExtraRoom)}>
+    <h2
+      className={cx(styles.sectionHeader, styles.sectionHeaderExtraRoom)}
+      id="videos"
+    >
       QueryCon 2018 Videos
     </h2>
 
