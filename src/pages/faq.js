@@ -120,10 +120,10 @@ class FAQ extends Component {
         </div>
 
         <div className={styles.questions}>
-          {questions.map((question, index) => (
+          {questions.map((question) => (
             <Question
               answer={question.answer}
-              key={index}
+              key={question.questionLine1.replace(/\s/g, '')}
               questionLine1={question.questionLine1}
               questionLine2={question.questionLine2}
             />
@@ -134,6 +134,7 @@ class FAQ extends Component {
 
         <div className={styles.contactUsContainer}>
           <img
+            alt=""
             className={styles.bottomImage}
             src={require('./paper-airplane.svg')}
           />

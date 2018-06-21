@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import MediaQuery from 'react-responsive'
 
 import imgChrisLongCode from './chris-long-code.png'
 import imgMikeSpeaking from './mike-speaking.png'

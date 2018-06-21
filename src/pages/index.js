@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 import Link from 'gatsby-link'
 
-import Button from '../components/buttons/Button'
 import FeatureTile from '../components/FeatureTile'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -39,24 +38,24 @@ import imgHeadshotTeddyReed from './headshot-ted-reed.jpg'
 import imgHeadshotTeddyReed2x from './headshot-ted-reed-2x.jpg'
 import imgHeadshotTeddyReed3x from './headshot-ted-reed-3x.jpg'
 import imgHeroLogo from './querycon-large.svg'
-import imgMegaphone from './megaphone.svg'
 import imgMikeStage1 from './mike-stage-1.png'
 import imgOrbitz from './orbitz.svg'
 import imgPalaceOfFineArtsPoster from './palace-fine-arts.jpg'
 import imgPaperAirplane from './paper-airplane.svg'
 import imgTwitterBird from './twitter-bird.svg'
 import imgVenue from './palace-fine-arts.svg'
-import rightArrow from './right-facing-arrow.svg'
 import MainSpeaker from '../components/MainSpeaker'
 import MediaLinks from '../components/MediaLinks'
 import MobileHeader from '../components/MobileHeader'
 import ProminentCta from '../components/ProminentCta'
-import RegisterButton from '../components/buttons/RegisterButton'
 import RegistrationTiles from '../components/RegistrationTiles'
+import rightArrow from './right-facing-arrow.svg'
+import rightArrowPink from '../components/common/arrow-right-pink.svg'
 import SpeakerTile from '../components/SpeakerTile'
 import styles from './index.module.scss'
 import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
 import videoPalaceOfFineArtsWebM from './palace-fine-arts.webm'
+import Videos from '../components/Videos'
 import { MOBILE_WIDTH } from '../util/constants'
 
 const cx = classNames.bind(styles)
@@ -106,16 +105,75 @@ const IndexPage = () => (
     <div className={styles.ctaBar}>
       <MediaQuery minWidth={MOBILE_WIDTH + 1}>
         <p className={styles.ctaBarText}>
-          Interested in attending? Space is limited, reserve your spot!
+          QueryCon 2018 was an awesome success! We {`can't`} wait for next year.
         </p>
       </MediaQuery>
-
-      <RegisterButton className={styles.ctaBarRegisterButton} />
     </div>
 
     <MediaQuery maxWidth={MOBILE_WIDTH}>
       <h2 className={styles.supplementaryHeader}>QueryCon18</h2>
     </MediaQuery>
+
+    <h2 className={cx(styles.sectionHeader, styles.sectionHeaderExtraRoom)}>
+      QueryCon 2018 Videos
+    </h2>
+
+    <div className={styles.sectionSubheader}>
+      Did you miss us this year? Do you want to watch the talks again? {`We've`}{' '}
+      got you covered!
+    </div>
+
+    <div className={styles.preConfMain}>
+      <iframe
+        allowFullScreen
+        className={styles.preConfMainVideo}
+        frameBorder="0"
+        height="315"
+        src="https://www.youtube.com/embed/RVNEUqgwv5A?rel=0"
+        title="Nick Anderson (Facebook) - Evolving Our Open Source Community"
+      />
+
+      <div className={styles.preConfMainText}>
+        <h3 className={styles.preConfMainTitle}>
+          Nick Anderson (Facebook) - Evolving Our Open Source Community
+        </h3>
+
+        <p className={styles.preConfMainDescription}>
+          An exploration of how the osquery community has grown, problems we
+          faced/still face, and the directions {`we're`} hoping to push the
+          community forward. Over the past two years the osquery community has
+          increased dramatically. Not only have the number of contributions to
+          the agent dramatically bumped, so has the number of platforms we
+          support and richness of discussions in our community around best
+          leveraging osquery. Nick takes us on a tour of where osquery has been
+          and where it is headed.
+        </p>
+      </div>
+    </div>
+
+    <MediaQuery maxWidth={MOBILE_WIDTH}>
+      <div className={cx(styles.clearBanner, styles.moreResourcesBanner)}>
+        More Videos:
+      </div>
+    </MediaQuery>
+
+    <Videos className={styles.videos} />
+
+    <div className={styles.sectionSubheader}>
+      More videos coming soon!
+    </div>
+
+    <a
+      className={styles.learnMoreLink}
+      href="https://www.youtube.com/playlist?list=PLlSdCcsTOu5STvaoPlr-PJE-zbYmlAGrX"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Check the YouTube Playlist
+      {` `}<img alt="" src={rightArrowPink} />
+    </a>
+
+    <div className={styles.sectionBreak} />
 
     <p className={styles.leader}>
       Join us for a 2-day <strong>Osquery</strong> conference at the{' '}
@@ -188,9 +246,10 @@ const IndexPage = () => (
       </FeatureTile>
 
       <FeatureTile title="Entry to Osquery Workshop" url="/program#workshop">
-        Inspired by the talks? The community workshop lets you put your ideas into action in a communal setting
-        where you can get hands-on experience guided by experts, collaborate on
-        issues, and network with community members.
+        Inspired by the talks? The community workshop lets you put your ideas
+        into action in a communal setting where you can get hands-on experience
+        guided by experts, collaborate on issues, and network with community
+        members.
       </FeatureTile>
     </div>
 
@@ -285,9 +344,15 @@ const IndexPage = () => (
       />
     </div>
 
-    <div className={styles.genericBanner}><Link to="/program#speakers">See The Full Program <img src={rightArrow} /></Link></div>
+    <div className={styles.genericBanner}>
+      <Link to="/program#speakers">
+        See The Full Program <img alt="" src={rightArrow} />
+      </Link>
+    </div>
 
-    <h2 id="location" className={styles.sectionHeader}>The Venue</h2>
+    <h2 id="location" className={styles.sectionHeader}>
+      The Venue
+    </h2>
 
     <div className={styles.sectionSubheader}>
       Palace of the Fine Arts Innovation Hangar - San Francisco, CA
