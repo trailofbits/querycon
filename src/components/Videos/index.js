@@ -3,7 +3,6 @@ import classNames from 'classnames'
 
 import imgBenHughes from './ben-hughes@2x.jpg'
 import imgChrisLong from './chris-long@2x.jpg'
-import imgHenryStamerjohan from './henry-stamerjohan@2x.jpg'
 import imgLaurenPearl from './lauren-pearl@2x.jpg'
 import imgMichaelLynn from './michael-lynn@2x.jpg'
 import imgMikeMyers from './mike-myers@2x.jpg'
@@ -134,23 +133,6 @@ class Videos extends Component {
             <span className={styles.org}>{` `}(Trail of Bits)</span>
             <span className={styles.title}>
               Three Super Features That Could Transform Osquery
-            </span>
-          </h4>
-        </a>
-
-        <a
-          className={styles.preConfLink}
-          href="https://www.youtube.com/watch?v=tlvTl6zATe8"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img alt="" className={styles.preConfLinkImg} src={imgHenryStamerjohan} />
-
-          <h4 className={styles.preConfLinkTitle}>
-            Henry Stamerjohan
-            <span className={styles.org}>{` `}(Zentral)</span>
-            <span className={styles.title}>
-              Osquery {`&`} Event Stream Processing Into ElasticStack
             </span>
           </h4>
         </a>
