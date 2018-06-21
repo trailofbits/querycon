@@ -129,7 +129,7 @@ const IndexPage = () => (
         className={styles.preConfMainVideo}
         frameBorder="0"
         height="315"
-        src="https://www.youtube.com/watch?v=RVNEUqgwv5A"
+        src="https://www.youtube.com/embed/RVNEUqgwv5A?rel=0"
         title="Nick Anderson (Facebook) - Evolving Our Open Source Community"
       />
 
