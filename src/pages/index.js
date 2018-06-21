@@ -44,12 +44,13 @@ import imgPalaceOfFineArtsPoster from './palace-fine-arts.jpg'
 import imgPaperAirplane from './paper-airplane.svg'
 import imgTwitterBird from './twitter-bird.svg'
 import imgVenue from './palace-fine-arts.svg'
-import rightArrow from './right-facing-arrow.svg'
 import MainSpeaker from '../components/MainSpeaker'
 import MediaLinks from '../components/MediaLinks'
 import MobileHeader from '../components/MobileHeader'
 import ProminentCta from '../components/ProminentCta'
 import RegistrationTiles from '../components/RegistrationTiles'
+import rightArrow from './right-facing-arrow.svg'
+import rightArrowPink from '../components/common/arrow-right-pink.svg'
 import SpeakerTile from '../components/SpeakerTile'
 import styles from './index.module.scss'
 import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
@@ -156,7 +157,21 @@ const IndexPage = () => (
       </div>
     </MediaQuery>
 
-    <Videos />
+    <Videos className={styles.videos} />
+
+    <div className={styles.sectionSubheader}>
+      More videos coming soon!
+    </div>
+
+    <a
+      className={styles.learnMoreLink}
+      href="https://www.youtube.com/playlist?list=PLlSdCcsTOu5STvaoPlr-PJE-zbYmlAGrX"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Check the YouTube Playlist
+      {` `}<img alt="" src={rightArrowPink} />
+    </a>
 
     <div className={styles.sectionBreak} />
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classNames from 'classnames'
 
 import imgBenHughes from './ben-hughes@2x.jpg'
 import imgChrisLong from './chris-long@2x.jpg'
@@ -16,9 +17,12 @@ import { MOBILE_WIDTH } from '../../util/constants'
 
 class Videos extends Component {
   render() {
+    const { className } = this.props
+    const cx = classNames.bind(styles)
+
     return (
       <div
-        className={styles.preConfLinksCarousel}
+        className={cx(styles.preConfLinksCarousel, className)}
         ref={el => (this.carousel = el)}
       >
         <a
