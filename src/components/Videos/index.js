@@ -9,8 +9,11 @@ import imgMikeMyers from './mike-myers@2x.jpg'
 import imgMilanShah from './milan-shah@2x.jpg'
 import imgMitchellGrenier from './mitchell-grenier@2x.jpg'
 import _imgSamuelKeeley from './samuel-keeley@2x.jpg'
+import imgHenryStamerjohan from './henry-stamerjohann@2x.jpg'
 import imgScottLundgren from './scott-lundgren@2x.jpg'
 import imgTeddyReed from './teddy-reed@2x.jpg'
+import imgMikeArpaia from './mike-arpaia@2x.jpg'
+import imgRobFry from './rob-fry@2x.jpg'
 import styles from './videos.module.scss'
 import { MOBILE_WIDTH } from '../../util/constants'
 
@@ -45,7 +48,11 @@ class Videos extends Component {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img alt="" className={styles.preConfLinkImg} src={imgScottLundgren} />
+          <img
+            alt=""
+            className={styles.preConfLinkImg}
+            src={imgScottLundgren}
+          />
 
           <h4 className={styles.preConfLinkTitle}>
             Scott Lundgren
@@ -62,7 +69,11 @@ class Videos extends Component {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img alt="" className={styles.preConfLinkImg} src={imgMitchellGrenier} />
+          <img
+            alt=""
+            className={styles.preConfLinkImg}
+            src={imgMitchellGrenier}
+          />
 
           <h4 className={styles.preConfLinkTitle}>
             Mitchell Grenier
@@ -122,7 +133,7 @@ class Videos extends Component {
 
         <a
           className={styles.preConfLink}
-          href="https://www.youtube.com/watch?v=BV6stTyU8gw"
+          href="https://youtu.be/k7AKxFIujjY"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -166,6 +177,58 @@ class Videos extends Component {
             Ben Hughes
             <span className={styles.org}>{` `}(Stripe)</span>
             <span className={styles.title}>Osquery, He Knows Me</span>
+          </h4>
+        </a>
+        <a
+          className={styles.preConfLink}
+          href="https://youtu.be/PfA3a8QEX9I"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img alt="" className={styles.preConfLinkImg} src={imgMikeArpaia} />
+
+          <h4 className={styles.preConfLinkTitle}>
+            Mike Arpaia
+            <span className={styles.org}>{` `}(Kolide)</span>
+            <span className={styles.title}>
+              fleetctl - Instrumenting Dynamic Environments
+            </span>
+          </h4>
+        </a>
+        <a
+          className={styles.preConfLink}
+          href="https://youtu.be/TaoNgBEh_kk"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img alt="" className={styles.preConfLinkImg} src={imgRobFry} />
+
+          <h4 className={styles.preConfLinkTitle}>
+            Rob Fry
+            <span className={styles.org}>{` `}(JASK)</span>
+            <span className={styles.title}>
+              SOC, aka Throw More People at the Problem
+            </span>
+          </h4>
+        </a>
+        <a
+          className={styles.preConfLink}
+          href="https://youtu.be/2pn0B_BC3hc"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt=""
+            className={styles.preConfLinkImg}
+            src={imgHenryStamerjohan}
+          />
+
+          <h4 className={styles.preConfLinkTitle}>
+            Henry Stamerjohann
+            <span className={styles.org}>{` `}(Zentral)</span>
+            <span className={styles.title}>
+              Osquery &amp; Event Stream Processing Into ElasticStack
+            </span>
           </h4>
         </a>
       </div>
