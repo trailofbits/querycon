@@ -7,6 +7,7 @@ import RegisterButton from '../buttons/RegisterButton'
 import styles from './registration-tiles.module.scss'
 import { MOBILE_WIDTH } from '../../util/constants'
 
+// TODO: Change me when registrations are ready
 class RegistrationTiles extends Component {
   state = {
     earlyBirdAvailable: moment().isBefore('2018-04-01')

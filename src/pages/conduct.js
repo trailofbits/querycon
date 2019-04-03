@@ -11,7 +11,7 @@ import styles from './conduct.module.scss'
 const CodeOfConduct = () => (
   <div>
     <Helmet>
-      <title>QueryCon18 - Code of Conduct</title>
+      <title>QueryCon19 - Code of Conduct</title>
       <meta name="description" content="Code of Conduct" />
     </Helmet>
     <div>
@@ -23,6 +23,7 @@ const CodeOfConduct = () => (
       </div>
     </div>
 
+    {/* TODO: Update Conduct when ready}
     <div className={styles.heroSection}>
       <div className={styles.header}>Code of Conduct</div>
       <img
@@ -42,7 +43,14 @@ const CodeOfConduct = () => (
         </Button>
       </div>
     </div>
+    {*/}
 
+    {/* TODO: delete me eventually! */}
+    <div className={styles.heroSection}>
+      <div className={styles.header}>Coming Soon!</div>
+    </div>
+
+    {/* TODO: Update Conduct when ready}
     <div className={styles.policies}>
       <div className={styles.containerTitle}>QueryCon Code of Conduct</div>
       <div className={styles.policyContent}>
@@ -148,6 +156,7 @@ const CodeOfConduct = () => (
         Contact Us
       </Button>
     </div>
+    {*/}
 
     <Footer />
   </div>

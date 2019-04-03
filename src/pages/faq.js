@@ -10,7 +10,8 @@ import Question from '../components/Question'
 import styles from './faq.module.scss'
 import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from '../util/constants'
 
-const questions = [
+/* TODO: Update FAQ
+  const questions = [
   {
     questionLine1: 'When does the conference start on May 31st?',
     questionLine2: 'When does it end on June 1st?',
@@ -81,6 +82,7 @@ const questions = [
     answer: 'No. We do not offer partial or full refunds for tickets.',
   },
 ]
+*/
 
 class FAQ extends Component {
   componentDidMount() {
@@ -91,7 +93,7 @@ class FAQ extends Component {
     return (
       <div ref={node => (this.node = node)}>
         <Helmet>
-          <title>QueryCon18 - FAQs</title>
+          <title>QueryCon19 - FAQs</title>
           <meta name="description" content="Frequently Asked Questions" />
         </Helmet>
         <MediaQuery minWidth={DESKTOP_MIN_WIDTH}>
@@ -102,6 +104,7 @@ class FAQ extends Component {
           <MobileHeader />
         </MediaQuery>
 
+        {/* TODO: Update when FAQ are ready}
         <div className={styles.heroSection}>
           <div className={styles.header}>Frequently Asked Questions</div>
           <img alt="" className={styles.heroImage} src={require('./faq-image.svg')} />
@@ -118,7 +121,14 @@ class FAQ extends Component {
             </Button>
           </div>
         </div>
+        {*/}
 
+        {/* TODO: delete me eventually */}
+        <div className={styles.heroSection}>
+          <div className={styles.header}>Coming Soon!</div>
+        </div>
+
+        {/* TODO: Update when FAQ are ready}
         <div className={styles.questions}>
           {questions.map((question) => (
             <Question
@@ -148,6 +158,7 @@ class FAQ extends Component {
             Contact Us
           </Button>
         </div>
+        {*/}
 
         <Footer />
       </div>

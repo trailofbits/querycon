@@ -7,10 +7,11 @@ import { MOBILE_WIDTH } from '../../util/constants'
 
 const Meta = () => (
   <div className={styles.meta}>
-    <a className={styles.metaText} href="https://kolide.com">
-      &copy; Kolide 2018
+    <a className={styles.metaText} href="https://www.trailofbits.com">
+      &copy; Trail of Bits 2019
     </a>
 
+    {/* TODO: Change with other copyrights if necessary}
     <div className={styles.metaText}>
       Drone footage used with permission from{` `}
       <a
@@ -21,6 +22,7 @@ const Meta = () => (
         Kendal Omdahl
       </a>
     </div>
+    {*/}
   </div>
 )
 
@@ -31,21 +33,27 @@ const Footer = () => (
     </MediaQuery>
 
     <MediaQuery maxWidth={MOBILE_WIDTH}>
-      <div className={styles.footerBranding}>QueryCon18</div>
+      <div className={styles.footerBranding}>QueryCon19</div>
     </MediaQuery>
 
     <section className={styles.links}>
       <ul>
         <li className={styles.li}>
+          {/* TODO: Update when registration is ready}
           <a
             className={styles.registerLink}
             href="https://www.eventbrite.com/e/querycon-tickets-42317323253"
           >
             Register Now
           </a>
+          {*/}
+
+          {/* TODO: delete me eventually */}
+          <div className={styles.registerLink}> Coming Soon!</div>
         </li>
       </ul>
     </section>
+
 
     <section className={styles.links}>
       <ul>

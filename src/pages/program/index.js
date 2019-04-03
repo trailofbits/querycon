@@ -20,7 +20,9 @@ const SOCIAL = 'social'
 
 class ProgramPage extends Component {
   componentWillMount() {
+    /* TODO: Uncomment when program is ready
     this.setState({ activeTab: this.activeTab })
+    */
   }
 
   get activeTab() {
@@ -39,12 +41,14 @@ class ProgramPage extends Component {
   }
 
   render() {
+    {/* TODO: Uncomment when program is ready}
     const { activeTab } = this.state
+    {*/}
 
     return (
       <div className={styles.content}>
         <Helmet>
-          <title>QueryCon18 - Program</title>
+          <title>QueryCon19 - Program</title>
           <meta name="description" content="Program" />
         </Helmet>
 
@@ -56,8 +60,14 @@ class ProgramPage extends Component {
           <MobileHeader />
         </MediaQuery>
 
+        {/* TODO: Uncomment when program is ready}
         <h2 className={styles.h2}>Program</h2>
+        {*/}
 
+        {/* TODO: Delete me eventually */}
+        <h2 className={styles.h2}>Coming Soon!</h2>
+
+        {/* TODO: Update when program is ready}
         <div className={styles.tabs}>
           <Tab
             active={activeTab === SCHEDULE}
@@ -91,6 +101,7 @@ class ProgramPage extends Component {
         <div className={styles.sectionBreak} />
 
         <ProgramSections activeTab={activeTab} />
+        {*/}
 
         <Footer />
       </div>

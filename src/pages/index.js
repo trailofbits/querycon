@@ -10,33 +10,10 @@ import Header from '../components/Header'
 import imgAirbnb from './airbnb.svg'
 import imgExpedia from './expedia.svg'
 import imgFAQ from './faq.svg'
+/* TODO: To substitute with new speakers
 import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
 import imgHeadshotBenHughes2x from './headshot-ben-hughes-2x.jpg'
-import imgHeadshotBenHughes3x from './headshot-ben-hughes-3x.jpg'
-import imgHeadshotChrisLong from './headshot-chris-long.jpg'
-import imgHeadshotChrisLong2x from './headshot-chris-long-2x.jpg'
-import imgHeadshotChrisLong3x from './headshot-chris-long-3x.jpg'
-import imgHeadshotLaurenPearl from './headshot-lauren-pearl.jpg'
-import imgHeadshotLaurenPearl2x from './headshot-lauren-pearl-2x.jpg'
-import imgHeadshotLaurenPearl3x from './headshot-lauren-pearl-3x.jpg'
-import imgHeadshotMikeArpaia from './headshot-mike-arpaia.jpg'
-import imgHeadshotMikeArpaia2x from './headshot-mike-arpaia-2x.jpg'
-import imgHeadshotMikeArpaia3x from './headshot-mike-arpaia-3x.jpg'
-import imgHeadshotMikeMyers from './headshot-mike-myers.jpg'
-import imgHeadshotMikeMyers2x from './headshot-mike-myers-2x.jpg'
-import imgHeadshotMikeMyers3x from './headshot-mike-myers-3x.jpg'
-import imgHeadshotMitchellGrenier from './headshot-mitchell-grenier.jpg'
-import imgHeadshotMitchellGrenier2x from './headshot-mitchell-grenier-2x.jpg'
-import imgHeadshotMitchellGrenier3x from './headshot-mitchell-grenier-3x.jpg'
-import imgHeadshotNickAnderson from './headshot-nick-anderson.png'
-import imgHeadshotNickAnderson2x from './headshot-nick-anderson-2x.png'
-import imgHeadshotNickAnderson3x from './headshot-nick-anderson-3x.png'
-import imgHeadshotRobFry from './headshot-rob-fry.jpg'
-import imgHeadshotRobFry2x from './headshot-rob-fry-2x.jpg'
-import imgHeadshotRobFry3x from './headshot-rob-fry-3x.jpg'
-import imgHeadshotTeddyReed from './headshot-ted-reed.jpg'
-import imgHeadshotTeddyReed2x from './headshot-ted-reed-2x.jpg'
-import imgHeadshotTeddyReed3x from './headshot-ted-reed-3x.jpg'
+import imgHeadshotBenHughes3x from './headshot-ben-hughes-3x.jpg'*/
 import imgHeroLogo from './querycon-large.svg'
 import imgMikeStage1 from './mike-stage-1.png'
 import imgOrbitz from './orbitz.svg'
@@ -53,8 +30,9 @@ import rightArrow from './right-facing-arrow.svg'
 import rightArrowPink from '../components/common/arrow-right-pink.svg'
 import SpeakerTile from '../components/SpeakerTile'
 import styles from './index.module.scss'
+/* TODO: Substitute with another video of NY?
 import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
-import videoPalaceOfFineArtsWebM from './palace-fine-arts.webm'
+import videoPalaceOfFineArtsWebM from './palace-fine-arts.webm'*/
 import Videos from '../components/Videos'
 import { MOBILE_WIDTH } from '../util/constants'
 
@@ -63,11 +41,12 @@ const cx = classNames.bind(styles)
 const IndexPage = () => (
   <div className={styles.pageWrapper}>
     <Helmet>
-      <title>QueryCon18</title>
+      <title>QueryCon19</title>
       <meta name="description" content="An osquery conference" />
     </Helmet>
 
     <section className={styles.heroSection}>
+      {/* TODO: Substitute with another video of NY? }
       <MediaQuery minWidth={MOBILE_WIDTH + 1}>
         <div className={styles.videoBackground}>
           <video
@@ -83,6 +62,7 @@ const IndexPage = () => (
           </video>
         </div>
       </MediaQuery>
+      {*/}
 
       <div className={styles.heroContent}>
         <MediaQuery minWidth={MOBILE_WIDTH + 1}>
@@ -93,32 +73,35 @@ const IndexPage = () => (
           <MobileHeader />
         </MediaQuery>
 
-        <h1 className={styles.header}>QueryCon 2018</h1>
+        <h1 className={styles.header}>QueryCon 2019</h1>
         <div className={styles.heroLogo}>
           <img alt="" src={imgHeroLogo} />
         </div>
-        <h2 className={styles.subHeader}>An osquery conference by Kolide</h2>
-        <h3 className={styles.subSubHeader}>San Francisco | May 31 - Jun 1</h3>
+        <h2 className={styles.subHeader}>An osquery conference by Trail of Bits</h2>
+        <h3 className={styles.subSubHeader}>New York City | Jun 20 - Jun 21</h3>
       </div>
     </section>
 
+    {/* TODO: Show this after the event}
     <div className={styles.ctaBar}>
       <MediaQuery minWidth={MOBILE_WIDTH + 1}>
         <p className={styles.ctaBarText}>
-          QueryCon 2018 was an awesome success! We {`can't`} wait for next year.
+          QueryCon 2019 was an awesome success! We {`can't`} wait for next year.
         </p>
       </MediaQuery>
     </div>
+    {*/}
 
     <MediaQuery maxWidth={MOBILE_WIDTH}>
-      <h2 className={styles.supplementaryHeader}>QueryCon18</h2>
+      <h2 className={styles.supplementaryHeader}>QueryCon19</h2>
     </MediaQuery>
 
+    {/* TODO: Show this after the event}
     <h2
       className={cx(styles.sectionHeader, styles.sectionHeaderExtraRoom)}
       id="videos"
     >
-      QueryCon 2018 Videos
+      QueryCon 2019 Videos
     </h2>
 
     <div className={styles.sectionSubheader}>
@@ -175,19 +158,24 @@ const IndexPage = () => (
       Check the YouTube Playlist
       {` `}<img alt="" src={rightArrowPink} />
     </a>
+    {*/}
 
     <div className={styles.sectionBreak} />
 
     <p className={styles.leader}>
-      Join us for a 2-day <strong>Osquery</strong> conference at the{' '}
-      <strong>Palace of Fine Arts Innovation Hangar</strong> focused on bringing
+      Join us for a 2-day <strong>Osquery</strong> conference at{' '}
+      <strong>Convene at 32 Old Slip, New York, NY 10005</strong> focused on bringing
       security, devops, macadmins, and other experts in the Osquery community
-      together. With talks from industry juggernauts and the{' '}
-      <strong>creators of Osquery</strong>, discussion will focus on emergent
-      topics that affect the landscape {`&`} development of Osquery.
+      together.
+      QueryCon is now in its second year, with new hosts Trail of Bits
+      and a new location in New York City.<br />
+      Following last year’s format, there will be a single speaking track,
+      and a community workshop.
     </p>
 
+    {/* TODO: Substitute with another image, text too}
     <div className={styles.leaderSub}>
+
       <MediaQuery maxWidth={MOBILE_WIDTH}>
         <div className={styles.leaderSub2}>
           <img
@@ -218,14 +206,20 @@ const IndexPage = () => (
         </div>
       </MediaQuery>
     </div>
+    {*/}
 
+    {/* TODO: substitute with Trail of Bits banner}
     <div className={styles.kolideBanner}>
       <span className={styles.kolideBannerText}>
-        QueryCon18 brought to you by Kolide
+        QueryCon19 brought to you by Trail of Bits
       </span>
     </div>
+    {*/}
 
-    <h2 className={styles.reserve}>Reserve your seat for QueryCon18 now!</h2>
+    <h2 className={styles.reserve}>Reserve your seat for QueryCon19 now!</h2>
+    {/* TODO: delete me eventually */}
+    <div className={styles.reserveSub}>Coming Soon!</div>
+    {/* TODO: Enter informations about registering and buying tickets}
     <div className={styles.reserveSub}>Register soon! Seating is limited!</div>
 
     <RegistrationTiles />
@@ -255,15 +249,24 @@ const IndexPage = () => (
         members.
       </FeatureTile>
     </div>
+    {*/}
 
     <div className={styles.sectionBreak} id="speakers" />
 
     <h2 className={styles.sectionHeader}>Featured Speakers</h2>
 
+    {/* TODO: replace with another punchline? }
     <div className={styles.sectionSubheader}>
       We are bringing the brightest and best of the Osquery community together.
     </div>
+    {*/}
 
+    {/* TODO: delete me eventually */}
+    <div className={styles.sectionSubheader}>
+      Coming Soon!
+    </div>
+
+    {/* TODO: Add speakers when known}
     <MainSpeaker
       company="Facebook"
       image={imgHeadshotNickAnderson}
@@ -282,69 +285,6 @@ const IndexPage = () => (
         name="Mike Arpaia"
         title="Co-Founder & CTO"
       />
-
-      <SpeakerTile
-        company="Trail of Bits"
-        image={imgHeadshotLaurenPearl}
-        image2x={imgHeadshotLaurenPearl2x}
-        image3x={imgHeadshotLaurenPearl3x}
-        name="Lauren Pearl"
-        title="Head of Strategy and Ops"
-      />
-
-      <SpeakerTile
-        company="JASK"
-        image={imgHeadshotRobFry}
-        image2x={imgHeadshotRobFry2x}
-        image3x={imgHeadshotRobFry3x}
-        name="Rob Fry"
-        title="Security Leader"
-      />
-
-      <SpeakerTile
-        company="Palantir"
-        image={imgHeadshotChrisLong}
-        image2x={imgHeadshotChrisLong2x}
-        image3x={imgHeadshotChrisLong3x}
-        name="Chris Long"
-        title="Security Engineer"
-      />
-
-      <SpeakerTile
-        company="Facebook"
-        image={imgHeadshotTeddyReed}
-        image2x={imgHeadshotTeddyReed2x}
-        image3x={imgHeadshotTeddyReed3x}
-        name="Teddy Reed"
-        title="Security Engineering Manager"
-      />
-
-      <SpeakerTile
-        company="Stripe"
-        image={imgHeadshotBenHughes}
-        image2x={imgHeadshotBenHughes2x}
-        image3x={imgHeadshotBenHughes3x}
-        name="Ben Hughes"
-        title="Security Engineer"
-      />
-
-      <SpeakerTile
-        company="Trail of Bits"
-        image={imgHeadshotMikeMyers}
-        image2x={imgHeadshotMikeMyers2x}
-        image3x={imgHeadshotMikeMyers3x}
-        name="Mike Myers"
-        title="Security Researcher"
-      />
-
-      <SpeakerTile
-        company="Facebook"
-        image={imgHeadshotMitchellGrenier}
-        image2x={imgHeadshotMitchellGrenier2x}
-        image3x={imgHeadshotMitchellGrenier3x}
-        name="Mitchell Grenier"
-        title="Security Engineer"
-      />
     </div>
 
     <div className={styles.genericBanner}>
@@ -352,31 +292,47 @@ const IndexPage = () => (
         See The Full Program <img alt="" src={rightArrow} />
       </Link>
     </div>
+    {*/}
+
+    {/* TODO: delete me eventually */}
+    <div className={styles.sectionBreak} id="speakers" />
 
     <h2 id="location" className={styles.sectionHeader}>
       The Venue
     </h2>
 
     <div className={styles.sectionSubheader}>
-      Palace of the Fine Arts Innovation Hangar - San Francisco, CA
+      Convene at 32 Old Slip - New York, NY
     </div>
 
+    {/* TODO: Substitute stylized venue with another image? }
     <div className={styles.venueImage}>
       <img alt="" className={styles.responsiveImage} src={imgVenue} />
     </div>
+    {*/}
 
+    {/* TODO: Update with a short description of the venue?}
     <p className={styles.venueDescription}>
-      QueryCon18 will be held at the Palace of the Fine Arts Innovation Hangar,
+      QueryCon19 will be held at the Palace of the Fine Arts Innovation Hangar,
       minutes away from the Golden Gate Bridge. Parking will be validated for
       all conference goers.
     </p>
+    {*/}
 
-    <a href="https://goo.gl/maps/jbcmsmERrUJ2">
+    {/* TODO: Update image, link is fine}
+    <a href="https://goo.gl/maps/xnbavxS1bU72">
       <div className={styles.venueMap} />
     </a>
+    {*/}
 
     <div className={styles.genericBanner}>Not sure where to stay?</div>
 
+    {/* TODO: delete me eventually */}
+    <div className={styles.sectionSubheader}>
+      Coming Soon!
+    </div>
+
+    {/* TODO: Add suggestions for place to stay}
     <div className={styles.prominentCTAs}>
       <ProminentCta
         className={styles.prominentCta}
@@ -402,6 +358,7 @@ const IndexPage = () => (
         href="https://www.expedia.com/Hotel-Search?destination=Bay+Area%2C+California&latLong=37.724160%2C-122.270938&regionId=6056043&startDate=05%2F30%2F2018&endDate=06%2F01%2F2018&_xpid=11905%7C1&adults=1&children=0"
       />
     </div>
+    {*/}
 
     <div className={styles.sectionBreak} id="learning" />
 
@@ -469,13 +426,13 @@ const IndexPage = () => (
       <ProminentCta
         heading="Hit Us Up on Twitter"
         icon={imgTwitterBird}
-        href="http://www.twitter.com/queryconf"
+        href="https://www.twitter.com/trailofbits"
       />
 
       <ProminentCta
         heading="Contact Us"
         icon={imgPaperAirplane}
-        href="mailto:info@querycon.io"
+        href="mailto:mike.myers@trailofbits.com"
       />
     </div>
 

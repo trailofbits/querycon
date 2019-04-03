@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'QueryCon 2018',
+    title: 'QueryCon 2019',
   },
   plugins: [
     {
