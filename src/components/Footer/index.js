@@ -39,17 +39,12 @@ const Footer = () => (
     <section className={styles.links}>
       <ul>
         <li className={styles.li}>
-          {/* TODO: Update when registration is ready}
           <a
             className={styles.registerLink}
-            href="https://www.eventbrite.com/e/querycon-tickets-42317323253"
+            href="https://www.eventbrite.com/e/querycon-2019-tickets-59900912241"
           >
             Register Now
           </a>
-          {*/}
-
-          {/* TODO: delete me eventually */}
-          <div className={styles.registerLink}> Coming Soon!</div>
         </li>
       </ul>
     </section>

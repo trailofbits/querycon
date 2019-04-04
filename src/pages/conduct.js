@@ -23,7 +23,6 @@ const CodeOfConduct = () => (
       </div>
     </div>
 
-    {/* TODO: Update Conduct when ready}
     <div className={styles.heroSection}>
       <div className={styles.header}>Code of Conduct</div>
       <img
@@ -36,27 +35,20 @@ const CodeOfConduct = () => (
           Have a concern? {"Don't"} hesitate to reach out:
         </span>
         <Button
-          url="mailto:info@querycon.io"
+          url="mailto:mike.myers@trailofbits.com"
           className={styles.contactUsButton}
         >
           Contact Us
         </Button>
       </div>
     </div>
-    {*/}
 
-    {/* TODO: delete me eventually! */}
-    <div className={styles.heroSection}>
-      <div className={styles.header}>Coming Soon!</div>
-    </div>
-
-    {/* TODO: Update Conduct when ready}
     <div className={styles.policies}>
       <div className={styles.containerTitle}>QueryCon Code of Conduct</div>
       <div className={styles.policyContent}>
         <Paragraph>
           All delegates, speakers, sponsors and volunteers at any QueryCon or
-          Kolide event are required to agree with the following code of conduct.
+          Trail of Bits event are required to agree with the following code of conduct.
           Organizers will enforce this code throughout the event.
         </Paragraph>
       </div>
@@ -65,7 +57,7 @@ const CodeOfConduct = () => (
         <div className={styles.policyTitle}>The Quick Version</div>
         <div className={styles.policyContent}>
           <Paragraph>
-            QueryCon and Kolide are dedicated to providing a harassment-free
+            QueryCon and Trail of Bits are dedicated to providing a harassment-free
             conference experience for everyone, regardless of gender, gender
             identity and expression, age, sexual orientation, disability,
             physical appearance, body size, race, ethnicity, religion (or lack
@@ -152,11 +144,10 @@ const CodeOfConduct = () => (
         <div>{"Don't"} hesitate to reach out and ask!</div>
       </div>
 
-      <Button url="mailto:info@querycon.io" className={styles.bottomButton}>
+      <Button url="mailto:mike.myers@trailofbits.com" className={styles.bottomButton}>
         Contact Us
       </Button>
     </div>
-    {*/}
 
     <Footer />
   </div>

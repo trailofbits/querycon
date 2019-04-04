@@ -13,8 +13,7 @@ const Header = props => (
     <div className={styles.navigation}>
       <Nav dark={props.dark} />
 
-      {/* TODO: enable when registration is ready */}
-      <RegisterButton className={styles.registerButton} disabled/>
+      <RegisterButton className={styles.registerButton}/>
     </div>
   </div>
 )

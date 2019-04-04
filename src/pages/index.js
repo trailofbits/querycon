@@ -217,13 +217,11 @@ const IndexPage = () => (
     {*/}
 
     <h2 className={styles.reserve}>Reserve your seat for QueryCon19 now!</h2>
-    {/* TODO: delete me eventually */}
-    <div className={styles.reserveSub}>Coming Soon!</div>
-    {/* TODO: Enter informations about registering and buying tickets}
     <div className={styles.reserveSub}>Register soon! Seating is limited!</div>
 
     <RegistrationTiles />
 
+    {/* TODO: Add a description of the pass}
     <h2 className={styles.passDescription}>
       Your pass gets you all of the following:
     </h2>
@@ -311,25 +309,19 @@ const IndexPage = () => (
     </div>
     {*/}
 
-    {/* TODO: Update with a short description of the venue?}
     <p className={styles.venueDescription}>
-      QueryCon19 will be held at the Palace of the Fine Arts Innovation Hangar,
-      minutes away from the Golden Gate Bridge. Parking will be validated for
-      all conference goers.
+      QueryCon19 will be held at the Convene, in downtown Manhattan,
+      just steps from Wall Street and the New York Stock Exchange.
     </p>
-    {*/}
 
-    {/* TODO: Update image, link is fine}
     <a href="https://goo.gl/maps/xnbavxS1bU72">
       <div className={styles.venueMap} />
     </a>
-    {*/}
 
     <div className={styles.genericBanner}>Not sure where to stay?</div>
 
-    {/* TODO: delete me eventually */}
     <div className={styles.sectionSubheader}>
-      Coming Soon!
+      Try <a href="https://www.marriott.com/hotels/travel/nycal-aloft-manhattan-downtown-financial-district/">Aloft Manhattan Downtown</a>
     </div>
 
     {/* TODO: Add suggestions for place to stay}
