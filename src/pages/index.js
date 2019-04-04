@@ -167,7 +167,7 @@ const IndexPage = () => (
       <strong>Convene at 32 Old Slip, New York, NY 10005</strong> focused on bringing
       security, devops, macadmins, and other experts in the Osquery community
       together.
-      QueryCon is now in its second year, with new hosts Trail of Bits
+      QueryCon is now in its second year, with its new host Trail of Bits
       and a new location in New York City.<br />
       Following last year’s format, there will be a single speaking track,
       and a community workshop.
