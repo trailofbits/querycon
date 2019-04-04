@@ -135,12 +135,13 @@
   background-color: $midnight-blue;
   position: relative;
 
+  /* TODO: Substitute it with another image?
   @media (max-width: $mobile-width) {
     background-image: url('./palace-fine-arts-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto 100%;
-  }
+  }*/
 }
 
 .videoBackground {
