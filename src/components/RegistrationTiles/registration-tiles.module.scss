@@ -22,7 +22,7 @@
   box-shadow: 0 3px 20px 0 rgba(50, 50, 93, 0.14),
     0 3px 3px 0 rgba(0, 0, 0, 0.07);
   box-sizing: border-box;
-  height: 400px;
+  height: 420px;
   text-align: center;
   width: 320px;
 }
@@ -42,11 +42,18 @@
 
 .price {
   color: $midnight-blue;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 900;
-  margin: 120px 0 25px;
+  margin: 120px 0 0px;
   position: relative;
   left: -7px;
+}
+
+.priceFee {
+  color: $midnight-blue;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 25px;
 }
 
 .priceFullPrice {

@@ -22,8 +22,9 @@ class RegistrationTiles extends Component {
 
             <div className={styles.price}>
               <span className={styles.dollar}>$</span>
-              320.99
+              300
             </div>
+            <div className={styles.priceFee}>+ processing fee</div>
 
             <RegisterButton className={lateRegistrationButtonClasses} />
           </div>
