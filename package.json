@@ -2,7 +2,7 @@
   "name": "QueryCon2019",
   "description": "Info + signup",
   "version": "1.0.0",
-  "author": "Kolide",
+  "author": "TrailofBits",
   "dependencies": {
     "classnames": "^2.2.5",
     "gatsby": "^1.9.158",
