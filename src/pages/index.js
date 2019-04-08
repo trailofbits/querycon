@@ -77,7 +77,7 @@ const IndexPage = () => (
         <div className={styles.heroLogo}>
           <img alt="" src={imgHeroLogo} />
         </div>
-        <h2 className={styles.subHeader}>An osquery conference by Trail of Bits</h2>
+        <h2 className={styles.subHeader}>An osquery conference by Trail of Bits and Kolide</h2>
         <h3 className={styles.subSubHeader}>New York City | Jun 20 - Jun 21</h3>
       </div>
     </section>

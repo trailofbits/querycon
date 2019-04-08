@@ -10,6 +10,9 @@ const Meta = () => (
     <a className={styles.metaText} href="https://www.trailofbits.com">
       &copy; Trail of Bits 2019
     </a>
+    <a className={styles.metaText} href="https://kolide.com">
+      &copy; Kolide 2019
+    </a>
 
     {/* TODO: Change with other copyrights if necessary}
     <div className={styles.metaText}>
