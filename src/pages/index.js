@@ -321,36 +321,29 @@ const IndexPage = () => (
     <div className={styles.genericBanner}>Not sure where to stay?</div>
 
     <div className={styles.sectionSubheader}>
-      Try <a href="https://www.marriott.com/hotels/travel/nycal-aloft-manhattan-downtown-financial-district/">Aloft Manhattan Downtown</a>
+      Some recommended hotels near the venue: <a href="https://www.marriott.com/hotels/travel/nycal-aloft-manhattan-downtown-financial-district/">Aloft Manhattan Downtown</a>,
+      <a href="https://www.marriott.com/hotels/travel/nycws-new-york-marriott-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">New York Marriott Downtown</a>, 
+      <a href="https://www.marriott.com/hotels/travel/nycwd-w-new-york-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">the W New York – Downtown</a>, 
+      or <a href="https://conradhotels3.hilton.com/en/hotels/new-york/conrad-new-york-NYCCICI/index.html?SEO_id=GMB-CI-NYCCICI">Conrad New York</a>.
     </div>
 
-    {/* TODO: Add suggestions for place to stay}
     <div className={styles.prominentCTAs}>
       <ProminentCta
         className={styles.prominentCta}
         heading="Check AirBnB Availability"
         icon={imgAirbnb}
-        subheading="May 31 - June 1"
-        href="https://www.airbnb.com/s/Bay-Area--CA--United-States/homes?place_id=ChIJtdeIpqODhYARqR9GV4QbiYw&refinement_paths%5B%5D=%2Fhomes&allow_override%5B%5D=&checkin=2018-05-30&checkout=2018-06-01&s_tag=wWue7Zlm"
+        subheading="June 19 - June 22"
+        href="https://www.airbnb.com/s/homes?refinement_paths%5B%5D=%2Fhomes&checkin=2019-06-19&checkout=2019-06-22&query=New%20York%2C%20NY%2C%20United%20States&search_type=UNKNOWN&allow_override%5B%5D=&zoom=15&search_by_map=true&sw_lat=40.69987304272757&sw_lng=-74.01933840869287&ne_lat=40.72287178114689&ne_lng=-73.9992171472154&place_id=ChIJOwg_06VPwokRYv534QaPC8g&s_tag=Ey4hVDr0"
       />
 
       <ProminentCta
         className={styles.prominentCta}
-        heading="See Hotels on Orbitz"
-        icon={imgOrbitz}
-        subheading="May 31 - June 1"
-        href="https://www.orbitz.com/Hotel-Search?#&destination=Bay%20Area%2C%20California&startDate=05/30/2018&endDate=06/01/2018&regionId=6056043&latLong=37.724160,-122.270938&adults=1"
-      />
-
-      <ProminentCta
-        className={styles.prominentCta}
-        heading="See Hotels on Expedia"
+        heading="Search More Hotels on Expedia"
         icon={imgExpedia}
-        subheading="May 31 - June 1"
-        href="https://www.expedia.com/Hotel-Search?destination=Bay+Area%2C+California&latLong=37.724160%2C-122.270938&regionId=6056043&startDate=05%2F30%2F2018&endDate=06%2F01%2F2018&_xpid=11905%7C1&adults=1&children=0"
+        subheading="June 19 - June 22"
+        href="https://www.expedia.com/Hotel-Search?destination=Lower+Manhattan,+New+York&startDate=06/19/2019&endDate=06/22/2019&adults=1&regionId=6360640&latLong=40.720157,-73.998745"
       />
     </div>
-    {*/}
 
     <div className={styles.sectionBreak} id="learning" />
 
