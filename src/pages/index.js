@@ -322,7 +322,7 @@ const IndexPage = () => (
 
     <div className={styles.sectionSubheader}>
       Some recommended hotels near the venue: <a href="https://www.marriott.com/hotels/travel/nycal-aloft-manhattan-downtown-financial-district/">Aloft Manhattan Downtown</a>,{" "}
-      <a href="https://www.marriott.com/hotels/travel/nycws-new-york-marriott-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">New York Marriott Downtown</a>, 
+      <a href="https://www.marriott.com/hotels/travel/nycws-new-york-marriott-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">New York Marriott Downtown</a>,{" "}
       <a href="https://www.marriott.com/hotels/travel/nycwd-w-new-york-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">the W New York – Downtown</a>, 
       or <a href="https://conradhotels3.hilton.com/en/hotels/new-york/conrad-new-york-NYCCICI/index.html?SEO_id=GMB-CI-NYCCICI">Conrad New York</a>.
     </div>
