@@ -20,9 +20,7 @@ const SOCIAL = 'social'
 
 class ProgramPage extends Component {
   componentWillMount() {
-    /* TODO: Uncomment when program is ready
     this.setState({ activeTab: this.activeTab })
-    */
   }
 
   get activeTab() {
@@ -41,9 +39,7 @@ class ProgramPage extends Component {
   }
 
   render() {
-    {/* TODO: Uncomment when program is ready}
     const { activeTab } = this.state
-    {*/}
 
     return (
       <div className={styles.content}>
@@ -64,10 +60,16 @@ class ProgramPage extends Component {
         <h2 className={styles.h2}>Program</h2>
         {*/}
 
-        {/* TODO: Delete me eventually */}
-        <h2 className={styles.h2}>Coming Soon!</h2>
+        {/* TODO: Delete me by June 1 when talk submissions are closed */}
+        <h2 className={styles.h2}>
+        <a
+          className={styles.learnMoreLink}
+          href="https://www.papercall.io/querycon19"
+          rel="noopener noreferrer"
+          target="_blank"
+        >Submissions for talks are open!</a></h2><h3>More speaker announcements coming soon</h3>
 
-        {/* TODO: Update when program is ready}
+
         <div className={styles.tabs}>
           <Tab
             active={activeTab === SCHEDULE}
@@ -75,7 +77,6 @@ class ProgramPage extends Component {
             size="large"
             text="Schedule"
           />
-
           <Tab
             active={activeTab === SPEAKERS}
             onClick={this.showContent(SPEAKERS)}
@@ -90,18 +91,20 @@ class ProgramPage extends Component {
             text="Workshop"
           />
 
+          {/* TODO: Update when afterparty is ready}
           <Tab
             active={activeTab === SOCIAL}
             onClick={this.showContent(SOCIAL)}
             size="large"
             text="Social"
           />
+          {*/}
         </div>
 
         <div className={styles.sectionBreak} />
 
         <ProgramSections activeTab={activeTab} />
-        {*/}
+        
 
         <Footer />
       </div>

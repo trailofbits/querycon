@@ -163,7 +163,7 @@ const IndexPage = () => (
     <div className={styles.sectionBreak} />
 
     <p className={styles.leader}>
-      Join us for a 2-day <strong>Osquery</strong> conference at{' '}
+      Join us for a 2-day <strong>osquery</strong> conference at{' '}
       <strong>Convene at 32 Old Slip, New York, NY 10005</strong> focused on bringing
       security, devops, macadmins, and other experts in the Osquery community
       together.
@@ -221,7 +221,6 @@ const IndexPage = () => (
 
     <RegistrationTiles />
 
-    {/* TODO: Add a description of the pass}
     <h2 className={styles.passDescription}>
       Your pass gets you all of the following:
     </h2>
@@ -229,41 +228,37 @@ const IndexPage = () => (
     <div className={styles.passFeatures}>
       <FeatureTile title="Full Conference Access" url="/program">
         Registration grants you full access to our two-day single track
-        conference, packed with Osquery experts ranging from the Osquery
-        creators and leaders to major open-source contributors and community
-        members.
+        conference, packed with osquery experts, leaders, major open-source 
+        contributors, and community members.
       </FeatureTile>
 
       <FeatureTile title="After Hours Cocktail Party" url="/program#social">
-        After a long day of talks, spend time imbibing with Osquery leaders,
+        After a long day of talks, spend time imbibing with osquery leaders,
         contributors, speakers, and other conference goers at this attendee-only
         networking event. Drinks and delicious food are on us!
       </FeatureTile>
 
-      <FeatureTile title="Entry to Osquery Workshop" url="/program#workshop">
+      <FeatureTile title="Entry to osquery Workshop" url="/program#workshop">
         Inspired by the talks? The community workshop lets you put your ideas
         into action in a communal setting where you can get hands-on experience
         guided by experts, collaborate on issues, and network with community
         members.
       </FeatureTile>
     </div>
-    {*/}
 
     <div className={styles.sectionBreak} id="speakers" />
 
     <h2 className={styles.sectionHeader}>Featured Speakers</h2>
 
-    {/* TODO: replace with another punchline? }
     <div className={styles.sectionSubheader}>
-      We are bringing the brightest and best of the Osquery community together.
-    </div>
-    {*/}
-
-    {/* TODO: delete me eventually */}
-    <div className={styles.sectionSubheader}>
-      Coming Soon!
+      QueryCon is about bringing the brightest and best of the osquery community together.
     </div>
 
+    <div className={styles.sectionSubheader}>
+    <Link to="/program#speakers">
+          See The Full Program <img alt="" src={rightArrow} />
+    </Link>
+    
     {/* TODO: Add speakers when known}
     <MainSpeaker
       company="Facebook"
@@ -284,13 +279,9 @@ const IndexPage = () => (
         title="Co-Founder & CTO"
       />
     </div>
-
-    <div className={styles.genericBanner}>
-      <Link to="/program#speakers">
-        See The Full Program <img alt="" src={rightArrow} />
-      </Link>
-    </div>
     {*/}
+
+    </div>
 
     {/* TODO: delete me eventually */}
     <div className={styles.sectionBreak} id="speakers" />
