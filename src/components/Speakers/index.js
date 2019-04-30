@@ -1,5 +1,12 @@
 import React from 'react'
 
+import imgHeadshotStefanoBoniccati from '../../pages/headshot-stefano-boniccati.jpg'
+import imgHeadshotStefanoBoniccati2x from '../../pages/headshot-stefano-boniccati-2x.jpg'
+import imgHeadshotStefanoBoniccati3x from '../../pages/headshot-stefano-boniccati-3x.jpg'
+import imgHeadshotAlessandroGario from '../../pages/headshot-alessandro-gario.jpg'
+import imgHeadshotAlessandroGario2x from '../../pages/headshot-alessandro-gario-2x.jpg'
+import imgHeadshotAlessandroGario3x from '../../pages/headshot-alessandro-gario-3x.jpg'
+{/* TODO: Update as more of 2019's speakers become known}
 import imgHeadshotBenHughes from '../../pages/headshot-ben-hughes.jpg'
 import imgHeadshotBenHughes2x from '../../pages/headshot-ben-hughes-2x.jpg'
 import imgHeadshotBenHughes3x from '../../pages/headshot-ben-hughes-3x.jpg'
@@ -24,21 +31,15 @@ import imgHeadshotMikeMyers3x from '../../pages/headshot-mike-myers-3x.jpg'
 import imgHeadshotMitchellGrenier from '../../pages/headshot-mitchell-grenier.jpg'
 import imgHeadshotMitchellGrenier2x from '../../pages/headshot-mitchell-grenier-2x.jpg'
 import imgHeadshotMitchellGrenier3x from '../../pages/headshot-mitchell-grenier-3x.jpg'
-import imgHeadshotNickAnderson from '../../pages/headshot-nick-anderson.png'
-import imgHeadshotNickAnderson2x from '../../pages/headshot-nick-anderson-2x.png'
-import imgHeadshotNickAnderson3x from '../../pages/headshot-nick-anderson-3x.png'
-import imgHeadshotTeddyReed from '../../pages/headshot-ted-reed.jpg'
-import imgHeadshotTeddyReed2x from '../../pages/headshot-ted-reed-2x.jpg'
-import imgHeadshotTeddyReed3x from '../../pages/headshot-ted-reed-3x.jpg'
+Nick Anderson can't attend this year because of a conflict
+Teddy Reed no longer works on the project, he says
 import imgHeadshotSamuelKeeley from '../../pages/headshot-samuel-keeley.jpg'
 import imgHeadshotSamuelKeeley2x from '../../pages/headshot-samuel-keeley-2x.jpg'
 import imgHeadshotSamuelKeeley3x from '../../pages/headshot-samuel-keeley-3x.jpg'
 import imgHeadshotScottLundgren from '../../pages/headshot-scott-lundgren.jpg'
 import imgHeadshotScottLundgren2x from '../../pages/headshot-scott-lundgren-2x.jpg'
 import imgHeadshotScottLundgren3x from '../../pages/headshot-scott-lundgren-3x.jpg'
-import imgHeadshotMilanShah from '../../pages/headshot-milan-shah.jpg'
-import imgHeadshotMilanShah2x from '../../pages/headshot-milan-shah-2x.jpg'
-import imgHeadshotMilanShah3x from '../../pages/headshot-milan-shah-3x.jpg'
+Milan Shah is blacklisted
 import imgHeadshotForestMonsen from '../../pages/headshot-forest-monsen.jpg'
 import imgHeadshotForestMonsen2x from '../../pages/headshot-forest-monsen-2x.jpg'
 import imgHeadshotForestMonsen3x from '../../pages/headshot-forest-monsen-3x.jpg'
@@ -48,6 +49,7 @@ import imgHeadshotSteffanHaas3x from '../../pages/headshot-steffan-haas-3x.jpg'
 import imgHeadshotRobFry from '../../pages/headshot-rob-fry.jpg'
 import imgHeadshotRobFry2x from '../../pages/headshot-rob-fry-2x.jpg'
 import imgHeadshotRobFry3x from '../../pages/headshot-rob-fry-3x.jpg'
+{*/}
 
 import styles from '../../pages/program/program.module.scss'
 
@@ -55,6 +57,43 @@ import Speaker from '../Speaker'
 
 const Speakers = ({ id }) => (
   <section id={id}>
+     <Speaker
+      company="Trail of Bits"
+      image={imgHeadshotStefanoBoniccati}
+      image2x={imgHeadshotStefanoBoniccati2x}
+      image3x={imgHeadshotStefanoBoniccati3x}
+      name="Stefano Boniccati"
+      presentationName="osql, the community-oriented osquery fork"
+      presentationTopic="osquery development"
+    >
+      <p>
+      osql is a community-oriented fork of osquery. Its goals are making 
+      the development process more open and predictable, reviewing and 
+      accepting community contributions more quickly, and restoring the
+      {` community’s`} confidence and direct participation in the osquery project. 
+      In this talk, we discuss how we intend to maintain a successful community 
+      fork of a major open-source project.
+      </p>
+    </Speaker>
+    <Speaker
+      company="Trail of Bits"
+      image={imgHeadshotAlessandroGario}
+      image2x={imgHeadshotAlessandroGario2x}
+      image3x={imgHeadshotAlessandroGario3x}
+      name="Alessandro Gario"
+      presentationName="The history of Linux security event monitoring with osquery"
+      presentationTopic="osquery development"
+    >
+      <p>
+      This talk introduces security event monitoring on Linux, and our lessons 
+      learned from attempts to implement it within osquery. Our first experience 
+      with osquery event monitoring was rewriting its use of Auditd. In order to 
+      capture events within containers, we next implemented an event publisher 
+      based on eBPF. We discovered what works, what {`doesn’t`}, and some paths 
+      forward.
+      </p>
+    </Speaker>
+  {/* TODO: Update as more of 2019's speakers become known}
     <Speaker
       company="Facebook"
       image={imgHeadshotNickAnderson}
@@ -470,6 +509,7 @@ const Speakers = ({ id }) => (
         securing and monitoring a Docker container environment.
       </p>
     </Speaker>
+  {*/}
   </section>
 )
 
