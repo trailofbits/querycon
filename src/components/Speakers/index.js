@@ -1,8 +1,8 @@
 import React from 'react'
 
-import imgHeadshotStefanoBoniccati from '../../pages/headshot-stefano-boniccati.jpg'
-import imgHeadshotStefanoBoniccati2x from '../../pages/headshot-stefano-boniccati-2x.jpg'
-import imgHeadshotStefanoBoniccati3x from '../../pages/headshot-stefano-boniccati-3x.jpg'
+import imgHeadshotStefanoBonicatti from '../../pages/headshot-stefano-bonicatti.jpg'
+import imgHeadshotStefanoBonicatti2x from '../../pages/headshot-stefano-bonicatti-2x.jpg'
+import imgHeadshotStefanoBonicatti3x from '../../pages/headshot-stefano-bonicatti-3x.jpg'
 import imgHeadshotAlessandroGario from '../../pages/headshot-alessandro-gario.jpg'
 import imgHeadshotAlessandroGario2x from '../../pages/headshot-alessandro-gario-2x.jpg'
 import imgHeadshotAlessandroGario3x from '../../pages/headshot-alessandro-gario-3x.jpg'
@@ -59,10 +59,10 @@ const Speakers = ({ id }) => (
   <section id={id}>
      <Speaker
       company="Trail of Bits"
-      image={imgHeadshotStefanoBoniccati}
-      image2x={imgHeadshotStefanoBoniccati2x}
-      image3x={imgHeadshotStefanoBoniccati3x}
-      name="Stefano Boniccati"
+      image={imgHeadshotStefanoBonicatti}
+      image2x={imgHeadshotStefanoBonicatti2x}
+      image3x={imgHeadshotStefanoBonicatti3x}
+      name="Stefano Bonicatti"
       presentationName="osql, the community-oriented osquery fork"
       presentationTopic="osquery development"
     >

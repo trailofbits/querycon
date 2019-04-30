@@ -110,7 +110,7 @@ const Schedule = ({ id }) => (
           category="osquery development"
           details="Trail of Bits"
           end="1:30 pm"
-          speaker="Stefano Boniccati"
+          speaker="Stefano Bonicatti"
           title="osql, the community-oriented osquery fork"
           type={TALK}
         >
