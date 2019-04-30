@@ -25,17 +25,19 @@ const Workshop = ({ id }) => (
     <p>Suggested Topics:</p>
 
     <ul className={styles.bullets}>
-      <li>Logging Pipelines: Using osquery with ELK</li>
+      <li>Contributing to osquery: your first table</li>
+      <li>Writing osquery extensions</li>
+      <li>Planning the roadmap for osql</li>
+      <li>Security testing osquery</li>
+      <li>Logging pipelines: using osquery with ELK</li>
       <li>Getting started with TLS</li>
-      <li>SQL: Writing your queries to return the right results</li>
-      <li>SQL: Writing performant pipelines</li>
-      <li>Contributing to osquery: Your first table</li>
-      <li>Writing osquery plugins</li>
+      <li>SQL: writing your queries to return the right results</li>
+      <li>SQL: writing performant pipelines</li>
     </ul>
 
     <p>
       Have a topic you’d be interested in? Want to facilitate one of the groups?{' '}
-      <a className={styles.contactLink} href="mailto:info@querycon.io">
+      <a className={styles.contactLink} href="mailto:mike.myers@trailofbits.com">
         Drop us a line!
       </a>
     </p>
