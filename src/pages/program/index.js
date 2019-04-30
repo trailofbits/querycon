@@ -91,14 +91,12 @@ class ProgramPage extends Component {
             text="Workshop"
           />
 
-          {/* TODO: Update when afterparty is ready}
           <Tab
             active={activeTab === SOCIAL}
             onClick={this.showContent(SOCIAL)}
             size="large"
             text="Social"
-          />
-          {*/}
+          />          
         </div>
 
         <div className={styles.sectionBreak} />
