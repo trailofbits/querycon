@@ -72,29 +72,59 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="11:00 am"
-          category="TBA"
-          details="TBA"
+          category="Production osquery"
+          details="Dactiv LLC"
           end="11:30 am"
-          speaker="TBA"
-          title="TBA"
+          speaker="Zach Wasserman"
+          title="10 Pitfalls on the Path to Osquery Bliss"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          Osquery is a powerful and intuitive tool, but everything is not always as 
+          it seems. In this talk we will demonstrate 10 gotchas that can lead to 
+          unexpected results, and explain how to avoid them. If you have used osquery, 
+          you have likely stumbled upon some of these. If not yet, you will.
+
+          This talk will dive into 10 common issues that new (and experienced) osquery 
+          users run into. In the format of interactive demos, we will explore these 
+          problems and the technical explanations underlying them. All osquery users 
+          will benefit from a greater understanding of how to work with the osquery 
+          internals to retrieve accurate, timely results.
+          <ul className={styles.bullets}>
+            <li>Where did my results go (1)? Running queries as user vs. root.</li>
+            <li>Where did my results go (2)? The effect of table order on JOINs.</li>
+            <li>Dude, {`where’s`} my SHA1? Hashing big files with read_max flag.</li>
+            <li>Why does this query work in osqueryd but not osqueryi? JSON escaping and queries.</li>
+            <li>Why {`isn’t`} my config respected? CLI flags vs. config options.</li>
+            <li>Why {`didn’t`} the query run? Understanding schedule intervals in osquery.</li>
+            <li>Where are my events (1)? Osqueryd and osqueryi independence.</li>
+            <li>Where are my events (2)? Tuning event expiration flags.</li>
+            <li>Where are my events (3)? Checking event publisher status with osquery_events.</li>
+            <li>Why is osquery eating my CPU? Identifying expensive queries.</li>
+          </ul>
           </p>
         </ScheduleEntry>
 
         <ScheduleEntry
           begin="11:30 am"
-          category="TBA"
-          details="TBA"
+          category="osquery development"
+          details="Google"
           end="12:00 pm"
-          speaker="TBA"
-          title="TBA"
+          speaker="Victor Vrantchan"
+          title="All you can do with extensions"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          Do you need to send your osquery logs to a custom backend? Is your current 
+          data pipeline a mess? Need to add a new table? Intimidated by C++? {`Let’s`} 
+          write an osquery extension! Find out how to take advantage of {`osquery’s`} 
+          powerful plugin interface to make osquery work in your environment.
+          </p>
+          <p>
+          In this talk, we will teach advanced users how they can utilize plugins 
+          to integrate osquery with their existing logging infrastructure, and 
+          add any missing features. We will target the Go SDK mostly, but will 
+          describe the other supported languages and differences in the talk.
           </p>
         </ScheduleEntry>
 
