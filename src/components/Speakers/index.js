@@ -6,6 +6,12 @@ import imgHeadshotStefanoBonicatti3x from '../../pages/headshot-stefano-bonicatt
 import imgHeadshotAlessandroGario from '../../pages/headshot-alessandro-gario.jpg'
 import imgHeadshotAlessandroGario2x from '../../pages/headshot-alessandro-gario-2x.jpg'
 import imgHeadshotAlessandroGario3x from '../../pages/headshot-alessandro-gario-3x.jpg'
+import imgHeadshotZachWasserman from '../../pages/headshot-zach-wasserman.jpg'
+import imgHeadshotZachWasserman2x from '../../pages/headshot-zach-wasserman-2x.jpg'
+import imgHeadshotZachWasserman3x from '../../pages/headshot-zach-wasserman-3x.jpg'
+import imgHeadshotVictorVrantchan from '../../pages/headshot-victor-vrantchan.jpg'
+import imgHeadshotVictorVrantchan2x from '../../pages/headshot-victor-vrantchan-2x.jpg'
+import imgHeadshotVictorVrantchan3x from '../../pages/headshot-victor-vrantchan-3x.jpg'
 {/* TODO: Update as more of 2019's speakers become known}
 import imgHeadshotBenHughes from '../../pages/headshot-ben-hughes.jpg'
 import imgHeadshotBenHughes2x from '../../pages/headshot-ben-hughes-2x.jpg'
@@ -93,6 +99,66 @@ const Speakers = ({ id }) => (
       forward.
       </p>
     </Speaker>
+
+
+    <Speaker
+      company="Dactiv LLC"
+      image={imgHeadshotZachWasserman}
+      image2x={imgHeadshotZachWasserman2x}
+      image3x={imgHeadshotZachWasserman3x}
+      name="Zach Wasserman"
+      presentationName="10 Pitfalls on the Path to Osquery Bliss"
+      presentationTopic="Production osquery"
+    >
+      <p>
+      Osquery is a powerful and intuitive tool, but everything is not always as 
+      it seems. In this talk we will demonstrate 10 gotchas that can lead to 
+      unexpected results, and explain how to avoid them. If you have used osquery, 
+      you have likely stumbled upon some of these. If not yet, you will.
+
+      This talk will dive into 10 common issues that new (and experienced) osquery 
+      users run into. In the format of interactive demos, we will explore these 
+      problems and the technical explanations underlying them. All osquery users 
+      will benefit from a greater understanding of how to work with the osquery 
+      internals to retrieve accurate, timely results.
+      <ul className={styles.bullets}>
+        <li>Where did my results go (1)? Running queries as user vs. root.</li>
+        <li>Where did my results go (2)? The effect of table order on JOINs.</li>
+        <li>Dude, {`where’s`} my SHA1? Hashing big files with read_max flag.</li>
+        <li>Why does this query work in osqueryd but not osqueryi? JSON escaping and queries.</li>
+        <li>Why {`isn’t`} my config respected? CLI flags vs. config options.</li>
+        <li>Why {`didn’t`} the query run? Understanding schedule intervals in osquery.</li>
+        <li>Where are my events (1)? Osqueryd and osqueryi independence.</li>
+        <li>Where are my events (2)? Tuning event expiration flags.</li>
+        <li>Where are my events (3)? Checking event publisher status with osquery_events.</li>
+        <li>Why is osquery eating my CPU? Identifying expensive queries.</li>
+      </ul>
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="Google"
+      image={imgHeadshotVictorVrantchan}
+      image2x={imgHeadshotVictorVrantchan2x}
+      image3x={imgHeadshotVictorVrantchan3x}
+      name="Victor Vrantchan"
+      presentationName="All you can do with extensions"
+      presentationTopic="osquery development"
+    >
+      <p>
+      Do you need to send your osquery logs to a custom backend? Is your current 
+      data pipeline a mess? Need to add a new table? Intimidated by C++? {`Let’s `}
+      write an osquery extension! Find out how to take advantage of {`osquery’s `}
+      powerful plugin interface to make osquery work in your environment.
+      </p>
+      <p>
+      In this talk, we will teach advanced users how they can utilize plugins 
+      to integrate osquery with their existing logging infrastructure, and 
+      add any missing features. We will target the Go SDK mostly, but will 
+      describe the other supported languages and differences in the talk.
+      </p>
+    </Speaker>
+
   {/* TODO: Update as more of 2019's speakers become known}
     <Speaker
       company="Facebook"
