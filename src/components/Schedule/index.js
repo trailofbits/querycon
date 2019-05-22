@@ -45,28 +45,27 @@ const Schedule = ({ id }) => (
         <ScheduleEntry
           begin="10:00 am"
           category={KEYNOTE}
-          details="TBA"
-          end="10:30 am"
-          speaker="TBA"
-          title="TBA"
+          details="Kolide"
+          end="11:00 am"
+          speaker="Jason Meller"
+          title="User Focused Security & Osquery"
           type={KEYNOTE}
         >
           <p>
-            (Coming Soon)
-          </p>
-        </ScheduleEntry>
+          User-Focused Security is an IT/Security methodology that is being rapidly 
+          adopted by {`today's`} fastest growing companies and technical teams. The 
+          term, coined by Netflix in 2017, describes a program that discourages 
+          locking-down devices in favor of transparently communicating your 
+          security policy to your users and giving them the tools to ensure they 
+          are compliant.
 
-        <ScheduleEntry
-          begin="10:30 am"
-          category="TBA"
-          details="TBA"
-          end="11:00 am"
-          speaker="TBA"
-          title="TBA"
-          type={TALK}
-        >
-          <p>
-            (Coming Soon)
+          With a little bit of ingenuity and time, Osquery is the perfect tool to 
+          build your own User-Focused Security program. In this talk, Jason Meller 
+          will discuss both the technical and human lessons Kolide learned building 
+          User-Focused experience on top of Osquery and Slack. After this talk, 
+          you should have all the information you need to build and test-pilot your 
+          own User-Focused security program and empower your users to take a more 
+          active role in the security of their organization.
           </p>
         </ScheduleEntry>
 
@@ -156,29 +155,44 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="1:30 pm"
-          category="TBA"
-          details="TBA"
+          category="Production osquery"
+          details="Kolide"
           end="2:00 pm"
-          speaker="TBA"
-          title="TBA"
+          speaker="Fritz Ifert-Miller"
+          title="Using macOS Spotlight and Osquery to Prevent Data Breaches"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          For those of us on Macs, Spotlight is a critical operating system feature 
+          we rely on daily to find the files we need littered throughout our hard 
+          drives. Despite its usefulness in our daily lives, very few security 
+          products take advantage of this incredible index of information to find 
+          security risks across our device fleet. In this talk, Fritz Ifert-Miller 
+          will walk you through {`Osquery's`} mdfind virtual table, teach you 
+          {`Spotlight's`} advanced search syntax, and surprise you with the breadth 
+          and depth of information you can uncover. The talk will cover practical 
+          use-cases and features Kolide has built on top of this table to help our 
+          users discover and eliminate potential sources of data breaches.
           </p>
         </ScheduleEntry>
 
         <ScheduleEntry
           begin="2:00 pm"
-          category="TBA"
-          details="TBA"
+          category="Production osquery"
+          details="Carbon Black"
           end="2:30 pm"
-          speaker="TBA"
-          title="TBA"
+          speaker="Tania McCormack"
+          title="Taking Osquery to the Mainstream to Benefit Us All"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          From Carbon Black to Trail of Bits to Kolide, there are now a variety of 
+          security vendors interested in making Osquery more accessible for 
+          security teams in corporate environments. {`We’ll`} take a look at the 
+          trends {`we’ve`} come across in the last 18 months that could remove 
+          some commons barriers of Osquery management, and lead a discussion around 
+          what else can be done to get more people using and contributing back to 
+          this project.
           </p>
         </ScheduleEntry>
 
@@ -274,16 +288,21 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="9:30 am"
-          category="TBA"
+          category="Production osquery"
           day={2}
-          details="TBA"
+          details="Carbon Black"
           end="10:00 am"
-          speaker="TBA"
-          title="TBA"
+          speaker="Jon Nelson"
+          title="Using Queries as Building Blocks to Support Your Security Framework"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          Teams often lean on standardized third-party security frameworks as the 
+          blueprint to ensure the thoroughness of their coverage and efficient use 
+          of their limited resources. In this session, {`we’ll`} walk through our 
+          process for identifying and grouping specific osquery tables to fill in 
+          the gaps within the frameworks your organization subscribes to, whether 
+          {`that’s`} NIST, MITRE {`ATT&CK`}, or industry-based regulations.
           </p>
         </ScheduleEntry>
 
@@ -327,16 +346,28 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="11:00 am"
-          category="TBA"
+          category="osquery Development"
           day={2}
-          details="TBA"
+          details="Kolide"
           end="11:30 am"
-          speaker="TBA"
-          title="TBA"
+          speaker="Joseph Sokol-Margolis"
+          title="Building and Distribution: The Kolide Launcher for Osquery"
           type={TALK}
         >
           <p>
-          (Coming Soon)
+          An often overlooked but necessary part of a production Osquery deployment 
+          is generating platform native packages and installers. This process can 
+          be incredibly challenging, as each operating system has its own idioms 
+          and tooling for creating installers, different systems for maintaining 
+          persistence through restarts, and distinct processes for code signing.
+
+          To make this easier for our customers, Kolide created The Kolide Launcher 
+          as an open source project aimed at removing the hurdles of installing, 
+          updating, and using Osquery at scale. 
+
+          In this talk, Joseph will describe Kolide {`Launcher’s`} build process, 
+          its approach to multi-format packaging, how to build and debug a Windows 
+          service, and several lessons learned after one hundred thousand builds.
           </p>
         </ScheduleEntry>
 
