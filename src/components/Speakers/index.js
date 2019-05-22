@@ -12,10 +12,23 @@ import imgHeadshotZachWasserman3x from '../../pages/headshot-zach-wasserman-3x.j
 import imgHeadshotVictorVrantchan from '../../pages/headshot-victor-vrantchan.jpg'
 import imgHeadshotVictorVrantchan2x from '../../pages/headshot-victor-vrantchan-2x.jpg'
 import imgHeadshotVictorVrantchan3x from '../../pages/headshot-victor-vrantchan-3x.jpg'
+import imgHeadshotJasonMeller from '../../pages/headshot-jason-meller.png'
+import imgHeadshotJasonMeller2x from '../../pages/headshot-jason-meller-2x.png'
+import imgHeadshotJasonMeller3x from '../../pages/headshot-jason-meller-3x.png'
+import imgHeadshotFritzIfertMiller from '../../pages/headshot-fritz-ifert-miller.jpg'
+import imgHeadshotFritzIfertMiller2x from '../../pages/headshot-fritz-ifert-miller-2x.jpg'
+import imgHeadshotFritzIfertMiller3x from '../../pages/headshot-fritz-ifert-miller-3x.jpg'
+import imgHeadshotTaniaMcCormack from '../../pages/headshot-tania-mccormack.png'
+import imgHeadshotTaniaMcCormack2x from '../../pages/headshot-tania-mccormack-2x.png'
+import imgHeadshotTaniaMcCormack3x from '../../pages/headshot-tania-mccormack-3x.png'
+import imgHeadshotJonNelson from '../../pages/headshot-jon-nelson.jpg'
+import imgHeadshotJonNelson2x from '../../pages/headshot-jon-nelson-2x.jpg'
+import imgHeadshotJonNelson3x from '../../pages/headshot-jon-nelson-3x.jpg'
+import imgHeadshotJosephSokolMargolis from '../../pages/headshot-joseph-sokol-margolis.jpg'
+import imgHeadshotJosephSokolMargolis2x from '../../pages/headshot-joseph-sokol-margolis-2x.jpg'
+import imgHeadshotJosephSokolMargolis3x from '../../pages/headshot-joseph-sokol-margolis-3x.jpg'
 {/* TODO: Update as more of 2019's speakers become known}
-import imgHeadshotBenHughes from '../../pages/headshot-ben-hughes.jpg'
-import imgHeadshotBenHughes2x from '../../pages/headshot-ben-hughes-2x.jpg'
-import imgHeadshotBenHughes3x from '../../pages/headshot-ben-hughes-3x.jpg'
+Ben Hughes hasn't worked in the osquery space any longer and is not attending
 import imgHeadshotChrisLong from '../../pages/headshot-chris-long.jpg'
 import imgHeadshotChrisLong2x from '../../pages/headshot-chris-long-2x.jpg'
 import imgHeadshotChrisLong3x from '../../pages/headshot-chris-long-3x.jpg'
@@ -28,9 +41,7 @@ import imgHeadshotMichaelLynn3x from '../../pages/headshot-michael-lynn-3x.jpg'
 import imgHeadshotHenryStamerjohan from '../../pages/headshot-henry-stamerjohan.jpg'
 import imgHeadshotHenryStamerjohan2x from '../../pages/headshot-henry-stamerjohan-2x.jpg'
 import imgHeadshotHenryStamerjohan3x from '../../pages/headshot-henry-stamerjohan-3x.jpg'
-import imgHeadshotMikeArpaia from '../../pages/headshot-mike-arpaia.jpg'
-import imgHeadshotMikeArpaia2x from '../../pages/headshot-mike-arpaia-2x.jpg'
-import imgHeadshotMikeArpaia3x from '../../pages/headshot-mike-arpaia-3x.jpg'
+Mike Arpaia wanted out of the osquery project and is not attending
 import imgHeadshotMikeMyers from '../../pages/headshot-mike-myers.jpg'
 import imgHeadshotMikeMyers2x from '../../pages/headshot-mike-myers-2x.jpg'
 import imgHeadshotMikeMyers3x from '../../pages/headshot-mike-myers-3x.jpg'
@@ -159,26 +170,127 @@ const Speakers = ({ id }) => (
       </p>
     </Speaker>
 
-  {/* TODO: Update as more of 2019's speakers become known}
     <Speaker
-      company="Facebook"
-      image={imgHeadshotNickAnderson}
-      image2x={imgHeadshotNickAnderson2x}
-      image3x={imgHeadshotNickAnderson3x}
-      name="Nick Anderson"
-      presentationName="Evolving Our Open Source Community"
+      company="Kolide"
+      image={imgHeadshotJasonMeller}
+      image2x={imgHeadshotJasonMeller2x}
+      image3x={imgHeadshotJasonMeller3x}
+      name="Jason Meller"
+      presentationName="User Focused Security & Osquery"
       presentationTopic="Keynote"
+      title="Co-Founder & CEO"
     >
       <p>
-        Over the past two years the osquery community has increased
-        dramatically. Not only have the number of contributions to the agent
-        dramatically bumped, so has the number of platforms we support and
-        richness of discussions in our community around best leveraging osquery.
-        {`We'll`} explore how our community has grown, problems we faced/still face,
-        and the directions {`we're`} hoping to push the community forward.
+      User-Focused Security is an IT/Security methodology that is being rapidly 
+      adopted by {`today's`} fastest growing companies and technical teams. The 
+      term, coined by Netflix in 2017, describes a program that discourages 
+      locking-down devices in favor of transparently communicating your 
+      security policy to your users and giving them the tools to ensure they 
+      are compliant.
+
+      With a little bit of ingenuity and time, Osquery is the perfect tool to 
+      build your own User-Focused Security program. In this talk, Jason Meller 
+      will discuss both the technical and human lessons Kolide learned building 
+      User-Focused experience on top of Osquery and Slack. After this talk, 
+      you should have all the information you need to build and test-pilot your 
+      own User-Focused security program and empower your users to take a more 
+      active role in the security of their organization.
       </p>
     </Speaker>
 
+    <Speaker
+      company="Kolide"
+      image={imgHeadshotFritzIfertMiller}
+      image2x={imgHeadshotFritzIfertMiller2x}
+      image3x={imgHeadshotFritzIfertMiller3x}
+      name="Fritz Ifert-Miller"
+      presentationName="Using macOS Spotlight and Osquery to Prevent Data Breaches"
+      presentationTopic="Production osquery"
+      title="UX"
+    >
+      <p>
+      For those of us on Macs, Spotlight is a critical operating system feature 
+      we rely on daily to find the files we need littered throughout our hard 
+      drives. Despite its usefulness in our daily lives, very few security 
+      products take advantage of this incredible index of information to find 
+      security risks across our device fleet. In this talk, Fritz Ifert-Miller 
+      will walk you through {`Osquery's`} mdfind virtual table, teach you 
+      {` Spotlight's`} advanced search syntax, and surprise you with the breadth
+      and depth of information you can uncover. The talk will cover practical 
+      use-cases and features Kolide has built on top of this table to help our 
+      users discover and eliminate potential sources of data breaches.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="Kolide"
+      image={imgHeadshotJosephSokolMargolis}
+      image2x={imgHeadshotJosephSokolMargolis2x}
+      image3x={imgHeadshotJosephSokolMargolis3x}
+      name="Joseph Sokol-Margolis"
+      presentationName="Building and Distribution: The Kolide Launcher for Osquery"
+      presentationTopic="osquery Development"
+      title="Site Reliability Engineer"
+    >
+      <p>
+      An often overlooked but necessary part of a production Osquery deployment 
+      is generating platform native packages and installers. This process can 
+      be incredibly challenging, as each operating system has its own idioms 
+      and tooling for creating installers, different systems for maintaining 
+      persistence through restarts, and distinct processes for code signing.
+
+      To make this easier for our customers, Kolide created The Kolide Launcher 
+      as an open source project aimed at removing the hurdles of installing, 
+      updating, and using Osquery at scale. 
+
+      In this talk, Joseph will describe Kolide {`Launcher’s`} build process, 
+      its approach to multi-format packaging, how to build and debug a Windows 
+      service, and several lessons learned after one hundred thousand builds.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="Carbon Black"
+      image={imgHeadshotTaniaMcCormack}
+      image2x={imgHeadshotTaniaMcCormack2x}
+      image3x={imgHeadshotTaniaMcCormack3x}
+      name="Tania McCormack"
+      presentationName="Taking Osquery to the Mainstream to Benefit Us All"
+      presentationTopic="Production osquery"
+      title="Senior Product Manager"
+    >
+      <p>
+      From Carbon Black to Trail of Bits to Kolide, there are now a variety of 
+      security vendors interested in making Osquery more accessible for 
+      security teams in corporate environments. {`We’ll`} take a look at the 
+      trends {`we’ve`} come across in the last 18 months that could remove 
+      some commons barriers of Osquery management, and lead a discussion around 
+      what else can be done to get more people using and contributing back to 
+      this project.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="Carbon Black"
+      image={imgHeadshotJonNelson}
+      image2x={imgHeadshotJonNelson2x}
+      image3x={imgHeadshotJonNelson3x}
+      name="Jon Nelson"
+      presentationName="Using Queries as Building Blocks to Support Your Security Framework"
+      presentationTopic="Production osquery"
+      title="Senior Systems Engineer"
+    >
+      <p>
+      Teams often lean on standardized third-party security frameworks as the 
+      blueprint to ensure the thoroughness of their coverage and efficient use 
+      of their limited resources. In this session, {`we’ll`} walk through our 
+      process for identifying and grouping specific osquery tables to fill in 
+      the gaps within the frameworks your organization subscribes to, whether 
+      {` that’s`} NIST, MITRE {`ATT&CK`}, or industry-based regulations.
+      </p>
+    </Speaker>
+
+  {/* TODO: Update as more of 2019's speakers become known}
     <Speaker
       company="Palantir"
       image={imgHeadshotChrisLong}
@@ -233,62 +345,6 @@ const Speakers = ({ id }) => (
         simple differencing and more sophisticated clustering methods, Diffy
         will quickly point you to those instances requiring further digital
         forensics actions.
-      </p>
-    </Speaker>
-
-    <Speaker
-      company="Stripe"
-      image={imgHeadshotBenHughes}
-      image2x={imgHeadshotBenHughes2x}
-      image3x={imgHeadshotBenHughes3x}
-      name="Ben Hughes"
-      presentationName="Osquery, He Knows Me"
-      presentationTopic="Production Osquery"
-      title="Security Engineer"
-    >
-      <p>
-        This talk, aimed at everyone, highlights the journey from before Osquery
-        in my time with the Etsy security team, and some of the tooling and
-        problems we faced. The wrong decisions {`I've`} made, so you can learn from
-        my foolish hubris. To a number of thousand deployment of Osquery (and
-        fleet and some not so fleet) at Stripe.
-      </p>
-    </Speaker>
-
-    <Speaker
-      company="Kolide"
-      image={imgHeadshotMikeArpaia}
-      image2x={imgHeadshotMikeArpaia2x}
-      image3x={imgHeadshotMikeArpaia3x}
-      name="Mike Arpaia"
-      presentationName="Instrumenting Dynamic Environments with Source Control, Peer Review, and Decentralized Intelligence Distribution"
-      presentationTopic="Osquery Tools"
-      title="Co-Founder & CTO"
-    >
-      <p>
-        Osquery configurations often start simple and static, but, as the
-        complexity of an osquery deployment grows, the level of dynamicism grows
-        to where a complex server installation is required to group sets of
-        hosts together and target them for analytics and threat hunting.
-      </p>
-
-      <p>
-        This talk introduces some lessons learned from Kubernetes, a container
-        orchestration platform, on how to effectively decouple and manage
-        configurations of interrelated components.
-      </p>
-
-      <p>
-        We will discuss how to reason about higher level instrumentation
-        objectives and share components as decentralized, atomically
-        distributable intelligence.
-      </p>
-
-      <p>
-        Finally, the open-source ecosystem and established best practices will
-        be explored so that attendees can begin implementing this way of
-        managing and sharing host instrumentation capabilities and see immediate
-        improvements to their instrumentation capabilities.
       </p>
     </Speaker>
 
@@ -482,27 +538,6 @@ const Speakers = ({ id }) => (
     </Speaker>
 
     <Speaker
-      company="Facebook"
-      image={imgHeadshotTeddyReed}
-      image2x={imgHeadshotTeddyReed2x}
-      image3x={imgHeadshotTeddyReed3x}
-      name="Teddy Reed"
-      presentationName="The Scary Parts of Osquery"
-      presentationTopic="Osquery Internals"
-      title="Security Engineering Manager"
-    >
-      <p>
-        This talk is meant to be 50% comical and 50% gut-wrenching horror. We
-        will cover several of the older and more fragile components within
-        osquery. We will highlight several assumptions that have been working
-        well but lack testing coverage or rigorous review. This includes several
-        potential exceptional edge cases that could be disastrous to performance
-        or data integrity. We will conclude with several examples of how to make
-        all of osquery more reliable and set up for a bright and sunny future!
-      </p>
-    </Speaker>
-
-    <Speaker
       company="Trail of Bits"
       image={imgHeadshotMikeMyers}
       image2x={imgHeadshotMikeMyers2x}
@@ -546,35 +581,6 @@ const Speakers = ({ id }) => (
       </p>
     </Speaker>
 
-    <Speaker
-      company="Uptycs"
-      image={imgHeadshotMilanShah}
-      image2x={imgHeadshotMilanShah2x}
-      image3x={imgHeadshotMilanShah3x}
-      name="Milan Shah"
-      presentationName="Osquery and Docker Containers"
-      presentationTopic="Production Osquery"
-      title="Co-Founder and CTO"
-    >
-      <p>
-        In the past, osquery had major limitations in support for providing
-        visibility into Docker containers. With the recent addition of 14 Docker
-        related tables in osquery, new opportunities exist to address major use
-        cases around resource optimization, intrusion detection and compliance
-        for Docker environments. Combined with information from Kubernetes and
-        SWARM – osquery can now help provide visibility across a containerized
-        application.
-      </p>
-
-      <p>
-        In this talk, we will explore the recent Docker table additions to
-        osquery, expose existing limitations to help guide future osquery
-        developments and discuss the growing implications of osquery in a
-        serverless world. Attendees will leave this session with an
-        understanding of whether or not osquery can meet their needs for
-        securing and monitoring a Docker container environment.
-      </p>
-    </Speaker>
   {*/}
   </section>
 )
