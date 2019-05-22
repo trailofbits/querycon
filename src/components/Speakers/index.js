@@ -21,14 +21,14 @@ import imgHeadshotFritzIfertMiller3x from '../../pages/headshot-fritz-ifert-mill
 import imgHeadshotTaniaMcCormack from '../../pages/headshot-tania-mccormack.png'
 import imgHeadshotTaniaMcCormack2x from '../../pages/headshot-tania-mccormack-2x.png'
 import imgHeadshotTaniaMcCormack3x from '../../pages/headshot-tania-mccormack-3x.png'
-import imgHeadshotJonNelson from '../../pages/headshot-jon-nelson.jpg'
-import imgHeadshotJonNelson2x from '../../pages/headshot-jon-nelson-2x.jpg'
-import imgHeadshotJonNelson3x from '../../pages/headshot-jon-nelson-3x.jpg'
+import imgHeadshotJonNelson from '../../pages/headshot-jon-nelson.png'
+import imgHeadshotJonNelson2x from '../../pages/headshot-jon-nelson-2x.png'
+import imgHeadshotJonNelson3x from '../../pages/headshot-jon-nelson-3x.png'
 import imgHeadshotJosephSokolMargolis from '../../pages/headshot-joseph-sokol-margolis.jpg'
 import imgHeadshotJosephSokolMargolis2x from '../../pages/headshot-joseph-sokol-margolis-2x.jpg'
 import imgHeadshotJosephSokolMargolis3x from '../../pages/headshot-joseph-sokol-margolis-3x.jpg'
 {/* TODO: Update as more of 2019's speakers become known}
-Ben Hughes hasn't worked in the osquery space any longer and is not attending
+Ben Hughes is not attending this year
 import imgHeadshotChrisLong from '../../pages/headshot-chris-long.jpg'
 import imgHeadshotChrisLong2x from '../../pages/headshot-chris-long-2x.jpg'
 import imgHeadshotChrisLong3x from '../../pages/headshot-chris-long-3x.jpg'
@@ -41,7 +41,7 @@ import imgHeadshotMichaelLynn3x from '../../pages/headshot-michael-lynn-3x.jpg'
 import imgHeadshotHenryStamerjohan from '../../pages/headshot-henry-stamerjohan.jpg'
 import imgHeadshotHenryStamerjohan2x from '../../pages/headshot-henry-stamerjohan-2x.jpg'
 import imgHeadshotHenryStamerjohan3x from '../../pages/headshot-henry-stamerjohan-3x.jpg'
-Mike Arpaia wanted out of the osquery project and is not attending
+Mike Arpaia is not attending this year
 import imgHeadshotMikeMyers from '../../pages/headshot-mike-myers.jpg'
 import imgHeadshotMikeMyers2x from '../../pages/headshot-mike-myers-2x.jpg'
 import imgHeadshotMikeMyers3x from '../../pages/headshot-mike-myers-3x.jpg'
@@ -56,7 +56,7 @@ import imgHeadshotSamuelKeeley3x from '../../pages/headshot-samuel-keeley-3x.jpg
 import imgHeadshotScottLundgren from '../../pages/headshot-scott-lundgren.jpg'
 import imgHeadshotScottLundgren2x from '../../pages/headshot-scott-lundgren-2x.jpg'
 import imgHeadshotScottLundgren3x from '../../pages/headshot-scott-lundgren-3x.jpg'
-Milan Shah is blacklisted
+Milan Shah is not speaking this year
 import imgHeadshotForestMonsen from '../../pages/headshot-forest-monsen.jpg'
 import imgHeadshotForestMonsen2x from '../../pages/headshot-forest-monsen-2x.jpg'
 import imgHeadshotForestMonsen3x from '../../pages/headshot-forest-monsen-3x.jpg'
