@@ -169,7 +169,7 @@ const Schedule = ({ id }) => (
           products take advantage of this incredible index of information to find 
           security risks across our device fleet. In this talk, Fritz Ifert-Miller 
           will walk you through {`Osquery's`} mdfind virtual table, teach you 
-          {`Spotlight's`} advanced search syntax, and surprise you with the breadth 
+          {` Spotlight's`} advanced search syntax, and surprise you with the breadth
           and depth of information you can uncover. The talk will cover practical 
           use-cases and features Kolide has built on top of this table to help our 
           users discover and eliminate potential sources of data breaches.
@@ -302,7 +302,7 @@ const Schedule = ({ id }) => (
           of their limited resources. In this session, {`we’ll`} walk through our 
           process for identifying and grouping specific osquery tables to fill in 
           the gaps within the frameworks your organization subscribes to, whether 
-          {`that’s`} NIST, MITRE {`ATT&CK`}, or industry-based regulations.
+          {` that’s`} NIST, MITRE {`ATT&CK`}, or industry-based regulations.
           </p>
         </ScheduleEntry>
 
