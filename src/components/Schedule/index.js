@@ -116,8 +116,8 @@ const Schedule = ({ id }) => (
         >
           <p>
           Do you need to send your osquery logs to a custom backend? Is your current 
-          data pipeline a mess? Need to add a new table? Intimidated by C++? {`Let’s`} 
-          write an osquery extension! Find out how to take advantage of {`osquery’s`} 
+          data pipeline a mess? Need to add a new table? Intimidated by C++? {`Let’s `}
+          write an osquery extension! Find out how to take advantage of {`osquery’s `}
           powerful plugin interface to make osquery work in your environment.
           </p>
           <p>
