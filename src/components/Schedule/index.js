@@ -205,15 +205,21 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="2:45 pm"
-          category="TBA"
-          details="TBA"
+          category="osquery Development"
+          details="PolyLogyx"
           end="3:15 pm"
-          speaker="TBA"
-          title="TBA"
+          speaker="Atul Kabra"
+          title="Enriching osquery with 'event-driven' extensions"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          Osquery has a mechanism for extending its core via extensions, but it {`doesn’t `}
+          allow an extension to participate in {`osquery's`} event framework. In this talk, 
+          we will describe how we overcame some of the design constraints in the osquery 
+          extension model, in order to create event-driven tables in an extension. As 
+          well, we will share our wishlist for how the extension ecosystem for osquery 
+          could be improved to enable some exciting potential use-cases for the 
+          endpoint agent.
           </p>
         </ScheduleEntry>
 
