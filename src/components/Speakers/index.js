@@ -323,7 +323,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotAlexMalone2x}
       image3x={imgHeadshotAlexMalone3x}
       name="Alex Malone"
-      presentationName="Internals : how osquery uses sqlite3 and rocksdb"
+      presentationName="Internals: how osquery uses sqlite3 and rocksdb"
       presentationTopic="osquery Internals"
       title="Senior Software Engineer"
     >

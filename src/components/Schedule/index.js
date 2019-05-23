@@ -243,7 +243,7 @@ const Schedule = ({ id }) => (
           details="AlienVault"
           end="4:15 pm"
           speaker="Alex Malone"
-          title="Internals : how osquery uses sqlite3 and rocksdb"
+          title="Internals: how osquery uses sqlite3 and rocksdb"
           type={TALK}
         >
           <p>
