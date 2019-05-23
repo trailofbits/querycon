@@ -30,6 +30,9 @@ import imgHeadshotJosephSokolMargolis3x from '../../pages/headshot-joseph-sokol-
 import imgHeadshotAtulKabra from '../../pages/headshot-atul-kabra.png'
 import imgHeadshotAtulKabra2x from '../../pages/headshot-atul-kabra-2x.png'
 import imgHeadshotAtulKabra3x from '../../pages/headshot-atul-kabra-3x.png'
+import imgHeadshotAlexMalone from '../../pages/headshot-alex-malone.png'
+import imgHeadshotAlexMalone2x from '../../pages/headshot-alex-malone-2x.png'
+import imgHeadshotAlexMalone3x from '../../pages/headshot-alex-malone-3x.png'
 {/* TODO: Update as more of 2019's speakers become known}
 Ben Hughes is not attending this year
 import imgHeadshotChrisLong from '../../pages/headshot-chris-long.jpg'
@@ -313,6 +316,26 @@ const Speakers = ({ id }) => (
       endpoint agent.
       </p>
     </Speaker>
+
+    <Speaker
+      company="AlienVault"
+      image={imgHeadshotAlexMalone}
+      image2x={imgHeadshotAlexMalone2x}
+      image3x={imgHeadshotAlexMalone3x}
+      name="Alex Malone"
+      presentationName="Internals : how osquery uses sqlite3 and rocksdb"
+      presentationTopic="osquery Internals"
+      title="Senior Software Engineer"
+    >
+      <p>
+      We will walk through a query from SQL to the logged JSON results, noting the 
+      important interactions with sqlite3 and rocksdb. For example, the processes 
+      table specifies an INDEX on pid. What does that entail, and how does it impact 
+      how the table generate() function is called? In this talk, listeners will gain 
+      insight into the sqlite3 virtual table API.
+      </p>
+    </Speaker>
+
 
   {/* TODO: Update as more of 2019's speakers become known}
     <Speaker
