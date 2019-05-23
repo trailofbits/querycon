@@ -225,11 +225,11 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="3:15 pm"
-          category="TBA"
-          details="TBA"
+          category=""
+          details=""
           end="3:45 pm"
           speaker="TBA"
-          title="TBA"
+          title=""
           type={TALK}
         >
           <p>
@@ -239,25 +239,29 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="3:45 pm"
-          category="TBA"
-          details="TBA"
+          category="osquery Internals"
+          details="AlienVault"
           end="4:15 pm"
-          speaker="TBA"
-          title="TBA"
+          speaker="Alex Malone"
+          title="Internals: how osquery uses sqlite3 and rocksdb"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          We will walk through a query from SQL to the logged JSON results, noting the 
+          important interactions with sqlite3 and rocksdb. For example, the processes 
+          table specifies an INDEX on pid. What does that entail, and how does it impact 
+          how the table generate() function is called? In this talk, listeners will gain 
+          insight into the sqlite3 virtual table API.
           </p>
         </ScheduleEntry>
 
         <ScheduleEntry
           begin="4:15 pm"
-          category="TBA"
-          details="TBA"
+          category=""
+          details=""
           end="4:45 pm"
           speaker="TBA"
-          title="TBA"
+          title=""
           type={TALK}
         >
           <p>
@@ -270,7 +274,7 @@ const Schedule = ({ id }) => (
           category="After-hours event"
           details="TBA"
           end="8:00 pm"
-          speaker="TBA"
+          speaker=""
           title="Off-Site Dinner & Drinks"
           type={WORKSHOP}
         />
@@ -336,12 +340,12 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="10:30 am"
-          category="TBA"
+          category=""
           day={2}
-          details="TBA"
+          details=""
           end="11:00 am"
           speaker="TBA"
-          title="TBA"
+          title=""
           type={TALK}
         >
           <p>
@@ -380,12 +384,12 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="11:30 am"
-          category="TBA"
+          category=""
           day={2}
-          details="TBA"
+          details=""
           end="12:00 pm"
           speaker="TBA"
-          title="TBA"
+          title=""
           type={TALK}
         >
           <p>
