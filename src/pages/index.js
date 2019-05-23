@@ -402,7 +402,7 @@ const IndexPage = () => (
       <ProminentCta
         heading="Hit Us Up on Twitter"
         icon={imgTwitterBird}
-        href="https://www.twitter.com/trailofbits"
+        href="https://www.twitter.com/QueryConf"
       />
 
       <ProminentCta
