@@ -27,6 +27,9 @@ import imgHeadshotJonNelson3x from '../../pages/headshot-jon-nelson-3x.png'
 import imgHeadshotJosephSokolMargolis from '../../pages/headshot-joseph-sokol-margolis.jpg'
 import imgHeadshotJosephSokolMargolis2x from '../../pages/headshot-joseph-sokol-margolis-2x.jpg'
 import imgHeadshotJosephSokolMargolis3x from '../../pages/headshot-joseph-sokol-margolis-3x.jpg'
+import imgHeadshotAtulKabra from '../../pages/headshot-atul-kabra.png'
+import imgHeadshotAtulKabra2x from '../../pages/headshot-atul-kabra-2x.png'
+import imgHeadshotAtulKabra3x from '../../pages/headshot-atul-kabra-3x.png'
 {/* TODO: Update as more of 2019's speakers become known}
 Ben Hughes is not attending this year
 import imgHeadshotChrisLong from '../../pages/headshot-chris-long.jpg'
@@ -287,6 +290,27 @@ const Speakers = ({ id }) => (
       process for identifying and grouping specific osquery tables to fill in 
       the gaps within the frameworks your organization subscribes to, whether 
       {` that’s`} NIST, MITRE {`ATT&CK`}, or industry-based regulations.
+      </p>
+    </Speaker>
+
+    <Speaker
+      company="PolyLogyx"
+      image={imgHeadshotAtulKabra}
+      image2x={imgHeadshotAtulKabra2x}
+      image3x={imgHeadshotAtulKabra3x}
+      name="Atul Kabra"
+      presentationName="Enriching osquery with 'event-driven' extensions"
+      presentationTopic="osquery Development"
+      title="Co-Founder, CTO and Architect"
+    >
+      <p>
+      Osquery has a mechanism for extending its core via extensions, but it {`doesn’t `}
+      allow an extension to participate in {`osquery's`} event framework. In this talk, 
+      we will describe how we overcame some of the design constraints in the osquery 
+      extension model, in order to create event-driven tables in an extension. As 
+      well, we will share our wishlist for how the extension ecosystem for osquery 
+      could be improved to enable some exciting potential use-cases for the 
+      endpoint agent.
       </p>
     </Speaker>
 
