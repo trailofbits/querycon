@@ -60,7 +60,7 @@ import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from '../util/constants'
   {
     questionLine1: 'Is parking available at the venue?',
     answer:
-      'There is parking available <a href="https://www.parkwhiz.com/p/new-york-parking/90-water-st/?venue_id=47752" target="_blank"> near the venue.',
+      'There is parking available <a href="https://www.parkwhiz.com/p/new-york-parking/90-water-st/?venue_id=47752" target="_blank"> near the venue</a>.',
   },
   {
     questionLine1: 'Can I sponsor this conference?',
