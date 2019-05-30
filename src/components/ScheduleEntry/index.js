@@ -12,8 +12,8 @@ export const ENTRY_TYPES = {
   WORKSHOP: 'workshop',
 }
 
-const DAY_1 = 'May 31 - (Day 1)'
-const DAY_2 = 'June 1 - (Day 2)'
+const DAY_1 = 'June 20 - (Day 1)'
+const DAY_2 = 'June 21 - (Day 2)'
 const cx = classNames.bind(styles)
 
 export class ScheduleEntry extends React.Component {
@@ -56,9 +56,9 @@ export class ScheduleEntry extends React.Component {
       >
         <h3 className={styles.time}>
           {day === 2 ? (
-            <span className={styles.day}>June 1 - (Day 2)</span>
+            <span className={styles.day}>June 21 - (Day 2)</span>
           ) : (
-            <span className={styles.day}>May 31 - (Day 1)</span>
+            <span className={styles.day}>June 20 - (Day 1)</span>
           )}
           {begin} - {end}
         </h3>
