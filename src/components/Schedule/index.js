@@ -225,15 +225,25 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="3:15 pm"
-          category=""
-          details=""
+          category="Production osquery"
+          details="Segment"
           end="3:45 pm"
-          speaker="TBA"
-          title=""
+          speaker="Matt Jane"
+          title="Monitoring Ephemeral Infrastructure with osquery"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          Modern infrastructure and deployment methods, as well as web-scale infrastructure 
+          have brought about a new paradigm in infrastructure management. Short lived and 
+          ephemeral resources allow applications to scale up and down on demand.
+
+          Unfortunately this means that one of the primary information gather methods of 
+          osquery, scheduled queries, becomes far less useful if queries are scheduled for 
+          a longer interval than the infrastructure will exist.
+
+          This {`doesn’t`} mean osquery and scheduled queries are no longer useful, far 
+          from it. It simply means that we need to adjust our way of thinking a bit and 
+          adapt our methods of information gathering to overcome these new issues.
           </p>
         </ScheduleEntry>
 
@@ -257,22 +267,32 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="4:15 pm"
-          category=""
-          details=""
+          category="Production osquery"
+          details="Zercurity"
           end="4:45 pm"
-          speaker="TBA"
-          title=""
+          speaker="Hugh Neale"
+          title="Osquery across compliance, monitoring, risk and threat hunting"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+          Stories, use cases and lessons learnt from the front line: Hugh will 
+          demonstrate how powerful osquery is across compliance, 
+          monitoring, risk IAM and threat hunting. The goal is to help build a 
+          complete picture of your IT estate and security posture. This talk is 
+          aimed at IT and Security operations.
+
+          Zercurity has been using osquery in production workloads from startups 
+          to listed companies. They use osquery for inventory management, monitoring, 
+          compliance, risk, vulnerability management and IAM to name a few. Hugh will
+          share some of their takeaways over the last few years and tell you 
+          about some of the things you can build atop osquery.
           </p>
         </ScheduleEntry>
 
         <ScheduleEntry
           begin="5:00 pm"
           category="After-hours event"
-          details="TBA"
+          details="Mailroom"
           end="8:00 pm"
           speaker=""
           title="Off-Site Dinner & Drinks"
