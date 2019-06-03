@@ -11,7 +11,7 @@
 }
 
 .preConfLink {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   display: block;
   margin-bottom: 22px;
   padding: 0 15px;
@@ -19,7 +19,7 @@
   width: 190px;
 
   &:hover {
-    color: $hot-pink;
+    color: $color-red;
   }
 
   @media(max-width: $mobile-width) {
@@ -50,7 +50,7 @@
   width: 190px;
 
   @media(max-width: $mobile-width) {
-    color: $cookie-monster-blue;
+    color: $color-red;
     font-weight: bold;
     line-height: 1.5;
     margin-left: 10px;

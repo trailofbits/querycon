@@ -8,6 +8,7 @@
 }
 
 .link {
+  color: $color-dark-grey;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: .6px;
@@ -16,16 +17,6 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $hot-pink;
+    color: $color-red;
   }
-}
-
-.linkLight {
-  @extend .link;
-  color: $eggshell;
-}
-
-.linkDark {
-  @extend .link;
-  color: $grape;
 }

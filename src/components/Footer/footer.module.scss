@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .footer {
-  background-color: $cloud;
+  background-color: $color-light-grey;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
@@ -14,9 +14,9 @@
 }
 
 .footerBranding {
-  background: url('../../pages/querycon.svg') left center no-repeat;
+  background: url('assets/logo/querycon_logo.svg') left center no-repeat;
   background-size: 48px 48px;
-  color: $grape;
+  color: $color-dark-grey;
   font-size: 18px;
   font-weight: 900;
   height: 48px;
@@ -28,7 +28,7 @@
 }
 
 .header {
-  color: $grape;
+  color: $color-dark-grey;
   font-size: 16px;
   letter-spacing: 0.6px;
   text-align: left;
@@ -43,7 +43,7 @@
   }
 
   > a {
-    color: $grape;
+    color: $color-dark-grey;
     font-size: 16px;
     font-weight: 700;
     text-align: left;
@@ -80,7 +80,7 @@
 }
 
 .metaText {
-  color: $grape-light;
+  color: $color-dark-grey;
   display: block;
   font-size: 18px;
   font-weight: 400;
@@ -89,7 +89,7 @@
 }
 
 .metaText a {
-  color: $grape-light;
+  color: $color-dark-grey;
 
   &:hover {
     text-decoration: underline;

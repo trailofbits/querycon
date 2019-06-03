@@ -18,7 +18,7 @@
   background-position: center 90px;
   background-repeat: no-repeat;
   border-radius: 10px;
-  border-top: 12px solid $hot-pink;
+  border-top: 12px solid $color-red;
   box-shadow: 0 3px 20px 0 rgba(50, 50, 93, 0.14),
     0 3px 3px 0 rgba(0, 0, 0, 0.07);
   box-sizing: border-box;
@@ -31,7 +31,7 @@
   background-color: $cloud;
   background-image: url('./night-owl.svg');
   background-position: center 85px;
-  border-color: $grape;
+  border-color: $color-medium-grey;
   box-shadow: none;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .price {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 80px;
   font-weight: 900;
   margin: 120px 0 0px;
@@ -50,7 +50,7 @@
 }
 
 .priceFee {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 24px;
   font-weight: 900;
   margin-bottom: 25px;
@@ -76,7 +76,7 @@
 }
 
 .dates {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 24px;
   margin-top: 40px;
   text-align: center;
@@ -92,7 +92,7 @@
 }
 
 .lateRegistrationTiles {
-  background: linear-gradient($cloud, $white 30%);
+  background: linear-gradient($color-light-grey, $white 30%);
   margin-top: 80px;
   position: relative;
   width: 100%;
@@ -114,16 +114,16 @@
 }
 
 .lateRegistrationTile {
-  background-image: url('../../pages/querycon.svg');
+  background-image: url('assets/logo/querycon_logo.svg');
   background-size: 66px 66px;
-  border-color: $cookie-monster-blue;
+  border-color: $color-red;
   margin: 146px auto 0;
 }
 
 .lateRegistrationButton {
-  background-color: $cookie-monster-blue;
+  background-color: $color-red;
 
   &:hover {
-    background: lighten($cookie-monster-blue, 10%);
+    background-color: darken($color-red, 10%);
   }
 }

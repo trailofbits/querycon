@@ -14,7 +14,7 @@
 }
 
 .presentationTopic {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 16px;
   font-weight: 900;
   letter-spacing: 2px;
@@ -23,7 +23,7 @@
 }
 
 .presentationName {
-  color: $hot-pink;
+  color: $color-red;
   font-size: 24px;
   font-weight: 900;
   letter-spacing: normal;
@@ -31,7 +31,7 @@
 }
 
 .speaker p {
-  color: $dark-gray;
+  color: $color-dark-grey;
   font-size: 18px;
   letter-spacing: normal;
   line-height: 1.33;
@@ -59,7 +59,7 @@
 }
 
 .name {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 24px;
   font-weight: 900;
   letter-spacing: 0.1px;
@@ -67,7 +67,7 @@
 }
 
 .title {
-  color: $dark-gray;
+  color: $color-dark-grey;
   font-size: 18px;
   letter-spacing: normal;
   line-height: 1.33;

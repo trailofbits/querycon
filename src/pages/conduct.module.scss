@@ -25,7 +25,7 @@
 }
 
 .header {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 46px;
   font-weight: 900;
   line-height: .83;
@@ -46,7 +46,7 @@
 }
 
 .contactUsBar {
-  background-color: $hot-pink;
+  background-color: $color-red;
   margin-top: 110px;
   width: 100%;
 }
@@ -70,7 +70,7 @@
 
 .contactUsButton {
   background-color: $white;
-  color: $hot-pink;
+  color: $color-red;
   display: inline-block;
   margin-bottom: 11px;
   margin-left: 20px;
@@ -99,7 +99,7 @@
 }
 
 .containerTitle {
-  color: $hot-pink;
+  color: $color-red;
   font-size: 34px;
   font-weight: 900;
   line-height: 1.5;
@@ -113,7 +113,7 @@
 }
 
 .policyTitle {
-  color: $hot-pink;
+  color: $color-red;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.5;
@@ -146,12 +146,12 @@
 }
 
 .inlineLink {
-  color: $hot-pink;
+  color: $color-red;
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-    color: $dark-pink;
+    color: $color-red;
   }
 }
 
@@ -173,7 +173,7 @@
 }
 
 .bottomText {
-  color: rgba(0, 18, 95, 0.56);
+  color: $color-medium-grey;
   font-size: 24px;
   line-height: 1.67;
   margin-top: 55px;

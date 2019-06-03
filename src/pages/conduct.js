@@ -1,6 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+import codeOfConductImage from 'assets/images/code-of-conduct.svg';
+import paperAirplaneImage from 'assets/images/paper-airplane.svg';
+
 import Button from '../components/buttons/Button'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -25,11 +28,7 @@ const CodeOfConduct = () => (
 
     <div className={styles.heroSection}>
       <div className={styles.header}>Code of Conduct</div>
-      <img
-        alt=""
-        className={styles.heroImage}
-        src={require('./code-of-conduct.svg')}
-      />
+      <img className={styles.heroImage} src={codeOfConductImage} alt="Code of Conduct" />
       <div className={styles.contactUsBar}>
         <span className={styles.contactUsContent}>
           Have a concern? {"Don't"} hesitate to reach out:
@@ -133,11 +132,7 @@ const CodeOfConduct = () => (
     <div className={styles.borderBottom} />
 
     <div className={styles.contactUsContainer}>
-      <img
-        alt=""
-        className={styles.bottomImage}
-        src={require('./paper-airplane.svg')}
-      />
+      <img className={styles.bottomImage} src={paperAirplaneImage} alt="Paper Airplane" />
 
       <div className={styles.bottomText}>
         <div>Still have questions about QueryCon?</div>
