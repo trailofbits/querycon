@@ -7,9 +7,14 @@
   margin: 0;
 }
 
+:global(a) {
+  color: $color-red;
+}
+
+
 :global(p) {
   box-sizing: border-box;
-  color: $dark-gray;
+  color: $color-dark-grey;
   font-size: 18px;
   line-height: 1.7;
   margin: 0;
@@ -22,7 +27,7 @@
 }
 
 :global(h2) {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 48px;
   font-weight: 900;
   margin: 0;
@@ -35,7 +40,7 @@
 }
 
 :global(h3) {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.5;
