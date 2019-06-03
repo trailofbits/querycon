@@ -5,12 +5,11 @@
 }
 
 .question {
-  color: $hot-pink;
+  color: $color-red;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.5;
   margin-bottom: 12px;
-  text-align: center;
 
   @media screen and (max-width: $mobile-width) {
     font-size: 22px;
@@ -18,7 +17,7 @@
 }
 
 .answer {
-  color: #202532;
+  color: $color-dark-grey;
   font-size: 18px;
   line-height: 1.78;
   text-align: justify;
