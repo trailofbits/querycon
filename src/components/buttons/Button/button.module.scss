@@ -1,7 +1,7 @@
 @import '../../../styles/variables';
 
 .button {
-  background-color: $cookie-monster-blue;
+  background-color: $color-red;
   border-radius: 4px;
   color: $white;
   display: block;
@@ -15,6 +15,6 @@
   width: 240px;
 
   &:hover {
-    background: darken($cookie-monster-blue, 10%);
+    background: darken($color-red, 10%);
   }
 }

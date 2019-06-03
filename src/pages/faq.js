@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
+import paperAirplaneImage from 'assets/images/paper-airplane.svg';
+
 import Button from '../components/buttons/Button'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -133,11 +135,7 @@ class FAQ extends Component {
         <div className={styles.borderBottom} />
 
         <div className={styles.contactUsContainer}>
-          <img
-            alt=""
-            className={styles.bottomImage}
-            src={require('./paper-airplane.svg')}
-          />
+          <img className={styles.bottomImage} src={paperAirplaneImage} alt="Paper Airplane" />
 
           <div className={styles.bottomText}>
             <div>Still have questions about QueryCon?</div>
