@@ -1,8 +1,8 @@
 import React from 'react'
 
-import imgHeadshotStefanoBonicatti from '../../pages/headshot-stefano-bonicatti.jpg'
-import imgHeadshotStefanoBonicatti2x from '../../pages/headshot-stefano-bonicatti-2x.jpg'
-import imgHeadshotStefanoBonicatti3x from '../../pages/headshot-stefano-bonicatti-3x.jpg'
+import imgHeadshotStefanoBonicatti from '../../pages/headshot-stefano-bonicatti.png'
+import imgHeadshotStefanoBonicatti2x from '../../pages/headshot-stefano-bonicatti-2x.png'
+import imgHeadshotStefanoBonicatti3x from '../../pages/headshot-stefano-bonicatti-3x.png'
 import imgHeadshotAlessandroGario from '../../pages/headshot-alessandro-gario.jpg'
 import imgHeadshotAlessandroGario2x from '../../pages/headshot-alessandro-gario-2x.jpg'
 import imgHeadshotAlessandroGario3x from '../../pages/headshot-alessandro-gario-3x.jpg'
@@ -33,6 +33,9 @@ import imgHeadshotAtulKabra3x from '../../pages/headshot-atul-kabra-3x.png'
 import imgHeadshotAlexMalone from '../../pages/headshot-alex-malone.png'
 import imgHeadshotAlexMalone2x from '../../pages/headshot-alex-malone-2x.png'
 import imgHeadshotAlexMalone3x from '../../pages/headshot-alex-malone-3x.png'
+import imgHeadshotHughNeale from '../../pages/headshot-hugh-neale.png'
+import imgHeadshotHughNeale2x from '../../pages/headshot-hugh-neale-2x.png'
+import imgHeadshotHughNeale3x from '../../pages/headshot-hugh-neale-3x.png'
 import imgHeadshotPlaceholder from '../../pages/headshot-placeholder.jpg'
 import imgHeadshotPlaceholder2x from '../../pages/headshot-placeholder-2x.jpg'
 import imgHeadshotPlaceholder3x from '../../pages/headshot-placeholder-3x.jpg'
@@ -366,9 +369,9 @@ const Speakers = ({ id }) => (
 
     <Speaker
       company="Zercurity"
-      image={imgHeadshotPlaceholder}
-      image2x={imgHeadshotPlaceholder2x}
-      image3x={imgHeadshotPlaceholder3x}
+      image={imgHeadshotHughNeale}
+      image2x={imgHeadshotHughNeale2x}
+      image3x={imgHeadshotHughNeale3x}
       name="Hugh Neale"
       presentationName="Osquery across compliance, monitoring, risk and threat hunting"
       presentationTopic="Production osquery"
