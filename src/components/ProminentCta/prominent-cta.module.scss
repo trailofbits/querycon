@@ -6,7 +6,7 @@
   text-decoration: none;
 
   &:visited {
-    color: $midnight-blue;
+    color: $color-dark-grey;
   }
 
   @media(max-width: $mobile-width) {
@@ -21,7 +21,7 @@
 
 .circle {
   align-items: center;
-  background-color: $cloud;
+  background-color: $color-light-grey;
   border-radius: 300px;
   display: inline-flex;
   height: 300px;
@@ -46,10 +46,14 @@
 }
 
 .heading {
-  color: $cookie-monster-blue;
+  color: $color-red;
   display: block;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
   text-decoration: none;
+
+  &:hover {
+    color: darken($color-red, 10%);
+  }
 }

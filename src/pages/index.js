@@ -4,36 +4,22 @@ import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 import Link from 'gatsby-link'
 
+import paperAirplaneImage from 'assets/images/paper-airplane.svg'
+import rightArrowImage from 'assets/images/right-arrow-circle.svg'
+
 import FeatureTile from '../components/FeatureTile'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import imgAirbnb from './airbnb.svg'
 import imgExpedia from './expedia.svg'
 import imgFAQ from './faq.svg'
-/* TODO: To substitute with new speakers
-import imgHeadshotBenHughes from './headshot-ben-hughes.jpg'
-import imgHeadshotBenHughes2x from './headshot-ben-hughes-2x.jpg'
-import imgHeadshotBenHughes3x from './headshot-ben-hughes-3x.jpg'*/
 import imgHeroLogo from './querycon-large.svg'
-import imgMikeStage1 from './mike-stage-1.png'
-import imgOrbitz from './orbitz.svg'
-import imgPalaceOfFineArtsPoster from './palace-fine-arts.jpg'
-import imgPaperAirplane from 'assets/images/paper-airplane.svg'
 import imgTwitterBird from './twitter-bird.svg'
-import imgVenue from './palace-fine-arts.svg'
-import MainSpeaker from '../components/MainSpeaker'
 import MediaLinks from '../components/MediaLinks'
 import MobileHeader from '../components/MobileHeader'
 import ProminentCta from '../components/ProminentCta'
 import RegistrationTiles from '../components/RegistrationTiles'
-import rightArrow from './right-facing-arrow.svg'
-import rightArrowPink from '../components/common/arrow-right-pink.svg'
-import SpeakerTile from '../components/SpeakerTile'
 import styles from './index.module.scss'
-/* TODO: Substitute with another video of NY?
-import videoPalaceOfFineArtsMp4 from './palace-fine-arts.mp4'
-import videoPalaceOfFineArtsWebM from './palace-fine-arts.webm'*/
-import Videos from '../components/Videos'
 import { MOBILE_WIDTH } from '../util/constants'
 
 const cx = classNames.bind(styles)
@@ -228,7 +214,7 @@ const IndexPage = () => (
     <div className={styles.passFeatures}>
       <FeatureTile title="Full Conference Access" url="/program">
         Registration grants you full access to our two-day single track
-        conference, packed with osquery experts, leaders, major open-source 
+        conference, packed with osquery experts, leaders, major open-source
         contributors, and community members.
       </FeatureTile>
 
@@ -255,10 +241,10 @@ const IndexPage = () => (
     </div>
 
     <div className={styles.sectionSubheader}>
-    <Link to="/program#speakers">
-          See The Full Program <img alt="" src={rightArrow} />
-    </Link>
-    
+      <Link to="/program#speakers">
+        See The Full Program <img src={rightArrowImage} alt="Right Arrow" />
+      </Link>
+
     {/* TODO: Add speakers when known}
     <MainSpeaker
       company="Facebook"
@@ -314,7 +300,7 @@ const IndexPage = () => (
     <div className={styles.sectionSubheader}>
       Some recommended hotels near the venue: <a href="https://www.marriott.com/hotels/travel/nycal-aloft-manhattan-downtown-financial-district/">Aloft Manhattan Downtown</a>,{" "}
       <a href="https://www.marriott.com/hotels/travel/nycws-new-york-marriott-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">New York Marriott Downtown</a>,{" "}
-      <a href="https://www.marriott.com/hotels/travel/nycwd-w-new-york-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">the W New York – Downtown</a>, 
+      <a href="https://www.marriott.com/hotels/travel/nycwd-w-new-york-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2">the W New York – Downtown</a>,
       or <a href="https://conradhotels3.hilton.com/en/hotels/new-york/conrad-new-york-NYCCICI/index.html?SEO_id=GMB-CI-NYCCICI">Conrad New York</a>.
     </div>
 
@@ -407,7 +393,7 @@ const IndexPage = () => (
 
       <ProminentCta
         heading="Contact Us"
-        icon={imgPaperAirplane}
+        icon={paperAirplaneImage}
         href="mailto:mike.myers@trailofbits.com"
       />
     </div>

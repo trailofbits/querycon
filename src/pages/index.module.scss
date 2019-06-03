@@ -9,6 +9,10 @@
 
 :global(a) {
   color: $color-red;
+
+  &:hover {
+    color: darken($color-red, 10%);
+  }
 }
 
 
@@ -69,7 +73,7 @@
 }
 
 .sectionSubheader {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 24px;
   line-height: 1.67;
   margin: 0 auto;
@@ -97,7 +101,7 @@
 
 .genericBanner {
   background-color: $cloud;
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 24px;
   height: 72px;
   letter-spacing: 6px;
@@ -137,7 +141,7 @@
 }
 
 .heroSection {
-  background-color: $midnight-blue;
+  background-color: $color-dark-grey;
   position: relative;
 
   /* TODO: Substitute it with another image?
@@ -278,7 +282,7 @@
 }
 
 .bigCharacter {
-  color: $cookie-monster-blue;
+  color: $color-red;
   font-size: 50px;
   font-weight: 900;
   line-height: 1em;
@@ -325,13 +329,13 @@
   text-transform: uppercase;
 
   @media (min-width: $mobile-width + 1) {
-    background: url('./kolide-pattern.svg') $cookie-monster-blue;
+    background: url('./kolide-pattern.svg') $color-red;
   }
 
   @media (max-width: $mobile-width) {
     background: url('./kolide-small-tile.svg') 7% center no-repeat,
       url('./kolide-small-tile.svg') 93% center no-repeat;
-    background-color: $cookie-monster-blue;
+    background-color: $color-red;
     box-sizing: border-box;
     font-size: 16px;
     letter-spacing: 2px;
@@ -351,9 +355,9 @@
     background-image: linear-gradient(
       to right,
       transparent,
-      $cookie-monster-blue 20%,
-      $cookie-monster-blue 50%,
-      $cookie-monster-blue 80%,
+      $color-red 20%,
+      $color-red 50%,
+      $color-red 80%,
       transparent
     );
   }
@@ -372,7 +376,7 @@
 }
 
 .reserveSub {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 30px;
   text-align: center;
 
@@ -382,7 +386,7 @@
 }
 
 .passDescription {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 30px;
   font-weight: 400;
   margin: 69px 0 75px;
@@ -417,7 +421,7 @@
 }
 
 .speakerSubmissionsHeader {
-  color: $cookie-monster-blue;
+  color: $color-red;
   font-size: 48px;
   font-weight: 900;
   margin: 0 auto 45px;
@@ -434,7 +438,7 @@
 }
 
 .speakerSubmissionsDescription {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 24px;
   line-height: 1.67;
   margin: 0 auto 50px;
@@ -448,7 +452,7 @@
   }
 
   strong {
-    color: $midnight-blue;
+    color: $color-dark-grey;
   }
 }
 
@@ -470,7 +474,7 @@
 }
 
 .venueDescription {
-  color: $dark-gray;
+  color: $color-dark-grey;
   font-size: 20px;
   line-height: 1.6;
   margin: 0 auto 111px;
@@ -560,7 +564,7 @@
 }
 
 .learnMoreLink {
-  color: #3f64ed;
+  color: $color-red;
   display: block;
   font-size: 20px;
   font-weight: 900;
@@ -575,5 +579,5 @@
 }
 
 .questionsSectionHeader {
-  color: $cookie-monster-blue;
+  color: $color-red;
 }
