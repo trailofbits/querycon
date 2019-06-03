@@ -1,8 +1,8 @@
 import React from 'react'
 
-import imgHeadshotStefanoBonicatti from 'assets/headshots/headshot-stefano-bonicatti.jpg'
-import imgHeadshotStefanoBonicatti2x from 'assets/headshots/headshot-stefano-bonicatti-2x.jpg'
-import imgHeadshotStefanoBonicatti3x from 'assets/headshots/headshot-stefano-bonicatti-3x.jpg'
+import imgHeadshotStefanoBonicatti from 'assets/headshots/headshot-stefano-bonicatti.png'
+import imgHeadshotStefanoBonicatti2x from 'assets/headshots/headshot-stefano-bonicatti-2x.png'
+import imgHeadshotStefanoBonicatti3x from 'assets/headshots/headshot-stefano-bonicatti-3x.png'
 import imgHeadshotAlessandroGario from 'assets/headshots/headshot-alessandro-gario.jpg'
 import imgHeadshotAlessandroGario2x from 'assets/headshots/headshot-alessandro-gario-2x.jpg'
 import imgHeadshotAlessandroGario3x from 'assets/headshots/headshot-alessandro-gario-3x.jpg'
@@ -15,9 +15,9 @@ import imgHeadshotVictorVrantchan3x from 'assets/headshots/headshot-victor-vrant
 import imgHeadshotJasonMeller from 'assets/headshots/headshot-jason-meller.png'
 import imgHeadshotJasonMeller2x from 'assets/headshots/headshot-jason-meller-2x.png'
 import imgHeadshotJasonMeller3x from 'assets/headshots/headshot-jason-meller-3x.png'
-import imgHeadshotFritzIfertMiller from 'assets/headshots/headshot-fritz-ifert-miller.jpg'
-import imgHeadshotFritzIfertMiller2x from 'assets/headshots/headshot-fritz-ifert-miller-2x.jpg'
-import imgHeadshotFritzIfertMiller3x from 'assets/headshots/headshot-fritz-ifert-miller-3x.jpg'
+import imgHeadshotFritzIfertMiller from 'assets/headshots/headshot-fritz-ifert-miller.png'
+import imgHeadshotFritzIfertMiller2x from 'assets/headshots/headshot-fritz-ifert-miller-2x.png'
+import imgHeadshotFritzIfertMiller3x from 'assets/headshots/headshot-fritz-ifert-miller-3x.png'
 import imgHeadshotTaniaMcCormack from 'assets/headshots/headshot-tania-mccormack.png'
 import imgHeadshotTaniaMcCormack2x from 'assets/headshots/headshot-tania-mccormack-2x.png'
 import imgHeadshotTaniaMcCormack3x from 'assets/headshots/headshot-tania-mccormack-3x.png'
@@ -33,6 +33,9 @@ import imgHeadshotAtulKabra3x from 'assets/headshots/headshot-atul-kabra-3x.png'
 import imgHeadshotAlexMalone from 'assets/headshots/headshot-alex-malone.png'
 import imgHeadshotAlexMalone2x from 'assets/headshots/headshot-alex-malone-2x.png'
 import imgHeadshotAlexMalone3x from 'assets/headshots/headshot-alex-malone-3x.png'
+import imgHeadshotHughNeale from 'assets/headshots/headshot-hugh-neale.png'
+import imgHeadshotHughNeale2x from 'assets/headshots/headshot-hugh-neale-2x.png'
+import imgHeadshotHughNeale3x from 'assets/headshots/headshot-hugh-neale-3x.png'
 import imgHeadshotPlaceholder from 'assets/headshots/headshot-placeholder.jpg'
 import imgHeadshotPlaceholder2x from 'assets/headshots/headshot-placeholder-2x.jpg'
 import imgHeadshotPlaceholder3x from 'assets/headshots/headshot-placeholder-3x.jpg'
@@ -326,9 +329,9 @@ const Speakers = ({ id }) => (
 
     <Speaker
       company="Zercurity"
-      image={imgHeadshotPlaceholder}
-      image2x={imgHeadshotPlaceholder2x}
-      image3x={imgHeadshotPlaceholder3x}
+      image={imgHeadshotHughNeale}
+      image2x={imgHeadshotHughNeale2x}
+      image3x={imgHeadshotHughNeale3x}
       name="Hugh Neale"
       presentationName="Osquery across compliance, monitoring, risk and threat hunting"
       presentationTopic="Production osquery"
