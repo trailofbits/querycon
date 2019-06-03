@@ -38,6 +38,16 @@
     "import/core-modules": [
       "react",
       "react-dom"
-    ]
+    ],
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "assets",
+            "./src/assets"
+          ]
+        ]
+      }
+    }
   }
 }
