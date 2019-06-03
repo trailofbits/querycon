@@ -6,6 +6,7 @@ import Link from 'gatsby-link'
 
 import paperAirplaneImage from 'assets/images/paper-airplane.svg'
 import rightArrowImage from 'assets/images/right-arrow-circle.svg'
+import queryConLogo from 'assets/logo/querycon_logo.svg'
 
 import FeatureTile from '../components/FeatureTile'
 import Footer from '../components/Footer'
@@ -13,7 +14,6 @@ import Header from '../components/Header'
 import imgAirbnb from './airbnb.svg'
 import imgExpedia from './expedia.svg'
 import imgFAQ from './faq.svg'
-import imgHeroLogo from './querycon-large.svg'
 import imgTwitterBird from './twitter-bird.svg'
 import MediaLinks from '../components/MediaLinks'
 import MobileHeader from '../components/MobileHeader'
@@ -61,9 +61,11 @@ const IndexPage = () => (
 
         <h1 className={styles.header}>QueryCon 2019</h1>
         <div className={styles.heroLogo}>
-          <img alt="" src={imgHeroLogo} />
+          <img alt="" src={queryConLogo} />
         </div>
-        <h2 className={styles.subHeader}>An osquery conference by Trail of Bits and Kolide, co-sponsored by Carbon Black</h2>
+        <h2 className={styles.subHeader}>An osquery conference</h2>
+        <h2 className={styles.subHeader}>by Trail of Bits and Kolide</h2>
+        <h2 className={styles.subHeader}>co-sponsored by Carbon Black</h2>
         <h3 className={styles.subSubHeader}>New York City | Jun 20 - Jun 21</h3>
       </div>
     </section>

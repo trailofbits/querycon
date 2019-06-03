@@ -141,7 +141,7 @@
 }
 
 .heroSection {
-  background-color: $color-dark-grey;
+  background-color: $color-light-grey;
   position: relative;
 
   /* TODO: Substitute it with another image?
@@ -174,7 +174,6 @@
 }
 
 .heroContent {
-  background-color: rgba(0, 18, 95, 0.6);
   height: 784px;
   position: relative;
   z-index: 1;
@@ -186,7 +185,7 @@
 }
 
 .header {
-  color: $white;
+  color: $color-black;
   font-size: 72px;
   font-weight: 900;
   letter-spacing: 4px;
@@ -200,22 +199,31 @@
 
 .heroLogo {
   height: 200px;
-  margin: 52px auto 47px;
-  width: 198px;
+  width: 200px;
+  margin: 50px auto;
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
 
   @media (max-width: $mobile-width) {
     height: 110px;
     width: 110px;
+
+    img {
+      height: 110px;
+      width: 110px;
+    }
   }
 }
 
 .subHeader {
-  color: $white;
+  color: $color-dark-grey;
   font-size: 24px;
   font-weight: 900;
   letter-spacing: 5.3px;
   line-height: 1.58;
-  margin: 40px 0 0;
   text-align: center;
   text-transform: uppercase;
 
@@ -226,7 +234,7 @@
 }
 
 .subSubHeader {
-  color: $white;
+  color: $color-dark-grey;
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 1.5px;

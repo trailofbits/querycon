@@ -6,14 +6,14 @@ import TextLogo from '../TextLogo'
 
 import styles from './header.module.scss'
 
-const Header = props => (
+const Header = () => (
   <div className={styles.header}>
-    <TextLogo dark={props.dark} />
+    <TextLogo />
 
     <div className={styles.navigation}>
-      <Nav dark={props.dark} />
+      <Nav />
 
-      <RegisterButton className={styles.registerButton}/>
+      <RegisterButton className={styles.registerButton} />
     </div>
   </div>
 )
