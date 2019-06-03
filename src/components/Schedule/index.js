@@ -29,7 +29,7 @@ const Schedule = ({ id }) => (
         <ScheduleEntry
           begin="8:30 am"
           end="9:30 am"
-          title="Check-In / Breakfast"
+          speaker="Check-In / Breakfast"
           type={MEAL}
         />
 
@@ -130,7 +130,7 @@ const Schedule = ({ id }) => (
         <ScheduleEntry
           begin="12:00 pm"
           end="1:00 pm"
-          title="Lunch"
+          speaker="Lunch"
           type={MEAL}
         />
 
@@ -312,7 +312,7 @@ const Schedule = ({ id }) => (
           begin="8:30 am"
           day={2}
           end="9:30 am"
-          title="Check-In / Breakfast"
+          speaker="Check-In / Breakfast"
           type={MEAL}
         />
 
@@ -422,7 +422,7 @@ const Schedule = ({ id }) => (
           begin="12:00 pm"
           day={2}
           end="1:00 pm"
-          title="Lunch"
+          speaker="Lunch"
           type={MEAL}
         />
 

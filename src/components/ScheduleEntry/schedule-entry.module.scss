@@ -12,6 +12,25 @@
   }
 }
 
+@mixin entry($entry-class-name, $entry-color) {
+  .entry.#{$entry-class-name} {
+    .time {
+      background-color: $entry-color;
+      border-color: $entry-color;
+    }
+
+    .entryBody {
+      border-color: $entry-color;
+    }
+  }
+}
+
+@include entry('talk', $color-dark-grey);
+@include entry('keynote', $color-red);
+@include entry('workshop', $color-red);
+@include entry('meal', $color-yellow);
+@include entry('break', $color-medium-grey);
+
 .time {
   border: 1px solid;
   border-bottom: none;
@@ -56,12 +75,13 @@
 .detailsToggle {
   background: transparent;
   border: none;
-  color: $cookie-monster-blue;
+  color: $color-medium-grey;
   font-family: $primary-font;
   font-size: 10px;
   font-weight: 700;
   margin-top: 20px;
   text-transform: uppercase;
+  text-decoration: underline;
 
   &:hover {
     cursor: pointer;
@@ -80,63 +100,8 @@
   }
 }
 
-.entry.break {
-  .time {
-    background-color: $grape-24;
-    border-color: $grape-24;
-  }
-
-  .entryBody {
-    border-color: $grape-24;
-  }
-}
-
-.entry.keynote {
-  .time {
-    background-color: $hot-pink;
-    border-color: $hot-pink;
-  }
-
-  .entryBody {
-    border-color: $hot-pink;
-  }
-}
-
-.entry.meal {
-  .time {
-    background-color: $yellow;
-    border-color: $yellow;
-  }
-
-  .entryBody {
-    border-color: $yellow;
-  }
-}
-
-.entry.talk {
-  .time {
-    background-color: $cookie-monster-blue;
-    border-color: $cookie-monster-blue;
-  }
-
-  .entryBody {
-    border-color: $cookie-monster-blue;
-  }
-}
-
-.entry.workshop {
-  .time {
-    background-color: $midnight-blue;
-    border-color: $midnight-blue;
-  }
-
-  .entryBody {
-    border-color: $midnight-blue;
-  }
-}
-
 .category {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -146,7 +111,7 @@
 }
 
 .title {
-  color: $midnight-blue;
+  color: $color-red;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
@@ -155,7 +120,7 @@
 }
 
 .speaker {
-  color: $cookie-monster-blue;
+  color: $color-dark-grey;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 6px;
@@ -163,7 +128,6 @@
 }
 
 .details {
-  color: $grape;
   font-size: 14px;
   text-align: center;
 }
