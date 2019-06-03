@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .workshop {
-  color: $dark-gray;
+  color: $color-dark-grey;
   font-size: 18px;
   line-height: 1.6;
   margin: 0 auto;
@@ -30,7 +30,7 @@
     }
     li:before {
         content: '\2022';
-        color: #ff287a;
+        color: $color-red;
         padding-right: 12px
     }
   }

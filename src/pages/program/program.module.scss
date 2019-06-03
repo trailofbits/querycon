@@ -43,7 +43,7 @@
 
   li:before {
     content: '\2022';
-    color: #ff287a;
+    color: $color-red;
     padding-right: 12px
   }
 }
