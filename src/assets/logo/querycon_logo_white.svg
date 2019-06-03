@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>QueryCon</title>
+    <desc>QueryCon Logo</desc>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="osql_color_logo" transform="translate(0.000000, 21.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(0.000000, -21.000000)">
+                <g transform="translate(15.000000, 52.000000)" id="Path">
+                    <polygon fill="#FFFFFF" points="32.1 13.9 30 0.4 56.2 19.9 59.1 37.8"></polygon>
+                    <polygon fill="#FFFFFF" points="27.9 13.9 29.9 0.4 3.7 19.9 0.8 37.8"></polygon>
+                </g>
+                <g transform="translate(52.000000, 15.000000)" id="Path">
+                    <polygon fill="#FFFFFF" points="14 27.7 0.5 29.8 20 3.6 38 0.7"></polygon>
+                    <polygon fill="#FFFFFF" points="14 31.9 0.5 29.9 20 56.1 38 59"></polygon>
+                </g>
+                <g id="Path">
+                    <g transform="translate(15.000000, 0.000000)">
+                        <polygon fill="#FFFFFF" points="27.9 24 30 37.5 3.8 18 0.9 0"></polygon>
+                        <polygon fill="#FFFFFF" points="32.2 24 30.1 37.5 56.3 18 59.2 0"></polygon>
+                    </g>
+                    <g transform="translate(0.000000, 15.000000)">
+                        <polygon fill="#FFFFFF" points="24 32.1 37.5 30.1 18 56.3 0.1 59.2"></polygon>
+                        <polygon fill="#FFFFFF" points="24 27.9 37.5 30 18 3.8 0.1 0.9"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

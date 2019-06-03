@@ -5,7 +5,6 @@ import styles from './schedule-entry.module.scss'
 
 export const ENTRY_TYPES = {
   BREAK: 'break',
-  HOST: 'host',
   KEYNOTE: 'keynote',
   MEAL: 'meal',
   TALK: 'talk',

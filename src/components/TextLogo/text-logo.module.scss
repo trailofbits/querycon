@@ -4,21 +4,17 @@
   font-size: 18px;
   font-weight: 900;
   height: 50px;
+  width: 50px;
   letter-spacing: 3px;
   line-height: 50px;
   padding-left: 65px;
   text-decoration: none;
   text-transform: uppercase;
-}
+  background: url('assets/logo/querycon_logo.svg') left center no-repeat;
+  background-size: 50px 50px;
+  color: $color-black;
 
-.textLogoLight {
-  @extend .textLogo;
-  background: url('../../pages/querycon-large.svg') left center no-repeat;
-  color: $white;
-}
-
-.textLogoDark {
-  @extend .textLogo;
-  background: url('../../pages/small-querycon-dark.svg') left center no-repeat;
-  color: $midnight-blue;
+  &:hover {
+    color: $color-red;
+  }
 }

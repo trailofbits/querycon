@@ -1,15 +1,20 @@
-<svg width="320px" height="200px" viewBox="0 0 320 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="320px" height="200px" viewBox="0 0 320 200" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <circle id="path-1" cx="160" cy="37" r="12"></circle>
         <filter x="-39.6%" y="-39.6%" width="179.2%" height="179.2%" filterUnits="objectBoundingBox" id="filter-2">
             <feGaussianBlur stdDeviation="8" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
             <feOffset dx="0" dy="3" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0.125490196   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"
+                         result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.125490196   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.15 0"
+                           type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
             <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
             <feOffset dx="0" dy="3" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
-            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
-            <feColorMatrix values="0 0 0 0 0.125490196   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.07 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"
+                         result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.125490196   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.07 0"
+                           type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
             <feMerge>
                 <feMergeNode in="shadowMatrixInner1"></feMergeNode>
                 <feMergeNode in="shadowMatrixInner2"></feMergeNode>
@@ -20,38 +25,51 @@
             <stop stop-color="#B8BDC1" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
-            <stop stop-color="#FF287A" offset="0%"></stop>
-            <stop stop-color="#FF287A" offset="100%"></stop>
+            <stop stop-color="#ad182b" offset="0%"></stop>
+            <stop stop-color="#ad182b" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="badge-top">
             <g id="Group-36">
                 <g id="Group-35">
-                    <ellipse id="Oval-8" stroke="#B7BEC5" stroke-width="5" cx="160" cy="104" rx="21.5" ry="13.5"></ellipse>
+                    <ellipse id="Oval-8" stroke="#B7BEC5" stroke-width="5" cx="160" cy="104" rx="21.5"
+                             ry="13.5"></ellipse>
                     <rect id="Rectangle-33" fill="#B7BEC5" x="156" y="110" width="8" height="15" rx="2"></rect>
                     <g id="Group-17" transform="translate(0.000000, 147.000000)">
                         <g id="Group-15">
                             <g id="Group-18">
                                 <g id="Oval-7">
                                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)"
+                                         xlink:href="#path-1"></use>
                                 </g>
-                                <path d="M10,0 L310,0 C315.522847,-1.01453063e-15 320,4.4771525 320,10 L320,12 L0,12 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z" id="Rectangle-20" fill="#3F64ED"></path>
+                                <path d="M10,0 L310,0 C315.522847,-1.01453063e-15 320,4.4771525 320,10 L320,12 L0,12 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z"
+                                      id="Rectangle-20" fill="#5a5a5a"></path>
                             </g>
                         </g>
                     </g>
-                    <rect id="Rectangle-31" fill="url(#linearGradient-3)" x="153" y="123" width="14" height="60" rx="3"></rect>
+                    <rect id="Rectangle-31" fill="url(#linearGradient-3)" x="153" y="123" width="14" height="60"
+                          rx="3"></rect>
                     <rect id="Rectangle-32" fill="#DADEE2" x="152" y="113" width="16" height="8" rx="2"></rect>
                     <g id="Group-12" transform="translate(111.000000, 0.000000)">
-                        <path d="M38,67 L60,67 C61.1045695,67 62,67.8954305 62,69 L62,95.8741814 C62,96.9787509 61.1045695,97.8741814 60,97.8741814 C59.7106,97.8741814 59.4246471,97.8113756 59.1618836,97.6901001 L55.5,96 C51.3757082,94.0964807 46.6242918,94.0964807 42.5,96 L38.8381164,97.6901001 C37.8352121,98.152979 36.6469601,97.715202 36.1840812,96.7122977 C36.0628058,96.4495342 36,96.1635814 36,95.8741814 L36,69 C36,67.8954305 36.8954305,67 38,67 Z" id="Rectangle-34" fill="#FF287A"></path>
-                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="57" y="69" width="4" height="2" rx="1"></rect>
-                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="52" y="69" width="4" height="2" rx="1"></rect>
-                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="47" y="69" width="4" height="2" rx="1"></rect>
-                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="42" y="69" width="4" height="2" rx="1"></rect>
-                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="37" y="69" width="4" height="2" rx="1"></rect>
-                        <polygon id="Rectangle-38" fill="#D50771" transform="translate(67.075622, 34.500000) scale(-1, 1) translate(-67.075622, -34.500000) " points="36.1512433 0 62.1512433 0 98 69 72 69"></polygon>
-                        <polygon id="Rectangle-38" fill="url(#linearGradient-4)" points="0.151243272 0 26.1512433 0 62 69 36 69"></polygon>
+                        <path d="M38,67 L60,67 C61.1045695,67 62,67.8954305 62,69 L62,95.8741814 C62,96.9787509 61.1045695,97.8741814 60,97.8741814 C59.7106,97.8741814 59.4246471,97.8113756 59.1618836,97.6901001 L55.5,96 C51.3757082,94.0964807 46.6242918,94.0964807 42.5,96 L38.8381164,97.6901001 C37.8352121,98.152979 36.6469601,97.715202 36.1840812,96.7122977 C36.0628058,96.4495342 36,96.1635814 36,95.8741814 L36,69 C36,67.8954305 36.8954305,67 38,67 Z"
+                              id="Rectangle-34" fill="#ad182b"></path>
+                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="57" y="69" width="4" height="2"
+                              rx="1"></rect>
+                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="52" y="69" width="4" height="2"
+                              rx="1"></rect>
+                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="47" y="69" width="4" height="2"
+                              rx="1"></rect>
+                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="42" y="69" width="4" height="2"
+                              rx="1"></rect>
+                        <rect id="Rectangle-36" fill-opacity="0.3" fill="#FFFFFF" x="37" y="69" width="4" height="2"
+                              rx="1"></rect>
+                        <polygon id="Rectangle-38" fill="#801220"
+                                 transform="translate(67.075622, 34.500000) scale(-1, 1) translate(-67.075622, -34.500000) "
+                                 points="36.1512433 0 62.1512433 0 98 69 72 69"></polygon>
+                        <polygon id="Rectangle-38" fill="url(#linearGradient-4)"
+                                 points="0.151243272 0 26.1512433 0 62 69 36 69"></polygon>
                     </g>
                 </g>
             </g>

@@ -1,15 +1,12 @@
 @import '../styles/variables';
 
 .heroSection {
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 130px;
+  margin: 130px auto 0;
   text-align: center;
 }
 
 .header {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 46px;
   font-weight: 900;
   line-height: .83;
@@ -30,7 +27,7 @@
 }
 
 .contactUsBar {
-  background-color: $cookie-monster-blue;
+  background-color: $color-red;
   margin-top: 110px;
   width: 100%;
 }
@@ -54,14 +51,14 @@
 
 .contactUsButton {
   background-color: $white;
-  color: $cookie-monster-blue;
+  color: $color-red;
   display: inline-block;
   margin-bottom: 11px;
   margin-left: 20px;
   margin-top: 11px;
 
   &:hover {
-    background-color: $cloud;
+    background-color: $color-light-grey;
   }
 }
 
@@ -96,7 +93,7 @@
 }
 
 .bottomText {
-  color: rgba(0, 18, 95, 0.56);
+  color: $color-medium-grey;
   font-size: 24px;
   line-height: 1.67;
   margin-top: 55px;

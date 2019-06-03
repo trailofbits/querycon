@@ -11,7 +11,7 @@
 }
 
 .dayHeading {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 36px;
   font-weight: 900;
   margin: 0;
@@ -30,9 +30,9 @@
 }
 
 .mobileDayLink {
-  border: 1px solid $cookie-monster-blue;
+  border: 1px solid $color-red;
   border-radius: 6px;
-  color: $cookie-monster-blue;
+  color: $color-red;
   display: block;
   font-size: 20px;
   font-weight: 700;

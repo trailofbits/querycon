@@ -7,9 +7,18 @@
   margin: 0;
 }
 
+:global(a) {
+  color: $color-red;
+
+  &:hover {
+    color: darken($color-red, 10%);
+  }
+}
+
+
 :global(p) {
   box-sizing: border-box;
-  color: $dark-gray;
+  color: $color-dark-grey;
   font-size: 18px;
   line-height: 1.7;
   margin: 0;
@@ -22,7 +31,7 @@
 }
 
 :global(h2) {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 48px;
   font-weight: 900;
   margin: 0;
@@ -35,7 +44,7 @@
 }
 
 :global(h3) {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.5;
@@ -64,7 +73,7 @@
 }
 
 .sectionSubheader {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 24px;
   line-height: 1.67;
   margin: 0 auto;
@@ -92,7 +101,7 @@
 
 .genericBanner {
   background-color: $cloud;
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 24px;
   height: 72px;
   letter-spacing: 6px;
@@ -132,7 +141,7 @@
 }
 
 .heroSection {
-  background-color: $midnight-blue;
+  background-color: $color-light-grey;
   position: relative;
 
   /* TODO: Substitute it with another image?
@@ -165,7 +174,6 @@
 }
 
 .heroContent {
-  background-color: rgba(0, 18, 95, 0.6);
   height: 784px;
   position: relative;
   z-index: 1;
@@ -177,7 +185,7 @@
 }
 
 .header {
-  color: $white;
+  color: $color-black;
   font-size: 72px;
   font-weight: 900;
   letter-spacing: 4px;
@@ -191,22 +199,31 @@
 
 .heroLogo {
   height: 200px;
-  margin: 52px auto 47px;
-  width: 198px;
+  width: 200px;
+  margin: 50px auto;
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
 
   @media (max-width: $mobile-width) {
     height: 110px;
     width: 110px;
+
+    img {
+      height: 110px;
+      width: 110px;
+    }
   }
 }
 
 .subHeader {
-  color: $white;
+  color: $color-dark-grey;
   font-size: 24px;
   font-weight: 900;
   letter-spacing: 5.3px;
   line-height: 1.58;
-  margin: 40px 0 0;
   text-align: center;
   text-transform: uppercase;
 
@@ -217,7 +234,7 @@
 }
 
 .subSubHeader {
-  color: $white;
+  color: $color-dark-grey;
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -273,7 +290,7 @@
 }
 
 .bigCharacter {
-  color: $cookie-monster-blue;
+  color: $color-red;
   font-size: 50px;
   font-weight: 900;
   line-height: 1em;
@@ -320,13 +337,13 @@
   text-transform: uppercase;
 
   @media (min-width: $mobile-width + 1) {
-    background: url('./kolide-pattern.svg') $cookie-monster-blue;
+    background: url('./kolide-pattern.svg') $color-red;
   }
 
   @media (max-width: $mobile-width) {
     background: url('./kolide-small-tile.svg') 7% center no-repeat,
       url('./kolide-small-tile.svg') 93% center no-repeat;
-    background-color: $cookie-monster-blue;
+    background-color: $color-red;
     box-sizing: border-box;
     font-size: 16px;
     letter-spacing: 2px;
@@ -346,9 +363,9 @@
     background-image: linear-gradient(
       to right,
       transparent,
-      $cookie-monster-blue 20%,
-      $cookie-monster-blue 50%,
-      $cookie-monster-blue 80%,
+      $color-red 20%,
+      $color-red 50%,
+      $color-red 80%,
       transparent
     );
   }
@@ -367,7 +384,7 @@
 }
 
 .reserveSub {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 30px;
   text-align: center;
 
@@ -377,7 +394,7 @@
 }
 
 .passDescription {
-  color: $midnight-blue;
+  color: $color-dark-grey;
   font-size: 30px;
   font-weight: 400;
   margin: 69px 0 75px;
@@ -412,7 +429,7 @@
 }
 
 .speakerSubmissionsHeader {
-  color: $cookie-monster-blue;
+  color: $color-red;
   font-size: 48px;
   font-weight: 900;
   margin: 0 auto 45px;
@@ -429,7 +446,7 @@
 }
 
 .speakerSubmissionsDescription {
-  color: $grape;
+  color: $color-medium-grey;
   font-size: 24px;
   line-height: 1.67;
   margin: 0 auto 50px;
@@ -443,7 +460,7 @@
   }
 
   strong {
-    color: $midnight-blue;
+    color: $color-dark-grey;
   }
 }
 
@@ -465,7 +482,7 @@
 }
 
 .venueDescription {
-  color: $dark-gray;
+  color: $color-dark-grey;
   font-size: 20px;
   line-height: 1.6;
   margin: 0 auto 111px;
@@ -555,7 +572,7 @@
 }
 
 .learnMoreLink {
-  color: #3f64ed;
+  color: $color-red;
   display: block;
   font-size: 20px;
   font-weight: 900;
@@ -570,5 +587,5 @@
 }
 
 .questionsSectionHeader {
-  color: $cookie-monster-blue;
+  color: $color-red;
 }

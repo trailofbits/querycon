@@ -2,12 +2,11 @@ import React from 'react'
 
 import styles from './text-logo.module.scss'
 
-const TextLogo = ({ dark }) => {
-  const { textLogoDark, textLogoLight } = styles
-  const style = dark ? textLogoDark : textLogoLight
+const TextLogo = () => {
+  const { textLogo } = styles
 
   return (
-    <a className={style} href="/">QueryCon</a>
+    <a className={textLogo} href="/">QueryCon</a>
   )
 }
 

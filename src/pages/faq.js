@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive'
 
+import faqImage from 'assets/images/faq-image.svg';
+import paperAirplaneImage from 'assets/images/paper-airplane.svg';
+
 import Button from '../components/buttons/Button'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -104,7 +107,7 @@ class FAQ extends Component {
 
         <div className={styles.heroSection}>
           <div className={styles.header}>Frequently Asked Questions</div>
-          <img alt="" className={styles.heroImage} src={require('./faq-image.svg')} />
+          <img className={styles.heroImage} src={faqImage} alt="Questions?" />
           <div className={styles.contactUsBar}>
             <span className={styles.contactUsContent}>
               {"Don't"} see your question below? {"Don't"} hesitate to reach
@@ -133,11 +136,7 @@ class FAQ extends Component {
         <div className={styles.borderBottom} />
 
         <div className={styles.contactUsContainer}>
-          <img
-            alt=""
-            className={styles.bottomImage}
-            src={require('./paper-airplane.svg')}
-          />
+          <img className={styles.bottomImage} src={paperAirplaneImage} alt="Paper Airplane" />
 
           <div className={styles.bottomText}>
             <div>Still have questions about QueryCon?</div>
