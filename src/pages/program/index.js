@@ -56,19 +56,7 @@ class ProgramPage extends Component {
           <MobileHeader />
         </MediaQuery>
 
-        {/* TODO: Uncomment when program is ready}
         <h2 className={styles.h2}>Program</h2>
-        {*/}
-
-        {/* TODO: Delete me by June 1 when talk submissions are closed */}
-        <h2 className={styles.h2}>
-        <a
-          className={styles.learnMoreLink}
-          href="https://www.papercall.io/querycon19"
-          rel="noopener noreferrer"
-          target="_blank"
-        >Submissions for talks are open!</a></h2><h3>More speaker announcements coming soon</h3>
-
 
         <div className={styles.tabs}>
           <Tab
