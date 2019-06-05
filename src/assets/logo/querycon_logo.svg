@@ -1,29 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>QueryCon</title>
-    <desc>QueryCon Logo</desc>
-    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="osql_color_logo" transform="translate(0.000000, 21.000000)" fill-rule="nonzero">
-            <g id="Group" transform="translate(0.000000, -21.000000)">
-                <g transform="translate(15.000000, 52.000000)" id="Path">
-                    <polygon fill="#BC2029" points="32.1 13.9 30 0.4 56.2 19.9 59.1 37.8"></polygon>
-                    <polygon fill="#000000" points="27.9 13.9 29.9 0.4 3.7 19.9 0.8 37.8"></polygon>
-                </g>
-                <g transform="translate(52.000000, 15.000000)" id="Path">
-                    <polygon fill="#BC2029" points="14 27.7 0.5 29.8 20 3.6 38 0.7"></polygon>
-                    <polygon fill="#000000" points="14 31.9 0.5 29.9 20 56.1 38 59"></polygon>
-                </g>
-                <g id="Path">
-                    <g transform="translate(15.000000, 0.000000)">
-                        <polygon fill="#BC2029" points="27.9 24 30 37.5 3.8 18 0.9 0"></polygon>
-                        <polygon fill="#000000" points="32.2 24 30.1 37.5 56.3 18 59.2 0"></polygon>
-                    </g>
-                    <g transform="translate(0.000000, 15.000000)">
-                        <polygon fill="#BC2029" points="24 32.1 37.5 30.1 18 56.3 0.1 59.2"></polygon>
-                        <polygon fill="#000000" points="24 27.9 37.5 30 18 3.8 0.1 0.9"></polygon>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" cursor="default" style="enable-background:new 0 0 243.2 131.9;zoom: 1;" x="0px" y="0px" xml:space="preserve" version="1.1" viewBox="0 0 75 75"><style type="text/css">
+        .st0{display:none;}
+        .st1{display:inline;}
+        .st2{fill:#939598;}
+        .st3{fill:#FFFFFF;}
+        .st4{fill:#BC2029;}
+</style><g id="Layer_2" class="st0"></g><g id="Layer_1"><g><g><g><g><g><polygon class="st4" points="47.194153,58.964256 46.394165,53.764267 56.39415,61.264259 57.494156,68.164215 "></polygon></g><g><polygon class="st4" points="45.494167,58.964256 46.294159,53.764267 36.294151,61.264259 35.194145,68.164215 "></polygon></g></g><g><g><polygon class="st4" points="54.394165,50.064262 49.194134,50.86425 56.694138,40.864258 63.594177,39.764259 "></polygon></g><g><polygon class="st4" points="54.394165,51.764259 49.194134,50.964256 56.694138,60.964256 63.594177,62.064274 "></polygon></g></g><g><g><g><polygon class="st4" points="45.594173,42.964256 46.394165,48.064262 36.294151,40.664261 35.194145,33.764248 "></polygon></g><g><polygon class="st4" points="47.194153,42.964256 46.394165,48.064262 56.39415,40.664261 57.494156,33.764248 "></polygon></g></g><g><g><polygon class="st4" points="38.29414,51.764259 43.494167,50.964256 35.994148,61.064262 29.194143,62.164265 "></polygon></g><g><polygon class="st4" points="38.29414,50.164253 43.494167,50.964256 35.994148,40.964256 29.194143,39.864258 "></polygon></g></g></g></g></g><g><g><g><g><polygon points="19.294153,47.36425 18.594154,42.164261 28.594154,49.664253 29.694139,56.56427 "></polygon></g><g><polygon points="17.694134,47.36425 18.494152,42.164261 8.494137,49.664253 7.394148,56.56427 "></polygon></g></g><g><g><polygon points="26.594147,38.795593 21.394157,39.595596 28.894157,29.595573 35.794151,28.495575 "></polygon></g><g><polygon points="26.594147,40.395599 21.394157,39.595596 28.894157,49.695595 35.794151,50.795601 "></polygon></g></g><g><g><g><polygon points="17.794142,31.364243 18.494152,36.464249 8.494137,29.06424 7.394148,22.164234 "></polygon></g><g><polygon points="19.394161,31.364243 18.594154,36.464249 28.594154,29.06424 29.694139,22.164234 "></polygon></g></g><g><g><polygon points="10.494134,40.164261 15.694136,39.364258 8.194133,49.464256 1.294163,50.564262 "></polygon></g><g><polygon points="10.494134,38.564262 15.694136,39.364258 8.194133,29.364243 1.294163,28.264236 "></polygon></g></g></g></g></g><g><g><g><g><polygon class="st2" points="58.094177,32.164246 57.294144,27.06424 67.294098,34.464241 68.394089,41.364258 "></polygon></g><g><polygon class="st2" points="56.494156,32.164246 57.294144,27.06424 47.194153,34.464241 46.094173,41.364258 "></polygon></g></g><g><g><polygon class="st2" points="65.294144,23.364239 60.194153,24.064236 67.594116,14.064251 74.494141,12.96425 "></polygon></g><g><polygon class="st2" points="65.294144,24.964233 60.194153,24.164234 67.594116,34.164246 74.494141,35.264244 "></polygon></g></g><g><g><g><polygon class="st2" points="56.494156,16.164244 57.294144,21.264233 47.294159,13.864243 46.094173,6.964246 "></polygon></g><g><polygon class="st2" points="58.094177,16.164244 57.294144,21.264233 67.394104,13.864243 68.494095,6.964246 "></polygon></g></g><g><g><polygon class="st2" points="49.29414,24.964233 54.394165,24.264236 46.994171,34.264244 40.094181,35.36425 "></polygon></g><g><polygon class="st2" points="49.29414,23.364239 54.394165,24.164234 46.994171,14.164246 40.094181,13.064245 "></polygon></g></g></g></g></g></g></g></svg>
