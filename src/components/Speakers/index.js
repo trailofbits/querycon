@@ -33,6 +33,9 @@ import imgHeadshotAtulKabra3x from 'assets/headshots/headshot-atul-kabra-3x.png'
 import imgHeadshotAlexMalone from 'assets/headshots/headshot-alex-malone.png'
 import imgHeadshotAlexMalone2x from 'assets/headshots/headshot-alex-malone-2x.png'
 import imgHeadshotAlexMalone3x from 'assets/headshots/headshot-alex-malone-3x.png'
+import imgHeadshotMattJane from 'assets/headshots/headshot-matt-jane.png'
+import imgHeadshotMattJane2x from 'assets/headshots/headshot-matt-jane-2x.png'
+import imgHeadshotMattJane3x from 'assets/headshots/headshot-matt-jane-3x.png'
 import imgHeadshotHughNeale from 'assets/headshots/headshot-hugh-neale.png'
 import imgHeadshotHughNeale2x from 'assets/headshots/headshot-hugh-neale-2x.png'
 import imgHeadshotHughNeale3x from 'assets/headshots/headshot-hugh-neale-3x.png'
@@ -304,9 +307,9 @@ const Speakers = ({ id }) => (
 
     <Speaker
       company="Segment"
-      image={imgHeadshotPlaceholder}
-      image2x={imgHeadshotPlaceholder2x}
-      image3x={imgHeadshotPlaceholder3x}
+      image={imgHeadshotMattJane}
+      image2x={imgHeadshotMattJane2x}
+      image3x={imgHeadshotMattJane3x}
       name="Matt Jane"
       presentationName="Monitoring Ephemeral Infrastructure with osquery"
       presentationTopic="Production osquery"
