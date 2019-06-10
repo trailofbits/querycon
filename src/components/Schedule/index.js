@@ -137,44 +137,25 @@ const Schedule = ({ id }) => (
         <ScheduleEntry
           begin="1:00 pm"
           category="osquery development"
-          details="Trail of Bits"
-          end="1:30 pm"
-          speaker="Stefano Bonicatti"
-          title="osql, the community-oriented osquery fork"
+          details="Facebook"
+          end="1:45 pm"
+          speaker="Teddy Reed and Ryan Wilson"
+          title="Panel Discussion: the osquery Foundation"
           type={TALK}
         >
           <p>
-            osql is a community-oriented fork of osquery. Its goals are making
-            the development process more open and predictable, reviewing and
-            accepting community contributions more quickly, and restoring the
-            {` community’s`} confidence and direct participation in the osquery project.
-            In this talk, we discuss how we intend to maintain a successful community
-            fork of a major open-source project.
+          Teddy, along with Facebook colleague Ryan Wilson, will lead a panel discussion 
+          and {`Q&A`} with members of the osquery community about the plans to transfer 
+          stewardship of osquery from Facebook to an open-source foundation.
           </p>
         </ScheduleEntry>
 
         <ScheduleEntry
-          begin="1:30 pm"
-          category="Production osquery"
-          details="Kolide"
+          begin="1:45 pm"
           end="2:00 pm"
-          speaker="Fritz Ifert-Miller"
-          title="Using macOS Spotlight and Osquery to Prevent Data Breaches"
-          type={TALK}
-        >
-          <p>
-            For those of us on Macs, Spotlight is a critical operating system feature
-            we rely on daily to find the files we need littered throughout our hard
-            drives. Despite its usefulness in our daily lives, very few security
-            products take advantage of this incredible index of information to find
-            security risks across our device fleet. In this talk, Fritz Ifert-Miller
-            will walk you through {`Osquery's`} mdfind virtual table, teach you
-            {` Spotlight's`} advanced search syntax, and surprise you with the breadth
-            and depth of information you can uncover. The talk will cover practical
-            use-cases and features Kolide has built on top of this table to help our
-            users discover and eliminate potential sources of data breaches.
-          </p>
-        </ScheduleEntry>
+          title="Break"
+          type={BREAK}
+        />
 
         <ScheduleEntry
           begin="2:00 pm"
@@ -198,16 +179,9 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="2:30 pm"
-          end="2:40 pm"
-          title="Break"
-          type={BREAK}
-        />
-
-        <ScheduleEntry
-          begin="2:45 pm"
           category="osquery Development"
           details="PolyLogyx"
-          end="3:15 pm"
+          end="3:00 pm"
           speaker="Atul Kabra"
           title="Enriching osquery with 'event-driven' extensions"
           type={TALK}
@@ -224,10 +198,10 @@ const Schedule = ({ id }) => (
         </ScheduleEntry>
 
         <ScheduleEntry
-          begin="3:15 pm"
+          begin="3:00 pm"
           category="Production osquery"
           details="Segment"
-          end="3:45 pm"
+          end="3:30 pm"
           speaker="Matt Jane"
           title="Monitoring Ephemeral Infrastructure with osquery"
           type={TALK}
@@ -246,6 +220,13 @@ const Schedule = ({ id }) => (
             adapt our methods of information gathering to overcome these new issues.
           </p>
         </ScheduleEntry>
+
+        <ScheduleEntry
+          begin="3:30 pm"
+          end="3:45 pm"
+          title="Break"
+          type={BREAK}
+        />
 
         <ScheduleEntry
           begin="3:45 pm"
@@ -323,7 +304,7 @@ const Schedule = ({ id }) => (
           details="Carbon Black"
           end="10:00 am"
           speaker="Jon Nelson"
-          title="Using Queries as Building Blocks to Support Your Security Framework"
+          title="Queries as Building Blocks for Your Security Framework"
           type={TALK}
         >
           <p>
@@ -344,7 +325,7 @@ const Schedule = ({ id }) => (
           details="Trail of Bits"
           end="10:30 am"
           speaker="Alessandro Gario"
-          title="The history of Linux security event monitoring with osquery"
+          title="Linux security event monitoring with osquery"
           type={TALK}
         >
           <p>
@@ -360,16 +341,24 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="10:30 am"
-          category=""
-          day={2}
-          details=""
+          category="Production osquery"
+          details="Kolide"
           end="11:00 am"
-          speaker="TBA"
-          title=""
+          speaker="Fritz Ifert-Miller"
+          title="Using macOS Spotlight and Osquery to Prevent Data Breaches"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+            For those of us on Macs, Spotlight is a critical operating system feature
+            we rely on daily to find the files we need littered throughout our hard
+            drives. Despite its usefulness in our daily lives, very few security
+            products take advantage of this incredible index of information to find
+            security risks across our device fleet. In this talk, Fritz Ifert-Miller
+            will walk you through {`Osquery's`} mdfind virtual table, teach you
+            {` Spotlight's`} advanced search syntax, and surprise you with the breadth
+            and depth of information you can uncover. The talk will cover practical
+            use-cases and features Kolide has built on top of this table to help our
+            users discover and eliminate potential sources of data breaches.
           </p>
         </ScheduleEntry>
 
@@ -404,16 +393,20 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="11:30 am"
-          category=""
-          day={2}
-          details=""
+          category="osquery development"
+          details="Trail of Bits"
           end="12:00 pm"
-          speaker="TBA"
-          title=""
+          speaker="Stefano Bonicatti"
+          title="osql, the community-oriented osquery fork"
           type={TALK}
         >
           <p>
-            (Coming Soon)
+            osql is a community-oriented fork of osquery. Its goals are making
+            the development process more open and predictable, reviewing and
+            accepting community contributions more quickly, and restoring the
+            {` community’s`} confidence and direct participation in the osquery project.
+            In this talk, we discuss how we intend to maintain a successful community
+            fork of a major open-source project.
           </p>
         </ScheduleEntry>
 

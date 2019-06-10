@@ -39,6 +39,9 @@ import imgHeadshotMattJane3x from 'assets/headshots/headshot-matt-jane-3x.png'
 import imgHeadshotHughNeale from 'assets/headshots/headshot-hugh-neale.png'
 import imgHeadshotHughNeale2x from 'assets/headshots/headshot-hugh-neale-2x.png'
 import imgHeadshotHughNeale3x from 'assets/headshots/headshot-hugh-neale-3x.png'
+import imgHeadshotTeddyReed from 'assets/headshots/headshot-teddy-reed.png'
+import imgHeadshotTeddyReed2x from 'assets/headshots/headshot-teddy-reed-2x.png'
+import imgHeadshotTeddyReed3x from 'assets/headshots/headshot-teddy-reed-3x.png'
 import imgHeadshotPlaceholder from 'assets/headshots/headshot-placeholder.jpg'
 import imgHeadshotPlaceholder2x from 'assets/headshots/headshot-placeholder-2x.jpg'
 import imgHeadshotPlaceholder3x from 'assets/headshots/headshot-placeholder-3x.jpg'
@@ -354,6 +357,24 @@ const Speakers = ({ id }) => (
         about some of the things you can build atop osquery.
       </p>
     </Speaker>
+
+    <Speaker
+      company="Facebook"
+      image={imgHeadshotTeddyReed}
+      image2x={imgHeadshotTeddyReed2x}
+      image3x={imgHeadshotTeddyReed3x}
+      name="Teddy Reed"
+      presentationName="Panel Discussion: the osquery Foundation"
+      presentationTopic="osquery Development"
+      title="Security Engineering Manager"
+    >
+      <p>
+      Teddy, along with Facebook colleague Ryan Wilson, will lead a panel discussion 
+      and {`Q&A`} with members of the osquery community about the plans to transfer 
+      stewardship of osquery from Facebook to an open-source foundation.
+      </p>
+    </Speaker>
+
 
   </section>
 )
