@@ -402,8 +402,8 @@ const Schedule = ({ id }) => (
         >
           <p>
             osql is a community-oriented fork of osquery. Its goals are making
-            the development process more open and predictable, reviewing and
-            accepting community contributions more quickly, and maintaining the
+            the development process more open and predictable, being responsive 
+            in reviewing and accepting community contributions, and maintaining the
             {` community’s`} confidence and direct participation in the osquery project.
             In this talk, we discuss how we intend to maintain a successful community
             fork of a major open-source project.
