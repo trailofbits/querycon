@@ -103,12 +103,61 @@ const Schedule = ({ id }) => (
             </ul>
           </p>
         </ScheduleEntry>
-
+       
         <ScheduleEntry
           begin="11:30 am"
           category="osquery development"
-          details="Google"
+          details="Trail of Bits"
           end="12:00 pm"
+          speaker="Stefano Bonicatti & Mark Mossberg"
+          title="osql, the community-oriented osquery fork"
+          type={TALK}
+        >
+          <p>
+            osql is a community-oriented fork of osquery. Its goals are making
+            the development process more open and predictable, being responsive 
+            in reviewing and accepting community contributions, and maintaining the
+            {` community’s`} confidence and direct participation in the osquery project.
+            In this talk, we discuss how we intend to maintain a successful community
+            fork of a major open-source project.
+          </p>
+        </ScheduleEntry>
+
+        <ScheduleEntry
+          begin="12:00 pm"
+          end="1:00 pm"
+          speaker="Lunch"
+          type={MEAL}
+        />
+
+        <ScheduleEntry
+          begin="1:00 pm"
+          category="osquery development"
+          details="Facebook"
+          end="1:45 pm"
+          speaker="Teddy Reed & Ryan Wilson"
+          title="Panel Discussion: the osquery Foundation"
+          type={TALK}
+        >
+          <p>
+          Teddy, along with Facebook colleague Ryan Wilson, will lead a panel discussion 
+          and {`Q&A`} with members of the osquery community about the plans to transfer 
+          stewardship of osquery from Facebook to an open-source foundation.
+          </p>
+        </ScheduleEntry>
+
+        <ScheduleEntry
+          begin="1:45 pm"
+          end="2:00 pm"
+          title="Break"
+          type={BREAK}
+        />
+
+        <ScheduleEntry
+          begin="02:00 pm"
+          category="osquery development"
+          details="Google"
+          end="02:30 pm"
           speaker="Victor Vrantchan"
           title="All you can do with extensions"
           type={TALK}
@@ -128,40 +177,10 @@ const Schedule = ({ id }) => (
         </ScheduleEntry>
 
         <ScheduleEntry
-          begin="12:00 pm"
-          end="1:00 pm"
-          speaker="Lunch"
-          type={MEAL}
-        />
-
-        <ScheduleEntry
-          begin="1:00 pm"
-          category="osquery development"
-          details="Facebook"
-          end="1:45 pm"
-          speaker="Teddy Reed and Ryan Wilson"
-          title="Panel Discussion: the osquery Foundation"
-          type={TALK}
-        >
-          <p>
-          Teddy, along with Facebook colleague Ryan Wilson, will lead a panel discussion 
-          and {`Q&A`} with members of the osquery community about the plans to transfer 
-          stewardship of osquery from Facebook to an open-source foundation.
-          </p>
-        </ScheduleEntry>
-
-        <ScheduleEntry
-          begin="1:45 pm"
-          end="2:00 pm"
-          title="Break"
-          type={BREAK}
-        />
-
-        <ScheduleEntry
-          begin="2:00 pm"
+          begin="2:30 pm"
           category="Production osquery"
           details="Carbon Black"
-          end="2:30 pm"
+          end="3:00 pm"
           speaker="Tania McCormack"
           title="Taking Osquery to the Mainstream to Benefit Us All"
           type={TALK}
@@ -174,26 +193,6 @@ const Schedule = ({ id }) => (
             some commons barriers of Osquery management, and lead a discussion around
             what else can be done to get more people using and contributing back to
             this project.
-          </p>
-        </ScheduleEntry>
-
-        <ScheduleEntry
-          begin="2:30 pm"
-          category="osquery Development"
-          details="PolyLogyx"
-          end="3:00 pm"
-          speaker="Atul Kabra"
-          title="Enriching osquery with 'event-driven' extensions"
-          type={TALK}
-        >
-          <p>
-            Osquery has a mechanism for extending its core via extensions, but it {`doesn’t `}
-            allow an extension to participate in {`osquery's`} event framework. In this talk,
-            we will describe how we overcame some of the design constraints in the osquery
-            extension model, in order to create event-driven tables in an extension. As
-            well, we will share our wishlist for how the extension ecosystem for osquery
-            could be improved to enable some exciting potential use-cases for the
-            endpoint agent.
           </p>
         </ScheduleEntry>
 
@@ -393,20 +392,21 @@ const Schedule = ({ id }) => (
 
         <ScheduleEntry
           begin="11:30 am"
-          category="osquery development"
-          details="Trail of Bits"
+          category="osquery Development"
+          details="PolyLogyx"
           end="12:00 pm"
-          speaker="Stefano Bonicatti"
-          title="osql, the community-oriented osquery fork"
+          speaker="Atul Kabra"
+          title="Enriching osquery with 'event-driven' extensions"
           type={TALK}
         >
           <p>
-            osql is a community-oriented fork of osquery. Its goals are making
-            the development process more open and predictable, being responsive 
-            in reviewing and accepting community contributions, and maintaining the
-            {` community’s`} confidence and direct participation in the osquery project.
-            In this talk, we discuss how we intend to maintain a successful community
-            fork of a major open-source project.
+            Osquery has a mechanism for extending its core via extensions, but it {`doesn’t `}
+            allow an extension to participate in {`osquery's`} event framework. In this talk,
+            we will describe how we overcame some of the design constraints in the osquery
+            extension model, in order to create event-driven tables in an extension. As
+            well, we will share our wishlist for how the extension ecosystem for osquery
+            could be improved to enable some exciting potential use-cases for the
+            endpoint agent.
           </p>
         </ScheduleEntry>
 
