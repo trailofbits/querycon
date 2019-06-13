@@ -39,6 +39,9 @@ import imgHeadshotMattJane3x from 'assets/headshots/headshot-matt-jane-3x.png'
 import imgHeadshotHughNeale from 'assets/headshots/headshot-hugh-neale.png'
 import imgHeadshotHughNeale2x from 'assets/headshots/headshot-hugh-neale-2x.png'
 import imgHeadshotHughNeale3x from 'assets/headshots/headshot-hugh-neale-3x.png'
+import imgHeadshotTeddyReed from 'assets/headshots/headshot-teddy-reed.png'
+import imgHeadshotTeddyReed2x from 'assets/headshots/headshot-teddy-reed-2x.png'
+import imgHeadshotTeddyReed3x from 'assets/headshots/headshot-teddy-reed-3x.png'
 import imgHeadshotPlaceholder from 'assets/headshots/headshot-placeholder.jpg'
 import imgHeadshotPlaceholder2x from 'assets/headshots/headshot-placeholder-2x.jpg'
 import imgHeadshotPlaceholder3x from 'assets/headshots/headshot-placeholder-3x.jpg'
@@ -59,12 +62,12 @@ const Speakers = ({ id }) => (
       presentationTopic="osquery development"
     >
       <p>
-        osql is a community-oriented fork of osquery. Its goals are making
-        the development process more open and predictable, reviewing and
-        accepting community contributions more quickly, and restoring the
-        {` community’s`} confidence and direct participation in the osquery project.
-        In this talk, we discuss how we intend to maintain a successful community
-        fork of a major open-source project.
+      osql is a community-oriented fork of osquery. Its goals are making
+      the development process more open and predictable, being responsive 
+      in reviewing and accepting community contributions, and maintaining the
+      {` community’s`} confidence and direct participation in the osquery project.
+      In this talk, we discuss how we intend to maintain a successful community
+      fork of a major open-source project.
       </p>
     </Speaker>
     <Speaker
@@ -73,7 +76,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotAlessandroGario2x}
       image3x={imgHeadshotAlessandroGario3x}
       name="Alessandro Gario"
-      presentationName="The history of Linux security event monitoring with osquery"
+      presentationName="Linux security event monitoring with osquery"
       presentationTopic="osquery development"
     >
       <p>
@@ -251,7 +254,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotJonNelson2x}
       image3x={imgHeadshotJonNelson3x}
       name="Jon Nelson"
-      presentationName="Using Queries as Building Blocks to Support Your Security Framework"
+      presentationName="Queries as Building Blocks for Your Security Framework"
       presentationTopic="Production osquery"
       title="Senior Systems Engineer"
     >
@@ -354,6 +357,24 @@ const Speakers = ({ id }) => (
         about some of the things you can build atop osquery.
       </p>
     </Speaker>
+
+    <Speaker
+      company="Facebook"
+      image={imgHeadshotTeddyReed}
+      image2x={imgHeadshotTeddyReed2x}
+      image3x={imgHeadshotTeddyReed3x}
+      name="Teddy Reed"
+      presentationName="Panel Discussion: the osquery Foundation"
+      presentationTopic="osquery Development"
+      title="Security Engineering Manager"
+    >
+      <p>
+      Teddy, along with Facebook colleague Ryan Wilson, will lead a panel discussion 
+      and {`Q&A`} with members of the osquery community about the plans to transfer 
+      stewardship of osquery from Facebook to an open-source foundation.
+      </p>
+    </Speaker>
+
 
   </section>
 )
