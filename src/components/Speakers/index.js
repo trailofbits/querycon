@@ -76,7 +76,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotAlessandroGario2x}
       image3x={imgHeadshotAlessandroGario3x}
       name="Alessandro Gario"
-      presentationName="The history of Linux security event monitoring with osquery"
+      presentationName="Linux security event monitoring with osquery"
       presentationTopic="osquery development"
     >
       <p>
