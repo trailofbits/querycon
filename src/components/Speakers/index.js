@@ -254,7 +254,7 @@ const Speakers = ({ id }) => (
       image2x={imgHeadshotJonNelson2x}
       image3x={imgHeadshotJonNelson3x}
       name="Jon Nelson"
-      presentationName="Using Queries as Building Blocks to Support Your Security Framework"
+      presentationName="Queries as Building Blocks for Your Security Framework"
       presentationTopic="Production osquery"
       title="Senior Systems Engineer"
     >
