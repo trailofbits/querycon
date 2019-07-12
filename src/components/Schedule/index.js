@@ -112,6 +112,7 @@ const Schedule = ({ id }) => (
           speaker="Stefano Bonicatti & Mark Mossberg"
           title="osql, the community-oriented osquery fork"
           type={TALK}
+          slides="assets/slides/Stefano%20Bonicatti%20and%20Mark%20Mossberg%20-%20osql%20-%20The%20community-oriented%20osquery%20fork.pdf"
         >
           <p>
             osql is a community-oriented fork of osquery. Its goals are making
