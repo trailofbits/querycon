@@ -6,7 +6,7 @@ import styles from './schedule.module.scss'
 import slidesStefanoBonicatti from 'assets/slides/Stefano Bonicatti and Mark Mossberg - osql - The community-oriented osquery fork.pdf'
 import slidesAlessandroGario from 'assets/slides/Alessandro Gario - Linux security event monitoring with osquery.pdf'
 import slidesZachWasserman from 'assets/slides/Zach Wasserman - 10 Pitfalls on the Path to osquery Bliss.pdf'
-// import slidesVictorVrantchan from ''
+import slidesVictorVrantchan from 'assets/slides/Victor Vrantchan - All you can do with extensions.pdf'
 // import slidesJasonMeller from ''
 import slidesFritzIfertMiller from 'assets/slides/Fritz Ifert-Miller - Using macOS Spotlight and osquery to Prevent Data Breaches.pdf'
 import slidesTaniaMcCormack from 'assets/slides/Tania McCormack - Taking osquery to the Mainstream to Benefit Us All.pdf'
@@ -178,6 +178,7 @@ const Schedule = ({ id }) => (
           speaker="Victor Vrantchan"
           title="All you can do with extensions"
           type={TALK}
+          slides={slidesVictorVrantchan}
         >
           <p>
             Do you need to send your osquery logs to a custom backend? Is your current
