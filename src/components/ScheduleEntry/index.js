@@ -39,6 +39,7 @@ export class ScheduleEntry extends React.Component {
       speaker,
       title,
       type,
+      slides,
     } = this.props
 
     const { showDetails } = this.state
@@ -72,16 +73,21 @@ export class ScheduleEntry extends React.Component {
           <div className={styles.details}>{details}</div>
 
           {(type === ENTRY_TYPES.TALK || type === ENTRY_TYPES.KEYNOTE) && (
-            <div className={styles.details}>
-              {showDetails ? (
-                <div>
-                  <div>{children}</div>
+            <div>
+              <div className={styles.slides}>
+                <a href={slides} rel="noopener noreferrer" target="_blank">Slides</a>
+              </div>
+              <div className={styles.details}>
+                {showDetails ? (
+                  <div>
+                    <div>{children}</div>
 
-                  <button className={styles.detailsToggle} onClick={this.hideDetails}>Hide Details</button>
-                </div>
-              ) : (
-                <button className={styles.detailsToggle} onClick={this.showDetails}>Show Details</button>
-              )}
+                    <button className={styles.detailsToggle} onClick={this.hideDetails}>Hide Details</button>
+                  </div>
+                ) : (
+                  <button className={styles.detailsToggle} onClick={this.showDetails}>Show Details</button>
+                )}
+              </div>
             </div>
           )}
         </div>

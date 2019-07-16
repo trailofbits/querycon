@@ -3,6 +3,21 @@ import React from 'react'
 import { ScheduleEntry, ENTRY_TYPES } from '../ScheduleEntry'
 import styles from './schedule.module.scss'
 
+import slidesStefanoBonicatti from 'assets/slides/Stefano Bonicatti and Mark Mossberg - osql - The community-oriented osquery fork.pdf'
+import slidesAlessandroGario from 'assets/slides/Alessandro Gario - Linux security event monitoring with osquery.pdf'
+import slidesZachWasserman from 'assets/slides/Zach Wasserman - 10 Pitfalls on the Path to osquery Bliss.pdf'
+import slidesVictorVrantchan from 'assets/slides/Victor Vrantchan - All you can do with extensions.pdf'
+import slidesJasonMeller from 'assets/slides/Jason Meller - Querycon 2019 Keynote.pdf'
+import slidesFritzIfertMiller from 'assets/slides/Fritz Ifert-Miller - Using macOS Spotlight and osquery to Prevent Data Breaches.pdf'
+import slidesTaniaMcCormack from 'assets/slides/Tania McCormack - Taking osquery to the Mainstream to Benefit Us All.pdf'
+import slidesJonNelson from 'assets/slides/Jon Nelson - Using Queries as Building Blocks.pdf'
+import slidesJosephSokolMargolis from 'assets/slides/Joseph Sokol-Margolis - Building and Distribution - The Kolide Launcher for osquery.pdf'
+import slidesAtulKabra from 'assets/slides/Atul Kabra - Enriching osquery with event-driven extensions.pdf'
+import slidesAlexMalone from 'assets/slides/Alex Malone - Internals - How sqlite3 and rocksdb are used.pdf'
+import slidestMattJane from 'assets/slides/Matt Jane - Monitoring Ephemeral Infrastructure with osquery.pdf'
+import slidesHughNeale from 'assets/slides/Hugh Neale - Building things atop osquery.pdf'
+// import slidesTeddyReed from '' // there are no slides for this talk
+
 const { BREAK, HOST, KEYNOTE, MEAL, TALK, WORKSHOP } = ENTRY_TYPES
 
 const Schedule = ({ id }) => (
@@ -50,6 +65,7 @@ const Schedule = ({ id }) => (
           speaker="Jason Meller"
           title="User Focused Security & Osquery"
           type={KEYNOTE}
+          slides={slidesJasonMeller}
         >
           <p>
             User-Focused Security is an IT/Security methodology that is being rapidly
@@ -77,6 +93,7 @@ const Schedule = ({ id }) => (
           speaker="Zach Wasserman"
           title="10 Pitfalls on the Path to Osquery Bliss"
           type={TALK}
+          slides={slidesZachWasserman}
         >
           <p>
             Osquery is a powerful and intuitive tool, but everything is not always as
@@ -112,6 +129,7 @@ const Schedule = ({ id }) => (
           speaker="Stefano Bonicatti & Mark Mossberg"
           title="osql, the community-oriented osquery fork"
           type={TALK}
+          slides={slidesStefanoBonicatti}
         >
           <p>
             osql is a community-oriented fork of osquery. Its goals are making
@@ -161,6 +179,7 @@ const Schedule = ({ id }) => (
           speaker="Victor Vrantchan"
           title="All you can do with extensions"
           type={TALK}
+          slides={slidesVictorVrantchan}
         >
           <p>
             Do you need to send your osquery logs to a custom backend? Is your current
@@ -184,6 +203,7 @@ const Schedule = ({ id }) => (
           speaker="Tania McCormack"
           title="Taking Osquery to the Mainstream to Benefit Us All"
           type={TALK}
+          slides={slidesTaniaMcCormack}
         >
           <p>
             From Carbon Black to Trail of Bits to Kolide, there are now a variety of
@@ -204,6 +224,7 @@ const Schedule = ({ id }) => (
           speaker="Matt Jane"
           title="Monitoring Ephemeral Infrastructure with osquery"
           type={TALK}
+          slides={slidestMattJane}
         >
           <p>
             Modern infrastructure and deployment methods, as well as web-scale infrastructure
@@ -235,6 +256,7 @@ const Schedule = ({ id }) => (
           speaker="Alex Malone"
           title="Internals: how osquery uses sqlite3 and rocksdb"
           type={TALK}
+          slides={slidesAlexMalone}
         >
           <p>
             We will walk through a query from SQL to the logged JSON results, noting the
@@ -253,6 +275,7 @@ const Schedule = ({ id }) => (
           speaker="Hugh Neale"
           title="Osquery across compliance, monitoring, risk and threat hunting"
           type={TALK}
+          slides={slidesHughNeale}
         >
           <p>
             Stories, use cases and lessons learnt from the front line: Hugh will
@@ -276,7 +299,7 @@ const Schedule = ({ id }) => (
           end="8:00 pm"
           speaker=""
           title="Off-Site Dinner & Drinks"
-          type={WORKSHOP}
+          type={BREAK}
         />
       </div>
 
@@ -305,6 +328,7 @@ const Schedule = ({ id }) => (
           speaker="Jon Nelson"
           title="Queries as Building Blocks for Your Security Framework"
           type={TALK}
+          slides={slidesJonNelson}
         >
           <p>
             Teams often lean on standardized third-party security frameworks as the
@@ -326,6 +350,7 @@ const Schedule = ({ id }) => (
           speaker="Alessandro Gario"
           title="Linux security event monitoring with osquery"
           type={TALK}
+          slides={slidesAlessandroGario}
         >
           <p>
             This talk introduces security event monitoring on Linux, and our lessons
@@ -346,6 +371,7 @@ const Schedule = ({ id }) => (
           speaker="Fritz Ifert-Miller"
           title="Using macOS Spotlight and Osquery to Prevent Data Breaches"
           type={TALK}
+          slides={slidesFritzIfertMiller}
         >
           <p>
             For those of us on Macs, Spotlight is a critical operating system feature
@@ -371,6 +397,7 @@ const Schedule = ({ id }) => (
           speaker="Joseph Sokol-Margolis"
           title="Building and Distribution: The Kolide Launcher for Osquery"
           type={TALK}
+          slides={slidesJosephSokolMargolis}
         >
           <p>
             An often overlooked but necessary part of a production Osquery deployment
@@ -398,6 +425,7 @@ const Schedule = ({ id }) => (
           speaker="Atul Kabra"
           title="Enriching osquery with 'event-driven' extensions"
           type={TALK}
+          slides={slidesAtulKabra}
         >
           <p>
             Osquery has a mechanism for extending its core via extensions, but it {`doesn’t `}
