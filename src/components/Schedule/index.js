@@ -7,7 +7,7 @@ import slidesStefanoBonicatti from 'assets/slides/Stefano Bonicatti and Mark Mos
 import slidesAlessandroGario from 'assets/slides/Alessandro Gario - Linux security event monitoring with osquery.pdf'
 import slidesZachWasserman from 'assets/slides/Zach Wasserman - 10 Pitfalls on the Path to osquery Bliss.pdf'
 import slidesVictorVrantchan from 'assets/slides/Victor Vrantchan - All you can do with extensions.pdf'
-// import slidesJasonMeller from ''
+import slidesJasonMeller from 'assets/slides/Jason Meller - Querycon 2019 Keynote.pdf'
 import slidesFritzIfertMiller from 'assets/slides/Fritz Ifert-Miller - Using macOS Spotlight and osquery to Prevent Data Breaches.pdf'
 import slidesTaniaMcCormack from 'assets/slides/Tania McCormack - Taking osquery to the Mainstream to Benefit Us All.pdf'
 import slidesJonNelson from 'assets/slides/Jon Nelson - Using Queries as Building Blocks.pdf'
@@ -16,7 +16,7 @@ import slidesAtulKabra from 'assets/slides/Atul Kabra - Enriching osquery with e
 import slidesAlexMalone from 'assets/slides/Alex Malone - Internals - How sqlite3 and rocksdb are used.pdf'
 import slidestMattJane from 'assets/slides/Matt Jane - Monitoring Ephemeral Infrastructure with osquery.pdf'
 import slidesHughNeale from 'assets/slides/Hugh Neale - Building things atop osquery.pdf'
-// import slidesTeddyReed from ''
+// import slidesTeddyReed from '' // there are no slides for this talk
 
 const { BREAK, HOST, KEYNOTE, MEAL, TALK, WORKSHOP } = ENTRY_TYPES
 
@@ -65,6 +65,7 @@ const Schedule = ({ id }) => (
           speaker="Jason Meller"
           title="User Focused Security & Osquery"
           type={KEYNOTE}
+          slides={slidesJasonMeller}
         >
           <p>
             User-Focused Security is an IT/Security methodology that is being rapidly
