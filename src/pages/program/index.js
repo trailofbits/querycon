@@ -11,7 +11,7 @@ import Speakers from '../../components/Speakers'
 import Tab from '../../components/Tab'
 import Workshop from '../../components/Workshop'
 import styles from './program.module.scss'
-import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from '../../util/constants'
+import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from 'util/constants'
 
 const SCHEDULE = 'schedule'
 const SPEAKERS = 'speakers'

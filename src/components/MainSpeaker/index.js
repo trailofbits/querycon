@@ -2,7 +2,7 @@ import React from 'react'
 import MediaQuery from 'react-responsive'
 
 import styles from './main-speaker.module.scss'
-import { MOBILE_WIDTH } from '../../util/constants'
+import { MOBILE_WIDTH } from 'util/constants'
 
 const MainSpeaker = ({ company, image, image2x, image3x, name, title }) => (
   <div className={styles.wrapper}>

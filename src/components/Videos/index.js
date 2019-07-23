@@ -15,7 +15,7 @@ import imgTeddyReed from './teddy-reed@2x.jpg'
 import imgMikeArpaia from './mike-arpaia@2x.jpg'
 import imgRobFry from './rob-fry@2x.jpg'
 import styles from './videos.module.scss'
-import { MOBILE_WIDTH } from '../../util/constants'
+import { MOBILE_WIDTH } from 'util/constants'
 
 class Videos extends Component {
   render() {

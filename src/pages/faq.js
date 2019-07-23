@@ -11,7 +11,7 @@ import Header from '../components/Header'
 import MobileHeader from '../components/MobileHeader'
 import Question from '../components/Question'
 import styles from './faq.module.scss'
-import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from '../util/constants'
+import { DESKTOP_MIN_WIDTH, MOBILE_WIDTH } from 'util/constants'
 
   const questions = [
   {
