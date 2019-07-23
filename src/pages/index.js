@@ -20,7 +20,7 @@ import MobileHeader from '../components/MobileHeader'
 import ProminentCta from '../components/ProminentCta'
 import RegistrationTiles from '../components/RegistrationTiles'
 import styles from './index.module.scss'
-import { MOBILE_WIDTH } from '../util/constants'
+import { MOBILE_WIDTH } from 'util/constants'
 
 const cx = classNames.bind(styles)
 
